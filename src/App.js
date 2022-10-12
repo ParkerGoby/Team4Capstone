@@ -27,17 +27,15 @@ function App() {
 					*/
 				}
 			</nav>
+			<!-- Slider Section -->
 			<section class="slider">
 				<div class="sliderDesktop">
-					<div class="sliderOverlay">
-						<h1 class="slider-head">
-							Welcome to Astro-Learn!
-						</h1>
-						<p class="slider-text" align="center">
-							Start a free and fun way to learn different topics. Make an account to start playing today!
+					<div class="sliderOverlayText">
+						<h1 class="sliderHead">Welcome to Astro-Learn!</h1>
+						<p class="sliderText" align="center">Start a free and fun way to learn different topics. Make an account to start playing today!
 							<br></br>
-
-							<a href="#tutorial" class="button">LEARN MORE</a></p>
+							<a href="#tutorial" class="button">LEARN MORE</a>
+						</p>
 					</div>
 				</div>
 			</section>

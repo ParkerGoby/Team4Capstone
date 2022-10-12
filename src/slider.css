@@ -8,7 +8,7 @@ width: 1920px;
 height: 550px;
 
 }
-.sliderOverlay {
+.sliderOverlayText {
     position: relative;
 	margin: 0 0 10px;
 	overflow: hidden;
@@ -16,7 +16,7 @@ height: 550px;
     width: 100%;
 }
 
-.slider-head {
+.sliderHead {
     z-index: 2;
     font-size: 48px;
     margin-bottom: 15px;
@@ -25,7 +25,7 @@ height: 550px;
     text-align: center;
 }
 
-.slider-text {
+.sliderText {
     z-index: 2;
     font-size: 24px;
     font-family: 'Montserrat';
