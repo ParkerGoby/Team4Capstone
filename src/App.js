@@ -27,7 +27,9 @@ function App() {
 					*/
 				}
 			</nav>
-			<!-- Slider Section -->
+			{
+			/* <!-- Slider Section --> */
+			}
 			<section class="slider">
 				<div class="sliderDesktop">
 					<div class="sliderOverlayText">
