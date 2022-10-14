@@ -17,9 +17,6 @@ function App() {
 					<Route exact path='/login' element={<Login />}> </Route>
 				</Routes>
 			</BrowserRouter>
-			
-			
-			
 			<footer className="footer">
 				<p className="text-footer">
 					Copyright ©-All rights are reserved
