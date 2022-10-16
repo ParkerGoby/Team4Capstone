@@ -1,68 +1,7 @@
 import * as React from 'react';
-import { styled } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
-import Box from '@material-ui/core/Box';
+
 import 'bootstrap/dist/css/bootstrap.css';
 
-
-
-const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#ffff',
-    ...theme.typography.body2,
-    padding: theme.spacing(3),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  }));
-
-  function FormRow1() {
-    return (
-      <React.Fragment>
-        <Grid item xs={4}>
-          <Item>Geography</Item>
-        </Grid>
-        <Grid item xs={4}>
-          <Item>History</Item>
-        </Grid>
-        <Grid item xs={4}>
-          <Item>Math</Item>
-        </Grid>
-      </React.Fragment>
-    );
-  }
-
-
-  function FormRow2() {
-    return (
-      <React.Fragment>
-        <Grid item xs={4}>
-          <Item>Science</Item>
-        </Grid>
-        <Grid item xs={4}>
-          <Item>Mythology</Item>
-        </Grid>
-        <Grid item xs={4}>
-          <Item>English</Item>
-        </Grid>
-      </React.Fragment>
-    );
-  } 
-
-  function FormRow3() {
-    return (
-      <React.Fragment>
-        <Grid item xs={4}>
-          <Item>Temp</Item>
-        </Grid>
-        <Grid item xs={4}>
-          <Item>Temp2</Item>
-        </Grid>
-        <Grid item xs={4}>
-          <Item>Temp3</Item>
-        </Grid>
-      </React.Fragment>
-    );
-  } 
 
 export function Category() {
     return (
