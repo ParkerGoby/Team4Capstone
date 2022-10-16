@@ -10,7 +10,7 @@ export function NavigationBar() {
                 <Link to="/register"><li>Register</li></Link>
                 <Link to="/login"><li>Login</li></Link>
                 <li><a href="#tutorial">Tutorial</a></li>
-                <li><a href="#quizzes">Quizzes</a></li>
+                <Link to="/category"><li>Category</li></Link>
                 <li><a href='#about'>About us</a></li>
             </ul>
             <div class="rightNav">
