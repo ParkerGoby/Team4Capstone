@@ -1,0 +1,80 @@
+.outside_login_div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+   margin: auto;
+width: 50%;
+/*border: 3px solid green;*/
+padding: 10px;
+}
+
+.inside_login_div {
+  width: 50%;
+/*border: 3px solid green;*/
+padding: 10px;
+margin: auto;
+}
+
+.login_form {
+    width: 50%;
+/*border: 3px solid green;*/
+padding: 10px;
+margin: auto;
+}
+
+.login_heading2 {
+  text-align: center;
+}
+
+.login_form_div {
+
+
+display: inline-block;
+/*border: 3px solid green;*/
+padding: 10px;
+margin: auto;
+display: grid;
+place-items: center;
+}
+
+.login_input {
+   margin: auto;
+display: block;
+ color: grey;
+border-radius: 4px;
+/* margin-bottom: 5px;*/
+border-radius: 16px;
+/*background: #f7f7f7;
+border: 2px solid #e5e5e5;
+border-radius: 16px;
+display: flex;
+margin-top: 8px;
+position: relative;
+height: 25px;
+width: auto;
+display: flex;
+width: 100%;
+padding: auto;*/
+padding: 15px;
+margin-bottom: 5px;
+}
+
+.login_input[type=text]:focus {
+  border: 3px solid #555;
+
+}
+
+.login_button {
+  background-color: #008CBA;
+  font-size: 15px;
+  padding: 5px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+background: #f7f7f7;
+border: 2px solid #e5e5e5;
+border-radius: 16px;
+display: flex;
+margin-top: 8px;
+position: relative;
