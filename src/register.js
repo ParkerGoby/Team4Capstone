@@ -10,27 +10,50 @@ const Register = () => {
 
     return (
         <>
-            <div class="outside_register_div">
-                <div class="inside_register_div">
-                    <form class="register_form" onSubmit={userRegistration}>
-                        <h2 class="register_heading2">Sign Up</h2>
-                        <div class="register_form_div">
-                            {/* <label>Username</label> */}
-                            <input class="register_input" placeholder="Username" type="userName" onChange={(e) => setUserName(e.target.value)} value={userName} />
-                            <br />
-                            <input class="register_input" placeholder="School" type="school" onChange={(e) => setUserName(e.target.value)} value={userName} />
-                            <br />
-                            {/* <label >Password</label> */}
-                            <input class="register_input" type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} value={password} />
-                                           <br />
-                                           <input class="register_input" type="confirmPassword" placeholder="Confirm Password" onChange={(e) => setPassword(e.target.value)} value={password} />
-                                           <br />
-                            <button class="login_button">Register</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </>        
+        
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card border-0 shadow rounded-3 my-5">
+          <div class="card-body p-4 p-sm-5">
+            <h5 class="card-title text-center mb-5 fw-light fs-5">Register</h5>
+            <form>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"></input>
+                <label for="floatingInput">Username</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"></input>
+                <label for="floatingInput">School</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password"></input>
+                <label for="floatingPassword">Password</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password"></input>
+                <label for="floatingPassword">Confirm Password</label>
+              </div>
+
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck"></input>
+                <label class="form-check-label" for="rememberPasswordCheck">
+                  Remember password
+                </label>
+              </div>
+              <div class="d-grid">
+                <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit">Sign
+                  in</button>
+              </div>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</>
     )
 }
 export default Register
