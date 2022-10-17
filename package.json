@@ -16,6 +16,10 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
+  "engines": {
+    "node": "16.18.0",
+    "npm": "8.19.2"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -36,10 +40,6 @@
       "not dead",
       "not op_mini all"
     ],
-    "engines": {
-      "node": "16.18.0",
-      "npm": "8.19.2"
-  },
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
