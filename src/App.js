@@ -40,7 +40,7 @@ function App() {
 					<Route exact path='/question1' element={<Level_1 />}> </Route>
 				
 					<Route exact path='/create' element={<Create />}> </Route>
-					<Route exact path='/edit' element={<Edit />}> </Route>
+					<Route exact path='/edit:id' element={<Edit />}> </Route>
 					<Route exact path='/recordList' element={<Record_list />}> </Route>
 				</Routes>
 			</BrowserRouter>
