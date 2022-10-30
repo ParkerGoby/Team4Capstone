@@ -27,7 +27,9 @@ export function NavigationBar() {
                     <li class="nav-item">
                         <a class="nav-link"><Link style={{color: 'white',textDecoration: 'none' }} to="/create">Create-Record</Link></a>
                     </li>
-                    
+                    <li class="nav-item">
+                        <a class="nav-link"><Link style={{color: 'white',textDecoration: 'none' }} to="/recordList">DB Records</Link></a>
+                    </li>
             
                 </ul>
                 
