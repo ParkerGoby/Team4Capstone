@@ -14,6 +14,10 @@ import Division from './categoryTypesMath/division.js';
 import Subtraction from './categoryTypesMath/subtraction.js';
 import Fractions from './categoryTypesMath/fractions.js';
 import Level_1 from './question1.js';
+import Edit from './components/edit';
+import Create from './components/create';
+
+import Record_list from './components/recordList';
 
 
 
@@ -34,6 +38,10 @@ function App() {
 					<Route exact path='/subtraction' element={<Subtraction />}> </Route>
 					<Route exact path='/fractions' element={<Fractions />}> </Route>
 					<Route exact path='/question1' element={<Level_1 />}> </Route>
+				
+					<Route exact path='/create' element={<Create />}> </Route>
+					<Route exact path='/edit' element={<Edit />}> </Route>
+					<Route exact path='/recordList' element={<Record_list />}> </Route>
 				</Routes>
 			</BrowserRouter>
 			<footer className="footer">

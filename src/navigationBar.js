@@ -24,6 +24,9 @@ export function NavigationBar() {
                     <li class="nav-item">
                         <a class="nav-link"><Link style={{color: 'white',textDecoration: 'none' }} to="/category">Categories</Link></a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><Link style={{color: 'white',textDecoration: 'none' }} to="/create">Create-Record</Link></a>
+                    </li>
                     
             
                 </ul>
