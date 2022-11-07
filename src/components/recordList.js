@@ -19,6 +19,11 @@ const Record = (props) => (
   </tr>
 );
 
+const Question = (props) => (
+  <h1>{props.record.question}?</h1>
+
+);
+
 export default function RecordList() {
   const [records, setRecords] = useState([]);
 
@@ -56,7 +61,7 @@ export default function RecordList() {
   function recordList() {
     return records.map((record) => {
       return (
-        <Record
+        <Question
           record={record}
           deleteRecord={() => deleteRecord(record._id)}
           key={record._id}
@@ -67,6 +72,7 @@ export default function RecordList() {
 
   // This following section will display the table with the records of individuals.
   return (
+    <>
     <div>
       <h3>Record List</h3>
       <table className="table table-striped" style={{ marginTop: 20 }}>
@@ -81,5 +87,58 @@ export default function RecordList() {
         <tbody>{recordList()}</tbody>
       </table>
     </div>
+
+    
+     <div class="title-container">        
+     <div class="container-fluid">
+     
+         <div class="row">
+         <div class="col-xs-1 text-center"><p>{recordList()}</p></div>
+         </div>
+     </div>
+     </div>
+ 
+ <div class="container-thing">
+     <div class="row row-cols-1 row-cols-md-2 g-4">
+         
+         <div class="col">
+             <div class="btn btn-outline-dark card">
+             <div class="card-body">
+                 <h5 class="card-title text-center align-middle">123</h5>
+                 { /*<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>*/}
+                 { /* <p>Addition</p> */ }
+             </div>
+             </div>
+         </div>
+         <div class="col">
+             <div class="btn btn-outline-dark card">
+             <div class="card-body">
+                 <h5 class="card-title text-center align-middle">345</h5>
+                 { /*<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>*/}
+                 { /* <p>Addition</p> */ }
+             </div>
+             </div>
+         </div>
+         <div class="col">
+             <div class="btn btn-outline-dark card">
+             <div class="card-body">
+                 <h5 class="card-title text-center align-middle">3</h5>
+                 { /* <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> */}
+                 { /* <p>Addition</p> */ }
+             </div>
+             </div>
+         </div>
+         <div class="col">
+             <div class="btn btn-outline-dark card">
+             <div class="card-body">
+                 <h5 class="card-title text-center align-middle">4</h5>
+                 { /*<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>*/}
+                { /* <p>Addition</p> */ }
+             </div>
+             </div>
+         </div>
+     </div>
+     </div>
+    </>
   );
 }

@@ -16,6 +16,7 @@ import Fractions from './categoryTypesMath/fractions.js';
 import Level_1 from './question1.js';
 import Edit from './components/edit';
 import Create from './components/create';
+import Footer from './footer';
 
 import Record_list from './components/recordList';
 
@@ -44,11 +45,7 @@ function App() {
 					<Route exact path='/recordList' element={<Record_list />}> </Route>
 				</Routes>
 			</BrowserRouter>
-			<footer className="footer">
-				<p className="text-footer">
-					Copyright ©-All rights are reserved
-				</p>
-			</footer>
+			<Footer />
 		</div>
 	)
 }
