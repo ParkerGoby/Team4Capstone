@@ -71,6 +71,25 @@ margin-bottom: 5px;
   padding: 5px;
   border-radius: 10px;
 }
+
+.progress_bar {
+  align-content: center;
+  padding-top: 30px;
+  margin-left: 560px;
+  margin-right: 560px;
+  transition: 1s ease;
+  transition-delay: 0.5s;
+}
+
+.level_footer {
+  padding-top: 30px;
+}
+
+.continue_button {
+  padding-right: 30px;
+  float: right;
+}
+
 /*
 background: #f7f7f7;
 border: 2px solid #e5e5e5;

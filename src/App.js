@@ -13,7 +13,7 @@ import Addition from './categoryTypesMath/addition.js';
 import Division from './categoryTypesMath/division.js';
 import Subtraction from './categoryTypesMath/subtraction.js';
 import Fractions from './categoryTypesMath/fractions.js';
-import Level_1 from './question1.js';
+import LevelHome from './levels/level-home.js';
 
 
 
@@ -33,7 +33,7 @@ function App() {
 					<Route exact path='/division' element={<Division />}> </Route>
 					<Route exact path='/subtraction' element={<Subtraction />}> </Route>
 					<Route exact path='/fractions' element={<Fractions />}> </Route>
-					<Route exact path='/question1' element={<Level_1 />}> </Route>
+					<Route exact path='/levels/level-home' element={<LevelHome/>}> </Route>
 				</Routes>
 			</BrowserRouter>
 			<footer className="footer">
