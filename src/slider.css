@@ -1,9 +1,5 @@
 .sliderDesktop {
     position: relative;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-image: url(../public/slider.jpg);
     border-bottom: 1px solid #aaa;
     width: 1920px;
     height: 550px;
