@@ -26,13 +26,12 @@
     "npm": "8.19.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "preinstall": "npx npm-force-resolutions",
-    "server": "npm server",
-    "heroku-postbuild": "npm install"
+    "heroku-postbuild": "npm install && npm run build"
     
   },
   "eslintConfig": {
