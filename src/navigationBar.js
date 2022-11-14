@@ -16,7 +16,7 @@ export function NavigationBar() {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active " aria-current="page"><Link style={{color: 'white',textDecoration: 'none' }} to="/register"><li>Register</li></Link></a>
+                        <a class="nav-link active " aria-current="page"><Link style={{color: 'white',textDecoration: 'none' }} to="/newRegister"><li>Register</li></Link></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link"><Link style={{color: 'white',textDecoration: 'none' }} to="/login">Login</Link></a>
@@ -36,7 +36,7 @@ export function NavigationBar() {
             </div>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                        <a class="nav-link" aria-current="page"><Link style={{color: 'white',textDecoration: 'none' }} to="/register"><li>Register</li></Link></a>
+                        <a class="nav-link" aria-current="page"><Link style={{color: 'white',textDecoration: 'none' }} to="/newRegister"><li>Register</li></Link></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link"><Link style={{color: 'white',textDecoration: 'none' }} to="/login">Login</Link></a>
