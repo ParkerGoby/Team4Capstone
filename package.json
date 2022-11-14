@@ -31,9 +31,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "preinstall": "npx npm-force-resolutions",
-    "server": "nodemon server.js",
-    "heroku-postbuild": "npm install nodemon && npm run start"
-    
+    "server": "npm server",
+    "heroku-postbuild": "npm install"
     
   },
   "eslintConfig": {
