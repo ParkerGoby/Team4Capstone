@@ -27,7 +27,7 @@
   },
   "scripts": {
     "build": "npm install && react-scripts start",
-    "heroku-postbuild": "npm install concurrently && npm run start",
+    "heroku-postbuild": "npm install concurrently && npm install && npm run start",
     "server": "node server.js",
     "start": "concurrently --kill-others-on-fail \"npm run server\" \"react-scripts start\""
   },
