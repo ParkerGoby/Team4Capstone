@@ -8,9 +8,15 @@ const Login = () => {
         e.preventDefault()
     console.log(userName, password)
 
+// var employeeInd = employees.find({email: "testingWDB"});
+// var employees;
+// while (employeeInd.hasNext()) {
+//     employees = employeeInd.next();
+//     console.log(employees.email);
+// }
     return (
         <>
-        
+         
         <>
 
             <div class="title-container">        
