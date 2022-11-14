@@ -26,11 +26,12 @@
     "npm": "8.19.2"
   },
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"react-scripts start\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "server":"nodemon server",
     "eject": "react-scripts eject",
-    "preinstall": "npx npm-force-resolutions",
+    "preinstall": "npx npm-force-resolutions && npm install concurrently",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
     
   },
