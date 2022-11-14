@@ -29,7 +29,7 @@
     "build": "npm install && react-scripts start",
     "heroku-postbuild": "npm install concurrently && npm install nodemon && npm run start",
     "server": "nodemon server.js",
-    "start": "concurrently --kill-others-on-fail \"npm run server\" \"react-scripts start\""
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm install && react-scripts start\""
 
   },
   "eslintConfig": {
