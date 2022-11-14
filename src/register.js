@@ -1,12 +1,12 @@
-import { useState } from "react"
+// import { useState } from "react"
 import './register.css';
 const Register = () => {
-    const [userName, setUserName] = useState('')
-    const [password, setPassword] = useState('')
+    // const [userName] = useState('')
+    // const [password] = useState('')
 
-    const userRegistration = async (e) =>
-        e.preventDefault()
-    console.log(userName, password)
+    // const userRegistration = async (e) =>
+    //     e.preventDefault()
+    // console.log(userName, password)
 
     return (
         <>
