@@ -37,18 +37,7 @@ loginRoutes.route("/login/:id").get(function (req, res) {
 });
  
 // This section will help you create a new login.
-loginRoutes.route("/login/add").post(function (req, response) {
- let db_connect = dbo.getDb();
- let myobj = {
-   name: req.body.name,
-   position: req.body.position,
-   level: req.body.level,
- };
- db_connect.collection("logins").insertOne(myobj, function (err, res) {
-   if (err) throw err;
-   response.json(res);
- });
-});
+
 
 loginRoutes.route("/login/register").post(function (req, response) {
  let db_connect = dbo.getDb();
@@ -69,9 +58,9 @@ loginRoutes.route("/update/:id").post(function (req, response) {
  let myquery = { _id: ObjectId(req.params.id) };
  let newvalues = {
    $set: {
-     name: req.body.name,
-     position: req.body.position,
-     level: req.body.level,
+     email: req.body.email,
+     school: req.body.school,
+     password: req.body.password,
    },
  };
  db_connect
