@@ -27,9 +27,9 @@
   },
   "scripts": {
     "build": "npm install && react-scripts start",
-    "heroku-postbuild": "npm install concurrently && npm run server",
+    "heroku-postbuild": "npm install concurrently && npm run start",
     "server": "node server.js",
-    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run build\""
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"react-scripts start\""
   },
   "eslintConfig": {
     "extends": [
