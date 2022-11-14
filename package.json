@@ -26,10 +26,9 @@
     "npm": "8.19.2"
   },
   "scripts": {
-    "start": "node server.js",
-    "heroku-postbuild": "npm install && npm run build"
-    
+    "start": "node server.js"
   },
+
   "eslintConfig": {
     "extends": [
       "react-app",
