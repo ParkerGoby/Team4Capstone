@@ -26,11 +26,12 @@
     "npm": "8.19.2"
   },
   "scripts": {
-    "build": "npm install && react-scripts start",
-    "heroku-postbuild": "npm install concurrently && npm install nodemon && npm run start",
-    "server": "nodemon server.js",
-    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm install && react-scripts start\""
-
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "preinstall": "npx npm-force-resolutions",
+    "heroku-postbuild": "npm install"
   },
   "eslintConfig": {
     "extends": [
