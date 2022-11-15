@@ -27,7 +27,7 @@
   },
   "scripts": {
     
-    "build": "react-scripts build && node server.js"
+    "build": "react-scripts build && npm install serve && serve -s build"
   },
   "eslintConfig": {
     "extends": [
