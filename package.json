@@ -26,7 +26,7 @@
     "npm": "8.19.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server.js",
     "build": "npm install",
     "test": "react-scripts test",
     "server":"node server",
