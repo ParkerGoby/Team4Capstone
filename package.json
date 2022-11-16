@@ -27,7 +27,7 @@
   },
   "scripts": {
     "start": "node server.js",
-    "heroku-postbuild": "npm install && npm start",
+    "heroku-postbuild": "npm install",
     "build": "react-scripts build"
   },
   "eslintConfig": {
