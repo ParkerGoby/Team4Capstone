@@ -3,12 +3,6 @@ const app = express();
 const cors = require("cors");
 require("dotenv").config({ path: "./config.env" });
 const port = process.env.PORT || 5000;
-const path = require("path");
-app.use(express.static(path.resolve(__dirname, "./build")));
-app.get("*", function (request, response) {
-  response.sendFile(path.resolve(__dirname, "./build", "index.html"));
-});
-
 
 app.use(cors());
 app.use(express.json());
