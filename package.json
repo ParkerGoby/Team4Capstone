@@ -26,8 +26,8 @@
     "npm": "8.19.2"
   },
   "scripts": {
-    "start": "npm start",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run start"
+    
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && node server.js"
   },
   "eslintConfig": {
     "extends": [
