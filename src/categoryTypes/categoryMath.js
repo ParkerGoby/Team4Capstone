@@ -2,7 +2,7 @@ import * as React from "react";
 import { Link, useLocation } from "react-router-dom";
 //import { default as Level_home } from "../levels/level-home";
 
-var level_home = "../levels/level-home";
+const level_home = "../levels/level-home";
 
 export function LevelSelect() {
   const location = useLocation();

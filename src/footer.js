@@ -1,9 +1,11 @@
 import React from "react";
+import './index.css'
+
 const Footer = () => {
-    return ( 
-        <footer className = "d-block" >
-        <p className = "text-center" > ©Copyright 2021 Lead Capture Page </p>
-        </footer>
-    );
+  return (
+    <footer style={{ position: "sticky", zIndex: "2" }} className="d-block">
+      <p className="text-footer">Copyright ©-All rights are reserved</p>
+    </footer>
+  );
 };
 export default Footer;
