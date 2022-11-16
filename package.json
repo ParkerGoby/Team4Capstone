@@ -27,7 +27,7 @@
   },
   "scripts": {
     
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && node server.js"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm start"
   },
   "eslintConfig": {
     "extends": [
