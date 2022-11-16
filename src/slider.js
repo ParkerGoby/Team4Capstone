@@ -6,7 +6,7 @@ export function Slider() {
       <div class="sliderDesktop">
         <video
           class="bgVideo"
-          playsinline
+          playsInline
           autoPlay
           loop
           muted

@@ -4,12 +4,9 @@ import ProgressBar from "react-bootstrap/ProgressBar";
 
 var score = 0;
 
-const Login = () => {
-  const [userName, setUserName] = useState("");
-  const [password, setPassword] = useState("");
+//if (login == true) check that user is logged in
 
-  const userLogin = async (e) => e.preventDefault();
-  console.log(userName, password);
+const Quiz = () => {
 
   let currentQuestion = getQuestion();
   let currentAnswer = getAnswer();
@@ -23,7 +20,6 @@ const Login = () => {
     } else {
       getQuestion();
       getAnswer();
-      console.log("hi");
     }
   };
 
@@ -109,4 +105,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Quiz;
