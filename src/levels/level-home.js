@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 import "./level-home.css";
 import ProgressBar from "react-bootstrap/ProgressBar";
 
@@ -7,7 +8,6 @@ var score = 0;
 //if (login == true) check that user is logged in
 
 const Quiz = () => {
-
   let currentQuestion = getQuestion();
   let currentAnswer = getAnswer();
 

@@ -1,6 +1,8 @@
 import * as React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { default as Level_home } from "../levels/level-home";
+//import { default as Level_home } from "../levels/level-home";
+
+var level_home = "../levels/level-home";
 
 export function LevelSelect() {
   const location = useLocation();
@@ -50,14 +52,13 @@ export function LevelSelect() {
                 {/* <a class="btn btn-primary"><Link style={{color: 'white',textDecoration: 'none' }} to="/counting">Counting</Link></a> */}
                 <h5 class="card-title">Level 1</h5>
                 {/* <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
-                <a class="btn btn-primary">
+                <button class="btn btn-primary">
                   <Link
                     style={{ color: "white", textDecoration: "none" }}
-                    to={Level_home}
-                  >
+                    to={level_home}>
                     Level 1
                   </Link>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -68,14 +69,13 @@ export function LevelSelect() {
               <div class="card-body">
                 <h5 class="card-title">Level 4</h5>
                 {/* <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
-                <a class="btn btn-primary">
+                <button class="btn btn-primary">
                   <Link
                     style={{ color: "white", textDecoration: "none" }}
-                    to={Level_home}
-                  >
+                    to={level_home}>
                     Under construction!
                   </Link>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -89,8 +89,7 @@ export function LevelSelect() {
                 <a class="btn btn-primary">
                   <Link
                     style={{ color: "white", textDecoration: "none" }}
-                    to={Level_home}
-                  >
+                    to={level_home}>
                     Under construction!
                   </Link>
                 </a>
@@ -107,8 +106,7 @@ export function LevelSelect() {
                 <a class="btn btn-primary">
                   <Link
                     style={{ color: "white", textDecoration: "none" }}
-                    to={Level_home}
-                  >
+                    to={level_home}>
                     Under construction!
                   </Link>
                 </a>
@@ -125,8 +123,7 @@ export function LevelSelect() {
                 <a class="btn btn-primary">
                   <Link
                     style={{ color: "white", textDecoration: "none" }}
-                    to={Level_home}
-                  >
+                    to={level_home}>
                     Under construction!
                   </Link>
                 </a>
@@ -143,8 +140,7 @@ export function LevelSelect() {
                 <a class="btn btn-primary">
                   <Link
                     style={{ color: "white", textDecoration: "none" }}
-                    to={Level_home}
-                  >
+                    to={level_home}>
                     Under construction!
                   </Link>
                 </a>
