@@ -26,7 +26,6 @@
     "npm": "8.19.2"
   },
   "scripts": {
-    "heroku-postbuild": "npm install",
     "build": "react-scripts build"
   },
   "eslintConfig": {
