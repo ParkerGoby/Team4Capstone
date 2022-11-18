@@ -3,14 +3,15 @@
     width: 800px;
     margin:auto;
     padding-bottom: 100px;
-    padding-top: 150px;
+    padding-top: 50px;
 }
 
 .title-container {
     padding-bottom: 25px;
-    padding-top: 150px;
+    padding-top: 125px;
 }  
 
-.cardCont1{
-    padding: 10px;
+.cardImg{
+    width: 100%;
+    height: 200px;
 }

@@ -14,16 +14,16 @@ export function LevelSelect() {
       categoryType = "Counting";
       break;
     case 1:
-      categoryType = "Multiplication";
-      break;
-    case 2:
       categoryType = "Addition";
       break;
+    case 2:
+      categoryType = "Subtraction";
+      break;
     case 3:
-      categoryType = "Division";
+      categoryType = "Multiplication";
       break;
     case 4:
-      categoryType = "Subtraction";
+      categoryType = "Division";
       break;
     case 5:
       categoryType = "Fractions";

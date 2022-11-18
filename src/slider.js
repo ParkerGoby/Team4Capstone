@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Button from "react-bootstrap/Button";
 import video from "./assets/Video.mp4";
 
 const register_page = "./register";
@@ -23,20 +24,22 @@ export function Slider() {
             Start a free and fun way to learn different topics. Make an account
             to start playing today!
             <br></br>
-            <button class="button">
+            <Button className="button" variant="light" class="button" size="lg">
               <Link
                 style={{ color: "black", textDecoration: "none" }}
-                to={register_page}>
+                to={register_page}
+              >
                 REGISTER
               </Link>
-            </button>
-            <button class="button">
+            </Button>
+            <Button className="button" variant="light" class="button" size="lg">
               <Link
                 style={{ color: "black", textDecoration: "none" }}
-                to={login_page}>
+                to={login_page}
+              >
                 LOGIN
               </Link>
-            </button>
+            </Button>
           </p>
         </div>
       </div>
