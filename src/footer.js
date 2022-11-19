@@ -1,9 +1,11 @@
 import React from "react";
 const Footer = () => {
     return ( 
-        <footer className = "d-block" >
-        <p className = "text-center" > ©Copyright 2021 Lead Capture Page </p>
-        </footer>
+        <footer className="footer">
+			<p className="text-footer">
+				Copyright ©-All rights are reserved
+			</p>
+		</footer>
     );
 };
 export default Footer;
