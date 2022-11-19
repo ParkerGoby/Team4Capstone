@@ -2,7 +2,7 @@
   "name": "team4capstone",
   "version": "0.1.0",
   "private": true,
-  "main":"server.js",
+  
   "dependencies": {
     "@popperjs/core": "^2.11.6",
     "@testing-library/jest-dom": "^5.16.5",
@@ -27,7 +27,7 @@
     "npm": "8.19.2"
   },
   "scripts": {
-    "build": "npm start",
+    "start": "react-scripts start",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
   },
   "eslintConfig": {
