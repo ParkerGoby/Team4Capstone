@@ -3,7 +3,7 @@ import './App.css';
 import './slider.css';
 import './category.css'
 import NavigationBar from './navigationBar';
-import Home from './home.js';
+import Slider from './slider.js';
 import Login from './login.js';
 import Register from './register.js';
 import Category from './category.js';
@@ -30,7 +30,7 @@ function App() {
 			<BrowserRouter>
 				<NavigationBar />
 				<Routes>
-					<Route exact path='/' element={<Home />}> </Route>
+					<Route exact path='/' element={<Slider />}> </Route>
 					<Route exact path='/register' element={<Register />}> </Route>
 					<Route exact path='/login' element={<Login />}> </Route>
 					<Route exact path='/category' element={<Category />}> </Route>
@@ -40,7 +40,7 @@ function App() {
 					<Route exact path='/division' element={<Division />}> </Route>
 					<Route exact path='/subtraction' element={<Subtraction />}> </Route>
 					<Route exact path='/fractions' element={<Fractions />}> </Route>
-          <Route exact path='/question1' element={<Level_1 />}> </Route>
+                    <Route exact path='/question1' element={<Level_1 />}> </Route>
 					<Route exact path='/newregister' element={<NewRegister />}> </Route>
 					<Route exact path='/create' element={<Create />}> </Route>
 					<Route exact path='/edit:id' element={<Edit />}> </Route>
