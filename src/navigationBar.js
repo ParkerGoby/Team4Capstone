@@ -15,12 +15,15 @@ export function NavigationBar() {
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+    {/* Removing these for now, since we have them twice on the navbar.
                     <li class="nav-item">
                         <a class="nav-link active " aria-current="page"><Link style={{color: 'white',textDecoration: 'none' }} to="/newRegister"><li>Register</li></Link></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link"><Link style={{color: 'white',textDecoration: 'none' }} to="/login">Login</Link></a>
                     </li>
+    */}
                     <li class="nav-item">
                         <a class="nav-link"><Link style={{color: 'white',textDecoration: 'none' }} to="/category">Categories</Link></a>
                     </li>

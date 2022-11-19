@@ -19,6 +19,8 @@ import Edit from './components/edit';
 import Create from './components/create';
 import Footer from './footer';
 import Record_list from './components/recordList';
+import LevelHome from './levels/level-home.js';
+
 
 
 
@@ -38,11 +40,12 @@ function App() {
 					<Route exact path='/division' element={<Division />}> </Route>
 					<Route exact path='/subtraction' element={<Subtraction />}> </Route>
 					<Route exact path='/fractions' element={<Fractions />}> </Route>
-					<Route exact path='/question1' element={<Level_1 />}> </Route>
+          <Route exact path='/question1' element={<Level_1 />}> </Route>
 					<Route exact path='/newregister' element={<NewRegister />}> </Route>
 					<Route exact path='/create' element={<Create />}> </Route>
 					<Route exact path='/edit:id' element={<Edit />}> </Route>
 					<Route exact path='/recordList' element={<Record_list />}> </Route>
+					<Route exact path='/levels/level-home' element={<LevelHome/>}> </Route>
 				</Routes>
 			</BrowserRouter>
 			<Footer />
