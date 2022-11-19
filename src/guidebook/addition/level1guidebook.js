@@ -1,5 +1,5 @@
 import React from "react";
-import '../gb_css/gb_styles.css';
+// import '../gb_css/gb_styles.css';
 const Level1GuideAddition = () => {
     return ( 
         <div>
