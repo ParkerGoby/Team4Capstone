@@ -20,6 +20,7 @@ import Create from './components/create';
 import Footer from './footer';
 import Record_list from './components/recordList';
 import LevelHome from './levels/level-home.js';
+import Guidebook from './guideBook';
 
 
 
@@ -46,6 +47,8 @@ function App() {
 					<Route exact path='/edit:id' element={<Edit />}> </Route>
 					<Route exact path='/recordList' element={<Record_list />}> </Route>
 					<Route exact path='/levels/level-home' element={<LevelHome/>}> </Route>
+					<Route exact path='/guide' element={<Guidebook/>}> </Route>
+					
 				</Routes>
 			</BrowserRouter>
 			<Footer />
