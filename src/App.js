@@ -20,7 +20,9 @@ import Create from './components/create';
 import Footer from './footer';
 import Record_list from './components/recordList';
 import LevelHome from './levels/level-home.js';
-import Guidebook from './guideBook';
+import Level1GuideAddition from './guidebook/addition/level1guidebook';
+import Level2GuideAddition from './guidebook/addition/level2guidebook';
+import Level3GuideAddition from './guidebook/addition/level3guidebook';
 
 
 
@@ -47,7 +49,9 @@ function App() {
 					<Route exact path='/edit:id' element={<Edit />}> </Route>
 					<Route exact path='/recordList' element={<Record_list />}> </Route>
 					<Route exact path='/levels/level-home' element={<LevelHome/>}> </Route>
-					<Route exact path='/guide' element={<Guidebook/>}> </Route>
+					<Route exact path='/guidebook/addition/1' element={<Level1GuideAddition/>}> </Route>
+					<Route exact path='/guidebook/addition/2' element={<Level2GuideAddition/>}> </Route>
+					<Route exact path='/guidebook/addition/3' element={<Level3GuideAddition/>}> </Route>
 					
 				</Routes>
 			</BrowserRouter>
