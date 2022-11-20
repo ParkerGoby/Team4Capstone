@@ -59,7 +59,7 @@ function App() {
 					<Route exact path='/guidebook/multiplication/1' element={<Level1GuideMultiplication/>}> </Route>
 					<Route exact path='/guidebook/multiplication/2' element={<Level2GuideMultiplication/>}> </Route>
 					<Route exact path='/guidebook/multiplication/3' element={<Level3GuideMultiplication/>}> </Route>
-					<Route exact path='/guidebook/guidebook' element={<GuidebookHome/>}> </Route>
+					<Route exact path='/guidebook' element={<GuidebookHome/>}> </Route>
 					
 					<Route exact path='/guidebook/fractions/1' element={<Level1GuideFraction/>}> </Route>
 					<Route exact path='/guidebook/division/1' element={<Level1GuideDivision/>}> </Route>
