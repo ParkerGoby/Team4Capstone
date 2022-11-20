@@ -66,7 +66,7 @@ export function Category() {
               <Button className="btn btn-primary" onClick={clickHandler(1)}>
                 <Link
                   style={{ color: "white", textDecoration: "none" }}
-                  to="/categoryTypes/categoryMath"
+                  to="/categoryTypesMath/addition"
                   state={{ from: categoryType }}
                 >
                   Let's Learn!
