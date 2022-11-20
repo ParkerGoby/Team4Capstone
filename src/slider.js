@@ -1,33 +1,47 @@
+import { Link } from "react-router-dom";
+import Button from "react-bootstrap/Button";
 import video from "./assets/Video.mp4";
+
+const register_page = "./register";
+const login_page = "./login";
 
 export function Slider() {
   return (
-    <section class="slider">
-      <div class="sliderDesktop">
+    <section className="slider">
+      <div className="sliderDesktop">
         <video
-          class="bgVideo"
-          playsinline
+          className="bgVideo"
+          playsInline
           autoPlay
           loop
           muted
           src={video}
           type="video/mp4"
-        >
-        </video>
-        <div class="sliderOverlayText">
-            <h1 class="sliderHead">Welcome to Astro-Learn!</h1>
-            <p class="sliderText" align="center">
-              Start a free and fun way to learn different topics. Make an
-              account to start playing today!
-              <br></br>
-              <a href="#tutorial" class="button">
-                SIGNUP
-              </a>
-              <a href="#tutorial" class="button">
+        ></video>
+        <div className="sliderOverlayText">
+          <h1 className="sliderHead">Welcome to Astro-Learn!</h1>
+          <p className="sliderText" align="center">
+            Start a free and fun way to learn different topics. Make an account
+            to start playing today!
+            <br></br>
+            <Button className="button" variant="light" size="lg">
+              <Link
+                style={{ color: "black", textDecoration: "none" }}
+                to={register_page}
+              >
+                REGISTER
+              </Link>
+            </Button>
+            <Button className="button" variant="light" size="lg">
+              <Link
+                style={{ color: "black", textDecoration: "none" }}
+                to={login_page}
+              >
                 LOGIN
-              </a>
-            </p>
-          </div>
+              </Link>
+            </Button>
+          </p>
+        </div>
       </div>
     </section>
   );

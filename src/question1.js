@@ -40,49 +40,49 @@ import './login.css';
 
     return (
         <>        
-            <div class="title-container">        
-            <div class="container-fluid">
+            <div className="title-container">        
+            <div className="container-fluid">
             
-                <div class="row">
-                <div class="col-xs-1 text-center question"><h1>What is {x} + {y}?</h1></div>
+                <div className="row">
+                <div className="col-xs-1 text-center question"><h1>What is {x} + {y}?</h1></div>
                 </div>
             </div>
             </div>
         
-        <div class="container-thing questionOptions">
-            <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col">
-                    <div class="btn btn-outline-dark card">
-                    <div class="card-body">
-                        <h5 class="card-title text-center align-middle" ><h2 id="h2_opt0">{answers[0]}</h2></h5>
-                        { /*<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>*/}
+        <div className="container-thing questionOptions">
+            <div className="row row-cols-1 row-cols-md-2 g-4">
+                <div className="col">
+                    <div className="btn btn-outline-dark card">
+                    <div className="card-body">
+                        <h5 className="card-title text-center align-middle" ><h2 id="h2_opt0">{answers[0]}</h2></h5>
+                        { /*<p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>*/}
                         { /* <p>Addition</p> */ }
                     </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="btn btn-outline-dark card">
-                    <div class="card-body">
-                        <h5 class="card-title text-center align-middle"><h2>{answers[1]}</h2></h5>
-                        { /*<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>*/}
+                <div className="col">
+                    <div className="btn btn-outline-dark card">
+                    <div className="card-body">
+                        <h5 className="card-title text-center align-middle"><h2>{answers[1]}</h2></h5>
+                        { /*<p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>*/}
                         { /* <p>Addition</p> */ }
                     </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="btn btn-outline-dark card">
-                    <div class="card-body">
-                        <h5 class="card-title text-center align-middle"><h2>{answers[2]}</h2></h5>
-                        { /* <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> */}
+                <div className="col">
+                    <div className="btn btn-outline-dark card">
+                    <div className="card-body">
+                        <h5 className="card-title text-center align-middle"><h2>{answers[2]}</h2></h5>
+                        { /* <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> */}
                         { /* <p>Addition</p> */ }
                     </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="btn btn-outline-dark card">
-                    <div class="card-body">
-                        <h5 class="card-title text-center align-middle"><h2>{answers[3]}</h2></h5>
-                        { /*<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>*/}
+                <div className="col">
+                    <div className="btn btn-outline-dark card">
+                    <div className="card-body">
+                        <h5 className="card-title text-center align-middle"><h2>{answers[3]}</h2></h5>
+                        { /*<p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>*/}
                        { /* <p>Addition</p> */ }
                     </div>
                     </div>

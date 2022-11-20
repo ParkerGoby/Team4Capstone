@@ -7,6 +7,7 @@ import Slider from './slider.js';
 import Login from './login.js';
 import Register from './register.js';
 import Category from './category.js';
+import CategoryMath from './categoryTypes/categoryMath.js';
 import Counting from './categoryTypesMath/counting.js';
 import Multiplication from './categoryTypesMath/multiplication.js';
 import Addition from './categoryTypesMath/addition.js';
@@ -41,9 +42,10 @@ function App() {
 					<Route exact path='/register' element={<Register />}> </Route>
 					<Route exact path='/login' element={<Login />}> </Route>
 					<Route exact path='/category' element={<Category />}> </Route>
+					<Route exact path='/categoryTypes/categoryMath' element={<CategoryMath />}> </Route>
 					<Route exact path='/counting' element={<Counting />}> </Route>
 					<Route exact path='/multiplication' element={<Multiplication />}> </Route>
-					<Route exact path='/addition' element={<Addition />}> </Route>
+					<Route exact path='/categoryTypesMath/addition' element={<Addition />}> </Route>
 					<Route exact path='/division' element={<Division />}> </Route>
 					<Route exact path='/subtraction' element={<Subtraction />}> </Route>
 					<Route exact path='/fractions' element={<Fractions />}> </Route>
@@ -60,7 +62,6 @@ function App() {
 					<Route exact path='/guidebook/multiplication/2' element={<Level2GuideMultiplication/>}> </Route>
 					<Route exact path='/guidebook/multiplication/3' element={<Level3GuideMultiplication/>}> </Route>
 					<Route exact path='/guidebook/guidebook' element={<GuidebookHome/>}> </Route>
-					
 					<Route exact path='/guidebook/fractions/1' element={<Level1GuideFraction/>}> </Route>
 					<Route exact path='/guidebook/division/1' element={<Level1GuideDivision/>}> </Route>
 					<Route exact path='/guidebook/subtraction/1' element={<Level1GuideSubtraction/>}> </Route>
