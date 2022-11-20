@@ -9,7 +9,7 @@ export function Category() {
             <div class="title-container">        
             <div class="container-fluid">
                 <div class="row">
-                <div class="col-xs-1 text-center"><h1>Categories</h1></div>
+                <div class="col-xs-1 text-center"><h1>Categories</h1><p>Pick a category that you would to like practice!</p></div>
                 </div>
             </div>
             </div>
