@@ -16,11 +16,11 @@ const Level1GuideAddition = () => {
                 
             </div> */}
             <br></br>
-            <article class="mb-4" >
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-md-10 col-lg-8 col-xl-7">
-                        <h2 class="section-heading">What is a fraction?</h2>
+            <article className="mb-4" >
+            <div className="container px-4 px-lg-5">
+                <div className="row gx-4 gx-lg-5 justify-content-center">
+                    <div className="col-md-10 col-lg-8 col-xl-7">
+                        <h2 className="section-heading">What is a fraction?</h2>
                         <p>A fraction (from Latin: fractus, "broken") represents a part of a whole or, more generally, any number of equal parts. When spoken in everyday English, a fraction describes how many parts of a certain size there are, for example, one-half, eight-fifths, three-quarters.</p>
                         
                     

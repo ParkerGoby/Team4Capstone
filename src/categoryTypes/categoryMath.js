@@ -49,9 +49,9 @@ export function LevelSelect() {
           <div className="cardCont1">
             <div className="card">
               <div className="card-body">
-                {/* <a class="btn btn-primary"><Link style={{color: 'white',textDecoration: 'none' }} to="/counting">Counting</Link></a> */}
+                {/* <a className="btn btn-primary"><Link style={{color: 'white',textDecoration: 'none' }} to="/counting">Counting</Link></a> */}
                 <h5 className="card-title">Level 1</h5>
-                {/* <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
+                {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
                 <button className="btn btn-primary">
                   <Link
                     style={{ color: "white", textDecoration: "none" }}
@@ -68,7 +68,7 @@ export function LevelSelect() {
             <div className="card">
               <div className="card-body">
                 <h5 className="card-title">Level 4</h5>
-                {/* <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
+                {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
                 <button className="btn btn-primary">
                   <Link
                     style={{ color: "white", textDecoration: "none" }}
@@ -85,7 +85,7 @@ export function LevelSelect() {
             <div className="card">
               <div className="card-body">
                 <h5 className="card-title">Level 2</h5>
-                {/* <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
+                {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
                 <a className="btn btn-primary">
                   <Link
                     style={{ color: "white", textDecoration: "none" }}
@@ -102,7 +102,7 @@ export function LevelSelect() {
             <div className="card">
               <div className="card-body">
                 <h5 className="card-title">Level 5</h5>
-                {/* <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
+                {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
                 <a className="btn btn-primary">
                   <Link
                     style={{ color: "white", textDecoration: "none" }}
@@ -119,7 +119,7 @@ export function LevelSelect() {
             <div className="card">
               <div className="card-body">
                 <h5 className="card-title">Level 3</h5>
-                {/* <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
+                {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
                 <a className="btn btn-primary">
                   <Link
                     style={{ color: "white", textDecoration: "none" }}
@@ -136,7 +136,7 @@ export function LevelSelect() {
             <div className="card">
               <div className="card-body">
                 <h5 className="card-title">Level 6</h5>
-                {/* <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
+                {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
                 <a className="btn btn-primary">
                   <Link
                     style={{ color: "white", textDecoration: "none" }}
