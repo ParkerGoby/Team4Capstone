@@ -23,9 +23,9 @@ import LevelHome from './levels/level-home.js';
 import Level1GuideAddition from './guidebook/addition/level1guidebook';
 import Level2GuideAddition from './guidebook/addition/level2guidebook';
 import Level3GuideAddition from './guidebook/addition/level3guidebook';
-
-
-
+import Level1GuideMultiplication from './guidebook/multiplication/level1guidebook';
+import Level2GuideMultiplication from './guidebook/multiplication/level2guidebook';
+import Level3GuideMultiplication from './guidebook/multiplication/level3guidebook';
 
 function App() {
 	return (
@@ -52,7 +52,9 @@ function App() {
 					<Route exact path='/guidebook/addition/1' element={<Level1GuideAddition/>}> </Route>
 					<Route exact path='/guidebook/addition/2' element={<Level2GuideAddition/>}> </Route>
 					<Route exact path='/guidebook/addition/3' element={<Level3GuideAddition/>}> </Route>
-					
+					<Route exact path='/guidebook/multiplication/1' element={<Level1GuideMultiplication/>}> </Route>
+					<Route exact path='/guidebook/multiplication/2' element={<Level2GuideMultiplication/>}> </Route>
+					<Route exact path='/guidebook/multiplication/3' element={<Level3GuideMultiplication/>}> </Route>
 				</Routes>
 			</BrowserRouter>
 			<Footer />
