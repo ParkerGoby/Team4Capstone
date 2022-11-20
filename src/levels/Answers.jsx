@@ -37,12 +37,12 @@ class Answers extends React.Component {
         }
     }
     
-    shouldComponentUpdate() {
+    /*shouldComponentUpdate() {
         this.setState({
             classNames: ['', '', '', '']
         });
         return true;
-    }
+    }*/
     
     render() {
         let { answers } = this.props;

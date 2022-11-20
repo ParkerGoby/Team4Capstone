@@ -23,7 +23,12 @@ class Quiz extends React.Component {
     this.handleIncreaseScore = this.handleIncreaseScore.bind(this);
   }
 
-  UNSAFE_componentWillMount() {
+  componentWillMount() {
+    let { nr } = this.state;
+    this.pushData(nr);
+  }
+
+  componentWillUnmount() {
     let { nr } = this.state;
     this.pushData(nr);
   }
