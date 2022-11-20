@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export function NavigationBar() {
   return (
-    <navbar style={{position: "sticky", zIndex: "2"}} class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div style={{position: "sticky", zIndex: "2"}} class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <Link style={{ color: "white", textDecoration: "none"}} to="/">
           <a class="navbar-brand text-white">
@@ -77,7 +77,7 @@ export function NavigationBar() {
                 <button class="btn btn-outline-light" type="submit">Search</button>
             </form> */}
       </div>
-    </navbar>
+    </div>
   );
 }
 export default NavigationBar;

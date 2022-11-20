@@ -1,108 +1,125 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
-import "./level-home.css";
 import ProgressBar from "react-bootstrap/ProgressBar";
+import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
+import Answers from "./Answers.jsx";
+import data from "./data";
+import "./level-home.css";
 
-var score = 0;
+class Quiz extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      nr: 0,
+      total: data.length,
+      showButton: false,
+      questionAnswered: false,
+      score: 0
+    };
+    this.nextQuestion = this.nextQuestion.bind(this);
+    this.handleShowButton = this.handleShowButton.bind(this);
+    this.handleStartQuiz = this.handleStartQuiz.bind(this);
+    this.handleIncreaseScore = this.handleIncreaseScore.bind(this);
+  }
 
-//if (login == true) check that user is logged in
+  UNSAFE_componentWillMount() {
+    let { nr } = this.state;
+    this.pushData(nr);
+  }
 
-const Quiz = () => {
-  let currentQuestion = getQuestion();
-  let currentAnswer = getAnswer();
+  pushData(nr) {
+    this.setState({
+      question: data[nr].question,
+      answers: [
+        data[nr].answers[0],
+        data[nr].answers[1],
+        data[nr].answers[2],
+        data[nr].answers[3],
+      ],
+      correct: data[nr].correct,
+      nr: this.state.nr + 1,
+    });
+  }
 
-  var [score, setScore] = React.useState(0);
-  //  Function called to grab new question and answer
-  const newQuestion = () => {
-    setScore((score) => score + 20);
-    if (score >= 100) {
-      //Done with level
+  nextQuestion() {
+    let { nr, total, score } = this.state;
+
+    if (nr === total) {
+      this.setState({
+        displayPopup: "flex",
+      });
     } else {
-      getQuestion();
-      getAnswer();
+      this.pushData(nr);
+      this.setState({
+        showButton: false,
+        questionAnswered: false,
+      });
     }
-  };
-
-  //  Question is defined here
-  function getQuestion() {
-    let question = "Sample Question";
-    return question;
   }
 
-  //  Function called to grab answer, can pass the id of the question later and return the answer from the db.
-  function getAnswer() {
-    let answer = "Sample Answer";
-    return answer;
+  handleShowButton() {
+    this.setState({
+      showButton: true,
+      questionAnswered: true,
+    });
   }
 
-  return (
-    <>
+  handleStartQuiz() {
+    this.setState({
+      nr: 1,
+    });
+  }
+
+  handleIncreaseScore() {
+    this.setState({
+      score: this.state.score + 25,
+    });
+  }
+
+  render() {
+    let {
+      nr,
+      total,
+      question,
+      answers,
+      correct,
+      showButton,
+      questionAnswered,
+      score,
+    } = this.state;
+
+    return (
       <>
-        <div class="progress_bar">
-          <ProgressBar id="1" animated now={score} />
-        </div>
-        <div class="title-container">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-xs-1 text-center">
-                <h1>{currentQuestion}</h1>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="container-thing">
-          <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col">
-              <div class="btn btn-outline-dark card">
-                <div class="card-body">
-                  <h5 class="card-title text-center align-middle">123</h5>
-                  {/*<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>*/}
-                  {/* <p>Addition</p> */}
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="btn btn-outline-dark card">
-                <div class="card-body">
-                  <h5 class="card-title text-center align-middle">345</h5>
-                  {/*<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>*/}
-                  {/* <p>Addition</p> */}
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="btn btn-outline-dark card">
-                <div class="card-body">
-                  <h5 class="card-title text-center align-middle">3</h5>
-                  {/* <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> */}
-                  {/* <p>Addition</p> */}
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="btn btn-outline-dark card">
-                <div class="card-body" onClick={() => newQuestion()}>
-                  <h5 class="card-title text-center align-middle">
-                    {currentAnswer}
-                  </h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </>
-      <div>
-        <footer className="level_footer">
-          <div class="continue_button">
-            <button class="btn btn-primary" /*onClick={() => NewQuestion()}*/>
-              Continue
-            </button>
-          </div>
-        </footer>
+      <>
+      <div className="progress_bar">
+          <ProgressBar id="progress_bar" animated now={score}></ProgressBar>
       </div>
-    </>
-  );
-};
+      <Container className="container" fluid>
+        <div id="question" className="text-center">
+          <h1>{question}</h1>
+        </div>
+        <div>
+          <Answers
+            answers={answers}
+            correct={correct}
+            showButton={this.handleShowButton}
+            isAnswered={questionAnswered}
+            increaseScore={this.handleIncreaseScore}>
+            </Answers>
+        </div>
+        <div id="submit">
+          {showButton ? (
+            <Button className="fancy-btn" onClick={this.nextQuestion}>
+              {nr === total ? "Finish quiz" : "Next question"}
+            </Button>
+          ) : null}
+        </div>
+      </Container>
+      </>
+      </>
+    );
+  }
+}
 
 export default Quiz;
