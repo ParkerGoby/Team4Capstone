@@ -21,8 +21,8 @@ code {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: sticky;
-  top: 0;
+  position: fixed;
+  top: 0px;
 }
 
 .background {
