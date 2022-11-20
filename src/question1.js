@@ -54,7 +54,7 @@ import './login.css';
                 <div class="col">
                     <div class="btn btn-outline-dark card">
                     <div class="card-body">
-                        <h5 class="card-title text-center align-middle"><h2>{answers[0]}</h2></h5>
+                        <h5 class="card-title text-center align-middle" ><h2 id="h2_opt0">{answers[0]}</h2></h5>
                         { /*<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>*/}
                         { /* <p>Addition</p> */ }
                     </div>
