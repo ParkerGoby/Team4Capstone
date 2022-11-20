@@ -24,11 +24,11 @@ const Level1GuideMulti = () => {
                 <h2 id="section_heading">What is Multiplication?</h2>
             <p>Multiplication is something that is used often in daily life. Learning Multiplication is extremely important!</p>
             <p>Before we get into multiplication, there are a few rules that we have to keep in mind.</p>
-            <p>- Any number multiplied by 0 will always be 0. For example, 10 X 0 is equal to 0 <br></br>
-                - Any number multipled by 1 will always be the number that was multiplied by 1. For example, 4 X 1 is equal 4. In Addition, a number plus another = is always that always<br></br>
+            <p>- Any number multiplied by 0 will always be 0. For example, 10 x 0 is equal to 0 <br></br>
+                - Any number multipled by 1 will always be the number that was multiplied by 1. For example, 4 x 1 is equal 4. In Addition, a number plus another = is always that always<br></br>
                
               
-                - Multiplication has the commutative property, which means that 4 X 2 is the same as 2 X 4
+                - Multiplication has the commutative property, which means that 4 x 2 is the same as 2 x 4
             </p>
                    
                     <img src={commutative} alt="../guidebook images/commutative.webp" />
