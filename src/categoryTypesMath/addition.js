@@ -45,7 +45,7 @@ export function Addition() {
             <div class="card-body">
                 <h5 class="card-title">Level 2</h5>
                 {/* <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="./question1" class="btn btn-primary">Level 2</a>
             </div>
             </div>
             </div>
