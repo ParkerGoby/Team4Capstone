@@ -20,12 +20,10 @@ const Level1GuideAddition = () => {
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
-                        <h2 class="section-heading">How to count?</h2>
-                        <p>Counting is the process of determining the number of elements of a finite set of objects, i.e., determining the size of a set. Counting is extremely important and something that is used everyday. It may seem hard right now, but it is required for learning advanced topics such as addition, subtraction, multiplication, division, and fractions</p>
-                        <p>The below video provides a create example for learning how to count:</p>
-                        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/_Qz68dtBiO4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+                        <h2 class="section-heading">What is a fraction?</h2>
+                        <p>A fraction (from Latin: fractus, "broken") represents a part of a whole or, more generally, any number of equal parts. When spoken in everyday English, a fraction describes how many parts of a certain size there are, for example, one-half, eight-fifths, three-quarters.</p>
                         
-                                              
+                    
                     </div>
                 </div>
             </div>

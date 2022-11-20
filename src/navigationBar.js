@@ -27,14 +27,14 @@ export function NavigationBar() {
                     <li class="nav-item">
                         <a class="nav-link"><Link style={{color: 'white',textDecoration: 'none' }} to="/category">Categories</Link></a>
                     </li>
-                    <li class="nav-item">
+                    {/* <li class="nav-item">
                         <a class="nav-link"><Link style={{color: 'white',textDecoration: 'none' }} to="/create">Create-Record</Link></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link"><Link style={{color: 'white',textDecoration: 'none' }} to="/recordList">DB Records</Link></a>
-                    </li>
+                    </li> */}
                     <li class="nav-item">
-                        <a class="nav-link"><Link style={{color: 'white',textDecoration: 'none' }} to="">Guidebooks</Link></a>
+                        <a class="nav-link"><Link style={{color: 'white',textDecoration: 'none' }} to="/guidebook/guidebook">Guidebooks</Link></a>
                     </li>
                 </ul>
                 

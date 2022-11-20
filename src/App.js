@@ -26,7 +26,11 @@ import Level3GuideAddition from './guidebook/addition/level3guidebook';
 import Level1GuideMultiplication from './guidebook/multiplication/level1guidebook';
 import Level2GuideMultiplication from './guidebook/multiplication/level2guidebook';
 import Level3GuideMultiplication from './guidebook/multiplication/level3guidebook';
-
+import GuidebookHome from './guidebook/guidebook';
+import Level1GuideFraction from './guidebook/fractions/level1guidebook';
+import Level1GuideSubtraction from './guidebook/subtraction/level1guidebook';
+import Level1GuideDivision from './guidebook/division/level1guidebook'
+import Level1GuideCounting from './guidebook/counting/level1guidebook'
 function App() {
 	return (
 		<div>
@@ -55,6 +59,12 @@ function App() {
 					<Route exact path='/guidebook/multiplication/1' element={<Level1GuideMultiplication/>}> </Route>
 					<Route exact path='/guidebook/multiplication/2' element={<Level2GuideMultiplication/>}> </Route>
 					<Route exact path='/guidebook/multiplication/3' element={<Level3GuideMultiplication/>}> </Route>
+					<Route exact path='/guidebook/guidebook' element={<GuidebookHome/>}> </Route>
+					
+					<Route exact path='/guidebook/fractions/1' element={<Level1GuideFraction/>}> </Route>
+					<Route exact path='/guidebook/division/1' element={<Level1GuideDivision/>}> </Route>
+					<Route exact path='/guidebook/subtraction/1' element={<Level1GuideSubtraction/>}> </Route>
+					<Route exact path='/guidebook/counting/1' element={<Level1GuideCounting/>}> </Route>
 				</Routes>
 			</BrowserRouter>
 			<Footer />

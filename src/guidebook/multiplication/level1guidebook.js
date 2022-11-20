@@ -22,7 +22,7 @@ const Level1GuideMulti = () => {
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
                 <h2 id="section_heading">What is Multiplication?</h2>
-            <p>Multiplication is something that is used often in daily life. Learning Multiplication is extremely important!</p>
+            <p>Multiplication (often denoted by the cross symbol ×, by the mid-line dot operator ⋅, by juxtaposition, or, on computers, by an asterisk *) is one of the four elementary mathematical operations of arithmetic, with the other ones being addition, subtraction, and division. The result of a multiplication operation is called a product. Multiplication is something that is used often in daily life. Learning Multiplication is extremely important!</p>
             <p>Before we get into multiplication, there are a few rules that we have to keep in mind.</p>
             <p>- Any number multiplied by 0 will always be 0. For example, 10 x 0 is equal to 0 <br></br>
                 - Any number multipled by 1 will always be the number that was multiplied by 1. For example, 4 x 1 is equal 4. In Addition, a number plus another = is always that always<br></br>
