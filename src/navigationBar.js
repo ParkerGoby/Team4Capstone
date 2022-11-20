@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 
 export function NavigationBar() {
   return (
-    <div style={{position: "sticky", zIndex: "2"}} class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
+    <div style={{position: "sticky", zIndex: "2"}} className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div className="container-fluid">
         <Link style={{ color: "white", textDecoration: "none"}} to="/">
-          <a class="navbar-brand text-white">
+          <a className="navbar-brand text-white">
             <img
               src={require("./assets/rocket.png")}
               alt="Astro-Learn Rocket"
@@ -16,7 +16,7 @@ export function NavigationBar() {
           </a>
         </Link>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -24,10 +24,10 @@ export function NavigationBar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             {/* Removing these for now, since we have them twice on the navbar.
                     <li class="nav-item">
                         <a class="nav-link active " aria-current="page"><Link style={{color: 'white',textDecoration: 'none' }} to="/register"><li>Register</li></Link></a>
@@ -36,8 +36,8 @@ export function NavigationBar() {
                         <a class="nav-link"><Link style={{color: 'white',textDecoration: 'none' }} to="/login">Login</Link></a>
                     </li>
     */}
-            <li class="nav-item">
-              <a class="nav-link">
+            <li className="nav-item">
+              <a className="nav-link">
                 <Link
                   style={{ color: "white", textDecoration: "none" }}
                   to="/category"
@@ -48,9 +48,9 @@ export function NavigationBar() {
             </li>
           </ul>
         </div>
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page">
+        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+          <li className="nav-item">
+            <a className="nav-link" aria-current="page">
               <Link
                 style={{ color: "white", textDecoration: "none" }}
                 to="/register"
@@ -59,8 +59,8 @@ export function NavigationBar() {
               </Link>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link">
+          <li className="nav-item">
+            <a className="nav-link">
               <Link
                 style={{ color: "white", textDecoration: "none" }}
                 to="/login"

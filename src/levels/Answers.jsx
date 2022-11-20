@@ -55,32 +55,32 @@ class Answers extends React.Component {
         }
     return (
             <div id="answers">
-                <div class="container-thing">
-                    <div class="row row-cols-1 row-cols-md-2 g-4">
-                        <div class="col">
-                            <Card class="btn btn-outline-dark card" style={{ cursor: 'pointer' }} onClick={this.checkAnswer} className={classNames[0]} data-id="1">
-                                <Card.Body class="card-body">
+                <div className="container-thing">
+                    <div className="row row-cols-1 row-cols-md-2 g-4">
+                        <div className="col">
+                            <Card className="btn btn-outline-dark card" style={{ cursor: 'pointer' }} onClick={this.checkAnswer} className={classNames[0]} data-id="1">
+                                <Card.Body className="card-body">
                                     <Card.Title>{answers[0]}</Card.Title>
                                 </Card.Body>
                             </Card>
                         </div>
-                        <div class="col">
-                            <Card class="btn btn-outline-dark card" style={{ cursor: 'pointer' }} onClick={this.checkAnswer} className={classNames[1]} data-id="2">
-                                <Card.Body class="card-body">
+                        <div className="col">
+                            <Card className="btn btn-outline-dark card" style={{ cursor: 'pointer' }} onClick={this.checkAnswer} className={classNames[1]} data-id="2">
+                                <Card.Body className="card-body">
                                     <Card.Title>{answers[1]}</Card.Title>
                                 </Card.Body>
                             </Card>
                         </div>
-                        <div class="col">
-                            <Card class="btn btn-outline-dark card" style={{ cursor: 'pointer' }} onClick={this.checkAnswer} className={classNames[2]} data-id="3">
-                                <Card.Body class="card-body">
+                        <div className="col">
+                            <Card className="btn btn-outline-dark card" style={{ cursor: 'pointer' }} onClick={this.checkAnswer} className={classNames[2]} data-id="3">
+                                <Card.Body className="card-body">
                                     <Card.Title>{answers[2]}</Card.Title>
                                 </Card.Body>
                             </Card>
                         </div>
-                        <div class="col">
-                            <Card class="btn btn-outline-dark card" style={{ cursor: 'pointer' }} onClick={this.checkAnswer} className={classNames[3]} data-id="4">
-                                <Card.Body class="card-body">
+                        <div className="col">
+                            <Card className="btn btn-outline-dark card" style={{ cursor: 'pointer' }} onClick={this.checkAnswer} className={classNames[3]} data-id="4">
+                                <Card.Body className="card-body">
                                     <Card.Title>{answers[3]}</Card.Title>
                                 </Card.Body>
                             </Card>

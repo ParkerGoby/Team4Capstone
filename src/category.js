@@ -12,19 +12,19 @@ export function Category() {
 
   return (
     <>
-      <div class="title-container">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-xs-1 text-center">
+      <div className="title-container">
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-xs-1 text-center">
               <h1>Categories</h1>
               <p>Select one of the subjects below to start learning!</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="container-thing">
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-          <div class="col">
+      <div className="container-thing">
+        <div className="row row-cols-1 row-cols-md-2 g-4">
+          <div className="col">
             <Card bg="dark" text="white" className="card">
               <Card.Img
                 className="cardImg"
@@ -38,7 +38,7 @@ export function Category() {
                   the bulk of the card's content.
                 </Card.Text>
               </Card.Body>
-              <Button class="btn btn-primary" onClick={clickHandler(0)}>
+              <Button className="btn btn-primary" onClick={clickHandler(0)}>
                 <Link
                   style={{ color: "white", textDecoration: "none" }}
                   to="/categoryTypes/categoryMath"
@@ -49,7 +49,7 @@ export function Category() {
               </Button>
             </Card>
           </div>
-          <div class="col">
+          <div className="col">
             <Card bg="dark" text="white" className="card">
               <Card.Img
                 className="cardImg"
@@ -63,7 +63,7 @@ export function Category() {
                   the bulk of the card's content.
                 </Card.Text>
               </Card.Body>
-              <Button class="btn btn-primary" onClick={clickHandler(1)}>
+              <Button className="btn btn-primary" onClick={clickHandler(1)}>
                 <Link
                   style={{ color: "white", textDecoration: "none" }}
                   to="/categoryTypes/categoryMath"
@@ -74,7 +74,7 @@ export function Category() {
               </Button>
             </Card>
           </div>
-          <div class="col">
+          <div className="col">
             <Card bg="dark" text="white" className="card">
               <Card.Img
                 className="cardImg"
@@ -88,7 +88,7 @@ export function Category() {
                   the bulk of the card's content.
                 </Card.Text>
               </Card.Body>
-              <Button class="btn btn-primary" onClick={clickHandler(2)}>
+              <Button className="btn btn-primary" onClick={clickHandler(2)}>
                 <Link
                   style={{ color: "white", textDecoration: "none" }}
                   to="/categoryTypes/categoryMath"
@@ -99,7 +99,7 @@ export function Category() {
               </Button>
             </Card>
           </div>
-          <div class="col">
+          <div className="col">
             <Card bg="dark" text="white" className="card">
               <Card.Img
                 className="cardImg"
@@ -113,7 +113,7 @@ export function Category() {
                   the bulk of the card's content.
                 </Card.Text>
               </Card.Body>
-              <Button class="btn btn-primary" onClick={clickHandler(3)}>
+              <Button className="btn btn-primary" onClick={clickHandler(3)}>
                 <Link
                   style={{ color: "white", textDecoration: "none" }}
                   to="/categoryTypes/categoryMath"
@@ -124,7 +124,7 @@ export function Category() {
               </Button>
             </Card>
           </div>
-          <div class="col">
+          <div className="col">
             <Card bg="dark" text="white" className="card">
               <Card.Img
                 className="cardImg"
@@ -138,7 +138,7 @@ export function Category() {
                   the bulk of the card's content.
                 </Card.Text>
               </Card.Body>
-              <Button class="btn btn-primary" onClick={clickHandler(4)}>
+              <Button className="btn btn-primary" onClick={clickHandler(4)}>
                 <Link
                   style={{ color: "white", textDecoration: "none" }}
                   to="/categoryTypes/categoryMath"
@@ -149,7 +149,7 @@ export function Category() {
               </Button>
             </Card>
           </div>
-          <div class="col">
+          <div className="col">
             <Card bg="dark" text="white" className="card">
               <Card.Img
                 className="cardImg"
@@ -163,7 +163,7 @@ export function Category() {
                   the bulk of the card's content.
                 </Card.Text>
               </Card.Body>
-              <Button class="btn btn-primary" onClick={clickHandler(5)}>
+              <Button className="btn btn-primary" onClick={clickHandler(5)}>
                 <Link
                   style={{ color: "white", textDecoration: "none" }}
                   to="/categoryTypes/categoryMath"

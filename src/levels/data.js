@@ -13,11 +13,11 @@ export default [
         question: 'What is 3+3?',
         answers: [
             '7',
-            '6',
             '9',
+            '6',
             '8'
         ],
-        correct: 2
+        correct: 3
     },    
     {
         question: 'What is 5+4?',
@@ -26,7 +26,7 @@ export default [
             '10', 
             '2', 
             '9'
-        ],    
+        ],
         correct: 4
     }
 ]

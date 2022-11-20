@@ -35,24 +35,24 @@ export function LevelSelect() {
 
   return (
     <>
-      <div class="title-container">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-xs-1 text-center">
+      <div className="title-container">
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-xs-1 text-center">
               <h1>{categoryType} Levels</h1>
             </div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="cardCont1">
-            <div class="card">
-              <div class="card-body">
+      <div className="row">
+        <div className="col-sm-6">
+          <div className="cardCont1">
+            <div className="card">
+              <div className="card-body">
                 {/* <a class="btn btn-primary"><Link style={{color: 'white',textDecoration: 'none' }} to="/counting">Counting</Link></a> */}
-                <h5 class="card-title">Level 1</h5>
+                <h5 className="card-title">Level 1</h5>
                 {/* <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
-                <button class="btn btn-primary">
+                <button className="btn btn-primary">
                   <Link
                     style={{ color: "white", textDecoration: "none" }}
                     to={level_home}>
@@ -63,13 +63,13 @@ export function LevelSelect() {
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
-          <div class="cardCont1">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Level 4</h5>
+        <div className="col-sm-6">
+          <div className="cardCont1">
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">Level 4</h5>
                 {/* <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
-                <button class="btn btn-primary">
+                <button className="btn btn-primary">
                   <Link
                     style={{ color: "white", textDecoration: "none" }}
                     to={level_home}>
@@ -80,13 +80,13 @@ export function LevelSelect() {
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
-          <div class="cardCont1">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Level 2</h5>
+        <div className="col-sm-6">
+          <div className="cardCont1">
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">Level 2</h5>
                 {/* <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
-                <a class="btn btn-primary">
+                <a className="btn btn-primary">
                   <Link
                     style={{ color: "white", textDecoration: "none" }}
                     to={level_home}>
@@ -97,13 +97,13 @@ export function LevelSelect() {
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
-          <div class="cardCont1">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Level 5</h5>
+        <div className="col-sm-6">
+          <div className="cardCont1">
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">Level 5</h5>
                 {/* <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
-                <a class="btn btn-primary">
+                <a className="btn btn-primary">
                   <Link
                     style={{ color: "white", textDecoration: "none" }}
                     to={level_home}>
@@ -114,13 +114,13 @@ export function LevelSelect() {
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
-          <div class="cardCont1">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Level 3</h5>
+        <div className="col-sm-6">
+          <div className="cardCont1">
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">Level 3</h5>
                 {/* <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
-                <a class="btn btn-primary">
+                <a className="btn btn-primary">
                   <Link
                     style={{ color: "white", textDecoration: "none" }}
                     to={level_home}>
@@ -131,13 +131,13 @@ export function LevelSelect() {
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
-          <div class="cardCont1">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Level 6</h5>
+        <div className="col-sm-6">
+          <div className="cardCont1">
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">Level 6</h5>
                 {/* <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
-                <a class="btn btn-primary">
+                <a className="btn btn-primary">
                   <Link
                     style={{ color: "white", textDecoration: "none" }}
                     to={level_home}>

@@ -3,9 +3,9 @@ export function Home() {
     return (
         <div>
             <Slider />
-            <section class="section">
-                <div class="box-main">
-                    <div class="secondHalf">
+            <section className="section">
+                <div className="box-main">
+                    <div className="secondHalf">
                     <br></br>
                     </div>
                 </div>

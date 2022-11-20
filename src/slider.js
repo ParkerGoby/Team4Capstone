@@ -7,10 +7,10 @@ const login_page = "./login";
 
 export function Slider() {
   return (
-    <section class="slider">
-      <div class="sliderDesktop">
+    <section className="slider">
+      <div className="sliderDesktop">
         <video
-          class="bgVideo"
+          className="bgVideo"
           playsInline
           autoPlay
           loop
@@ -18,13 +18,13 @@ export function Slider() {
           src={video}
           type="video/mp4"
         ></video>
-        <div class="sliderOverlayText">
-          <h1 class="sliderHead">Welcome to Astro-Learn!</h1>
-          <p class="sliderText" align="center">
+        <div className="sliderOverlayText">
+          <h1 className="sliderHead">Welcome to Astro-Learn!</h1>
+          <p className="sliderText" align="center">
             Start a free and fun way to learn different topics. Make an account
             to start playing today!
             <br></br>
-            <Button className="button" variant="light" class="button" size="lg">
+            <Button className="button" variant="light" size="lg">
               <Link
                 style={{ color: "black", textDecoration: "none" }}
                 to={register_page}
@@ -32,7 +32,7 @@ export function Slider() {
                 REGISTER
               </Link>
             </Button>
-            <Button className="button" variant="light" class="button" size="lg">
+            <Button className="button" variant="light" size="lg">
               <Link
                 style={{ color: "black", textDecoration: "none" }}
                 to={login_page}
