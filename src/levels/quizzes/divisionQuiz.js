@@ -2,11 +2,11 @@ import React from "react";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-import Answers from "../components/Answers.jsx";
-import additionData from "./DataFiles/additionData";
-import "./level-home.css";
+import Answers from "../../components/Answers.jsx";
+import divisionData from "../DataFiles/divisionData";
+import "./Quizzes.css";
 
-let data = additionData;
+let data = divisionData;
 
 class Quiz extends React.Component {
   constructor(props) {

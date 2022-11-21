@@ -1,5 +1,5 @@
 import * as React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 
@@ -21,7 +21,7 @@ export function Fractions() {
             <div className="card-body">
                 <h5 className="card-title">Level 1</h5>
                 {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
-                <a className="btn btn-primary">Go somewhere</a>
+                <a href="#" className="btn btn-primary"><Link style={{color: 'white',textDecoration: 'none'}} to="/levels/quizzes/fractionsQuiz">Level 1</Link></a>
             </div>
             </div>
             </div>
