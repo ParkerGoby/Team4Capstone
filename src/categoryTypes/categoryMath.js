@@ -1,10 +1,15 @@
 import * as React from "react";
+import Button from "react-bootstrap/Button";
 import { Link, useLocation } from "react-router-dom";
-//import { default as Level_home } from "../levels/level-home";
 
-const level_home = "../levels/level-home";
+var level_home = "../levels/level-home";
 
 export function LevelSelect() {
+
+  function clickHandler(typeSelection) {
+    categoryType = typeSelection;
+  }
+
   const location = useLocation();
   const { from } = location.state;
   let categoryType;
@@ -12,21 +17,27 @@ export function LevelSelect() {
   switch (from) {
     case 0:
       categoryType = "Counting";
+      level_home = "../levels/level-home";
       break;
     case 1:
       categoryType = "Addition";
+      level_home = "../levels/quizzes/additionQuiz";
       break;
     case 2:
       categoryType = "Subtraction";
+      level_home = "../levels/quizzes/subtractionQuiz";
       break;
     case 3:
       categoryType = "Multiplication";
+      level_home = "../levels/quizzes/multiplicationQuiz";
       break;
     case 4:
       categoryType = "Division";
+      level_home = "../levels/quizzes/divisionQuiz";
       break;
     case 5:
       categoryType = "Fractions";
+      level_home = "../levels/quizzes/fractionsQuiz";
       break;
     default:
       console.log("error: unknown category type");
@@ -49,16 +60,14 @@ export function LevelSelect() {
           <div className="cardCont1">
             <div className="card">
               <div className="card-body">
-                {/* <a className="btn btn-primary"><Link style={{color: 'white',textDecoration: 'none' }} to="/counting">Counting</Link></a> */}
                 <h5 className="card-title">Level 1</h5>
-                {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
-                <button className="btn btn-primary">
-                  <Link
+                <Link
                     style={{ color: "white", textDecoration: "none" }}
                     to={level_home}>
-                    Level 1
+                      <div>
+                      <Button>Level 1</Button>
+                      </div>
                   </Link>
-                </button>
               </div>
             </div>
           </div>
@@ -68,14 +77,13 @@ export function LevelSelect() {
             <div className="card">
               <div className="card-body">
                 <h5 className="card-title">Level 4</h5>
-                {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
-                <button className="btn btn-primary">
-                  <Link
+                <Link
                     style={{ color: "white", textDecoration: "none" }}
                     to={level_home}>
-                    Under construction!
+                      <div>
+                      <Button>Under construction!</Button>
+                      </div>
                   </Link>
-                </button>
               </div>
             </div>
           </div>
@@ -85,14 +93,12 @@ export function LevelSelect() {
             <div className="card">
               <div className="card-body">
                 <h5 className="card-title">Level 2</h5>
-                {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
-                <a className="btn btn-primary">
-                  <Link
-                    style={{ color: "white", textDecoration: "none" }}
-                    to={level_home}>
-                    Under construction!
+                <Link
+                    style={{ color: "white", textDecoration: "none" }}>
+                      <div>
+                      <Button href="/question1">Level 2</Button>
+                      </div>
                   </Link>
-                </a>
               </div>
             </div>
           </div>
@@ -102,14 +108,13 @@ export function LevelSelect() {
             <div className="card">
               <div className="card-body">
                 <h5 className="card-title">Level 5</h5>
-                {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
-                <a className="btn btn-primary">
-                  <Link
+                <Link
                     style={{ color: "white", textDecoration: "none" }}
                     to={level_home}>
-                    Under construction!
+                      <div>
+                      <Button>Under construction!</Button>
+                      </div>
                   </Link>
-                </a>
               </div>
             </div>
           </div>
@@ -119,14 +124,13 @@ export function LevelSelect() {
             <div className="card">
               <div className="card-body">
                 <h5 className="card-title">Level 3</h5>
-                {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
-                <a className="btn btn-primary">
-                  <Link
+                <Link
                     style={{ color: "white", textDecoration: "none" }}
                     to={level_home}>
-                    Under construction!
+                      <div>
+                      <Button>Under construction!</Button>
+                      </div>
                   </Link>
-                </a>
               </div>
             </div>
           </div>
@@ -137,13 +141,13 @@ export function LevelSelect() {
               <div className="card-body">
                 <h5 className="card-title">Level 6</h5>
                 {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
-                <a className="btn btn-primary">
+                <Button className="btn btn-primary">
                   <Link
                     style={{ color: "white", textDecoration: "none" }}
                     to={level_home}>
                     Under construction!
                   </Link>
-                </a>
+                </Button>
               </div>
             </div>
           </div>

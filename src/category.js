@@ -34,15 +34,16 @@ export function Category() {
               <Card.Body>
                 <h3 className="text-center">Counting</h3>
               </Card.Body>
-              <Button className="btn btn-primary" onClick={clickHandler(0)}>
-                <Link
-                  style={{ color: "white", textDecoration: "none" }}
-                  to="/categoryTypes/categoryMath"
-                  state={{ from: categoryType }}
-                >
-                  Let's Learn!
-                </Link>
-              </Button>
+              <Link
+                style={{ color: "white", textDecoration: "none" }}
+                to="/categoryTypes/categoryMath"
+                onClick={clickHandler(0)}
+                state={{ from: categoryType }}
+              >
+                <div className="d-grid gap-2">
+                  <Button>Let's Learn!</Button>
+                </div>
+              </Link>
             </Card>
           </div>
           <div className="col">
@@ -55,15 +56,16 @@ export function Category() {
               <Card.Body>
                 <h3 className="text-center">Addition</h3>
               </Card.Body>
-              <Button className="btn btn-primary" onClick={clickHandler(1)}>
-                <Link
-                  style={{ color: "white", textDecoration: "none" }}
-                  to="/categoryTypesMath/addition"
-                  state={{ from: categoryType }}
-                >
-                  Let's Learn!
-                </Link>
-              </Button>
+              <Link
+                style={{ color: "white", textDecoration: "none" }}
+                to="/categoryTypesMath/addition"
+                onClick={clickHandler(1)}
+                state={{ from: categoryType }}
+              >
+                <div className="d-grid gap-2">
+                  <Button>Let's Learn!</Button>
+                </div>
+              </Link>
             </Card>
           </div>
           <div className="col">
@@ -76,15 +78,16 @@ export function Category() {
               <Card.Body>
                 <h3 className="text-center">Subtraction</h3>
               </Card.Body>
-              <Button className="btn btn-primary" onClick={clickHandler(2)}>
-                <Link
-                  style={{ color: "white", textDecoration: "none" }}
-                  to="/categoryTypes/categoryMath"
-                  state={{ from: categoryType }}
-                >
-                  Let's Learn!
-                </Link>
-              </Button>
+              <Link
+                style={{ color: "white", textDecoration: "none" }}
+                to="/categoryTypes/categoryMath"
+                onClick={clickHandler(2)}
+                state={{ from: categoryType }}
+              >
+                <div className="d-grid gap-2">
+                  <Button>Let's Learn!</Button>
+                </div>
+              </Link>
             </Card>
           </div>
           <div className="col">
@@ -97,15 +100,16 @@ export function Category() {
               <Card.Body>
                 <h3 className="text-center">Multiplication</h3>
               </Card.Body>
-              <Button className="btn btn-primary" onClick={clickHandler(3)}>
-                <Link
-                  style={{ color: "white", textDecoration: "none" }}
-                  to="/categoryTypes/categoryMath"
-                  state={{ from: categoryType }}
-                >
-                  Let's Learn!
-                </Link>
-              </Button>
+              <Link
+                style={{ color: "white", textDecoration: "none" }}
+                to="/categoryTypes/categoryMath"
+                onClick={clickHandler(3)}
+                state={{ from: categoryType }}
+              >
+                <div className="d-grid gap-2">
+                  <Button>Let's Learn!</Button>
+                </div>
+              </Link>
             </Card>
           </div>
           <div className="col">
@@ -118,15 +122,16 @@ export function Category() {
               <Card.Body>
                 <h3 className="text-center">Division</h3>
               </Card.Body>
-              <Button className="btn btn-primary" onClick={clickHandler(4)}>
-                <Link
-                  style={{ color: "white", textDecoration: "none" }}
-                  to="/categoryTypes/categoryMath"
-                  state={{ from: categoryType }}
-                >
-                  Let's Learn!
-                </Link>
-              </Button>
+              <Link
+                style={{ color: "white", textDecoration: "none" }}
+                to="/categoryTypes/categoryMath"
+                onClick={clickHandler(4)}
+                state={{ from: categoryType }}
+              >
+                <div className="d-grid gap-2">
+                  <Button>Let's Learn!</Button>
+                </div>
+              </Link>
             </Card>
           </div>
           <div className="col">
@@ -139,15 +144,16 @@ export function Category() {
               <Card.Body>
                 <h3 className="text-center">Fractions</h3>
               </Card.Body>
-              <Button className="btn btn-primary" onClick={clickHandler(5)}>
-                <Link
-                  style={{ color: "white", textDecoration: "none" }}
-                  to="/categoryTypes/categoryMath"
-                  state={{ from: categoryType }}
-                >
-                  Let's Learn!
-                </Link>
-              </Button>
+              <Link
+                style={{ color: "white", textDecoration: "none" }}
+                to="/categoryTypes/categoryMath"
+                onClick={clickHandler(5)}
+                state={{ from: categoryType }}
+              >
+                <div className="d-grid gap-2">
+                  <Button>Let's Learn!</Button>
+                </div>
+              </Link>
             </Card>
           </div>
         </div>

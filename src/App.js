@@ -20,7 +20,16 @@ import Edit from './components/edit';
 import Create from './components/create';
 import Footer from './footer';
 import Record_list from './components/recordList';
+
+//Quizzes:
 import LevelHome from './levels/level-home.js';
+import AdditionQuiz from './levels/quizzes/additionQuiz.js';
+import SubtractionQuiz from './levels/quizzes/subtractionQuiz.js';
+import MultiplicationQuiz from './levels/quizzes/multiplicationQuiz.js';
+import DivisionQuiz from './levels/quizzes/divisionQuiz.js';
+import FractionsQuiz from './levels/quizzes/fractionsQuiz.js';
+
+//Guidebook:
 import Level1GuideAddition from './guidebook/addition/level1guidebook';
 import Level2GuideAddition from './guidebook/addition/level2guidebook';
 import Level3GuideAddition from './guidebook/addition/level3guidebook';
@@ -55,6 +64,11 @@ function App() {
 					<Route exact path='/edit:id' element={<Edit />}> </Route>
 					<Route exact path='/recordList' element={<Record_list />}> </Route>
 					<Route exact path='/levels/level-home' element={<LevelHome/>}> </Route>
+					<Route exact path='/levels/quizzes/additionQuiz' element={<AdditionQuiz/>}> </Route>
+					<Route exact path='/levels/quizzes/subtractionQuiz' element={<SubtractionQuiz/>}> </Route>
+					<Route exact path='/levels/quizzes/multiplicationQuiz' element={<MultiplicationQuiz/>}> </Route>
+					<Route exact path='/levels/quizzes/divisionQuiz' element={<DivisionQuiz/>}> </Route>
+					<Route exact path='/levels/quizzes/fractionsQuiz' element={<FractionsQuiz/>}> </Route>
 					<Route exact path='/guidebook/addition/1' element={<Level1GuideAddition/>}> </Route>
 					<Route exact path='/guidebook/addition/2' element={<Level2GuideAddition/>}> </Route>
 					<Route exact path='/guidebook/addition/3' element={<Level3GuideAddition/>}> </Route>

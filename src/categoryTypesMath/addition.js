@@ -23,7 +23,7 @@ export function Addition() {
             {/* <a className="btn btn-primary"><Link style={{color: 'white',textDecoration: 'none' }} to="/counting">Counting</Link></a> */}
                 <h5 className="card-title">Level 1</h5>
                 {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
-                <a href="#" className="btn btn-primary"><Link style={{color: 'white',textDecoration: 'none'}} to="/levels/level-home">Level 1</Link></a>
+                <a href="#" className="btn btn-primary"><Link style={{color: 'white',textDecoration: 'none'}} to="/levels/quizzes/additionQuiz">Level 1</Link></a>
          
             </div>
             </div>

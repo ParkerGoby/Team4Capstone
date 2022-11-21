@@ -32,14 +32,14 @@ export function Category() {
                 variant="top"
                 src={require("../assets/counting.jpg")}
               />
-              <Button className="btn btn-primary">
-                <Link
-                  style={{ color: "white", textDecoration: "none" }}
-                  to="/guidebook/counting/1"
-                >
-                  Let's Learn!
-                </Link>
-              </Button>
+              <Link
+                style={{ color: "white", textDecoration: "none" }}
+                to="../guidebook/counting/1"
+              >
+                <div className="d-grid gap-2">
+                  <Button className="btn btn-primary">Let's Learn!</Button>
+                </div>
+              </Link>
             </Card>
           </div>
           <div className="col">
@@ -52,14 +52,14 @@ export function Category() {
                 variant="top"
                 src={require("../assets/addition.png")}
               />
-              <Button className="btn btn-primary">
-                <Link
-                  style={{ color: "white", textDecoration: "none" }}
-                  to="/guidebook/addition/1"
-                >
-                  Let's Learn!
-                </Link>
-              </Button>
+              <Link
+                style={{ color: "white", textDecoration: "none" }}
+                to="../guidebook/addition/1"
+              >
+                <div className="d-grid gap-2">
+                  <Button className="btn btn-primary">Let's Learn!</Button>
+                </div>
+              </Link>
             </Card>
           </div>
           <div className="col">
@@ -72,14 +72,14 @@ export function Category() {
                 variant="top"
                 src={require("../assets/subtraction.jpg")}
               />
-              <Button className="btn btn-primary">
-                <Link
-                  style={{ color: "white", textDecoration: "none" }}
-                  to="/guidebook/subtraction/1"
-                >
-                  Let's Learn!
-                </Link>
-              </Button>
+              <Link
+                style={{ color: "white", textDecoration: "none" }}
+                to="../guidebook/subtraction/1"
+              >
+                <div className="d-grid gap-2">
+                  <Button className="btn btn-primary">Let's Learn!</Button>
+                </div>
+              </Link>
             </Card>
           </div>
           <div className="col">
@@ -92,14 +92,14 @@ export function Category() {
                 variant="top"
                 src={require("../assets/multiplication.png")}
               />
-              <Button className="btn btn-primary">
-                <Link
-                  style={{ color: "white", textDecoration: "none" }}
-                  to="/guidebook/multiplication/1"
-                >
-                  Let's Learn!
-                </Link>
-              </Button>
+              <Link
+                style={{ color: "white", textDecoration: "none" }}
+                to="../guidebook/multiplication/1"
+              >
+                <div className="d-grid gap-2">
+                  <Button className="btn btn-primary">Let's Learn!</Button>
+                </div>
+              </Link>
             </Card>
           </div>
           <div className="col">
@@ -112,14 +112,14 @@ export function Category() {
                 variant="top"
                 src={require("../assets/division.jpg")}
               />
-              <Button className="btn btn-primary">
-                <Link
-                  style={{ color: "white", textDecoration: "none" }}
-                  to="/guidebook/division/1"
-                >
-                  Let's Learn!
-                </Link>
-              </Button>
+              <Link
+                style={{ color: "white", textDecoration: "none" }}
+                to="../guidebook/division/1"
+              >
+                <div className="d-grid gap-2">
+                  <Button className="btn btn-primary">Let's Learn!</Button>
+                </div>
+              </Link>
             </Card>
           </div>
           <div className="col">
@@ -132,14 +132,14 @@ export function Category() {
                 variant="top"
                 src={require("../assets/fractions.jpg")}
               />
-              <Button className="btn btn-primary">
-                <Link
-                  style={{ color: "white", textDecoration: "none" }}
-                  to="/guidebook/fractions/1"
-                >
-                  Let's Learn!
-                </Link>
-              </Button>
+              <Link
+                style={{ color: "white", textDecoration: "none" }}
+                to="../guidebook/fractions/1"
+              >
+                <div className="d-grid gap-2">
+                  <Button className="btn btn-primary">Let's Learn!</Button>
+                </div>
+              </Link>
             </Card>
           </div>
         </div>
