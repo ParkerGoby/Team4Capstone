@@ -41,9 +41,7 @@ export function Category() {
                 state={{ from: categoryType }}
               >
                 <div className="d-grid gap-2">
-                  <Button>
-                    Let's Learn!
-                  </Button>
+                  <Button>Let's Learn!</Button>
                 </div>
               </Link>
             </Card>
@@ -65,9 +63,7 @@ export function Category() {
                 state={{ from: categoryType }}
               >
                 <div className="d-grid gap-2">
-                  <Button>
-                    Let's Learn!
-                  </Button>
+                  <Button>Let's Learn!</Button>
                 </div>
               </Link>
             </Card>
@@ -89,9 +85,7 @@ export function Category() {
                 state={{ from: categoryType }}
               >
                 <div className="d-grid gap-2">
-                  <Button>
-                    Let's Learn!
-                  </Button>
+                  <Button>Let's Learn!</Button>
                 </div>
               </Link>
             </Card>
@@ -113,9 +107,7 @@ export function Category() {
                 state={{ from: categoryType }}
               >
                 <div className="d-grid gap-2">
-                  <Button>
-                    Let's Learn!
-                  </Button>
+                  <Button>Let's Learn!</Button>
                 </div>
               </Link>
             </Card>
@@ -137,9 +129,7 @@ export function Category() {
                 state={{ from: categoryType }}
               >
                 <div className="d-grid gap-2">
-                  <Button>
-                    Let's Learn!
-                  </Button>
+                  <Button>Let's Learn!</Button>
                 </div>
               </Link>
             </Card>
@@ -161,9 +151,7 @@ export function Category() {
                 state={{ from: categoryType }}
               >
                 <div className="d-grid gap-2">
-                  <Button>
-                    Let's Learn!
-                  </Button>
+                  <Button>Let's Learn!</Button>
                 </div>
               </Link>
             </Card>
