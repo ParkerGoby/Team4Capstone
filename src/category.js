@@ -32,11 +32,7 @@ export function Category() {
                 src={require("./assets/counting.jpg")}
               />
               <Card.Body>
-                <Card.Title>Counting</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
+                <h3 className="text-center">Counting</h3>
               </Card.Body>
               <Button className="btn btn-primary" onClick={clickHandler(0)}>
                 <Link
@@ -57,11 +53,7 @@ export function Category() {
                 src={require("./assets/addition.png")}
               />
               <Card.Body>
-                <Card.Title>Addition</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
+                <h3 className="text-center">Addition</h3>
               </Card.Body>
               <Button className="btn btn-primary" onClick={clickHandler(1)}>
                 <Link
@@ -82,11 +74,7 @@ export function Category() {
                 src={require("./assets/subtraction.jpg")}
               />
               <Card.Body>
-                <Card.Title>Subtraction</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
+                <h3 className="text-center">Subtraction</h3>
               </Card.Body>
               <Button className="btn btn-primary" onClick={clickHandler(2)}>
                 <Link
@@ -107,11 +95,7 @@ export function Category() {
                 src={require("./assets/multiplication.png")}
               />
               <Card.Body>
-                <Card.Title>Multiplication</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
+                <h3 className="text-center">Multiplication</h3>
               </Card.Body>
               <Button className="btn btn-primary" onClick={clickHandler(3)}>
                 <Link
@@ -132,11 +116,7 @@ export function Category() {
                 src={require("./assets/division.jpg")}
               />
               <Card.Body>
-                <Card.Title>Division</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
+                <h3 className="text-center">Division</h3>
               </Card.Body>
               <Button className="btn btn-primary" onClick={clickHandler(4)}>
                 <Link
@@ -157,11 +137,7 @@ export function Category() {
                 src={require("./assets/fractions.jpg")}
               />
               <Card.Body>
-                <Card.Title>Fractions</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
+                <h3 className="text-center">Fractions</h3>
               </Card.Body>
               <Button className="btn btn-primary" onClick={clickHandler(5)}>
                 <Link
