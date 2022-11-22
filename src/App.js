@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import './App.css';
 import './slider.css';
@@ -14,12 +15,12 @@ import Addition from './categoryTypesMath/addition.js';
 import Division from './categoryTypesMath/division.js';
 import Subtraction from './categoryTypesMath/subtraction.js';
 import Fractions from './categoryTypesMath/fractions.js';
-import Level_1 from './question1.js';
+import LevelOne from './question1.js';
 import NewRegister from './newRegister.js';
 import Edit from './components/edit';
 import Create from './components/create';
 import Footer from './footer';
-import Record_list from './components/recordList';
+import RecordList from './components/recordList';
 
 //Quizzes:
 import LevelHome from './levels/level-home.js';
@@ -41,7 +42,14 @@ import Level1GuideFraction from './guidebook/fractions/level1guidebook';
 import Level1GuideSubtraction from './guidebook/subtraction/level1guidebook';
 import Level1GuideDivision from './guidebook/division/level1guidebook'
 import Level1GuideCounting from './guidebook/counting/level1guidebook'
+import useToken from './useToken';
+
 function App() {
+	const { token, setToken } = useToken();
+
+	if(!token){
+		return<Login setToken={setToken} />
+	}
 	return (
 		<div>
 			<BrowserRouter>
@@ -58,11 +66,11 @@ function App() {
 					<Route exact path='/division' element={<Division />}> </Route>
 					<Route exact path='/subtraction' element={<Subtraction />}> </Route>
 					<Route exact path='/fractions' element={<Fractions />}> </Route>
-                    <Route exact path='/question1' element={<Level_1 />}> </Route>
-					<Route exact path='/newregister' element={<NewRegister />}> </Route>
+                    <Route exact path='/question1' element={<LevelOne />}> </Route>
+					<Route exact path='/newRegister' element={<NewRegister />}> </Route>
 					<Route exact path='/create' element={<Create />}> </Route>
 					<Route exact path='/edit:id' element={<Edit />}> </Route>
-					<Route exact path='/recordList' element={<Record_list />}> </Route>
+					<Route exact path='/recordList' element={<RecordList />}> </Route>
 					<Route exact path='/levels/level-home' element={<LevelHome/>}> </Route>
 					<Route exact path='/levels/quizzes/additionQuiz' element={<AdditionQuiz/>}> </Route>
 					<Route exact path='/levels/quizzes/subtractionQuiz' element={<SubtractionQuiz/>}> </Route>
