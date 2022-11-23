@@ -1,8 +1,13 @@
 export default [
-    {
-        question: 'What is 2+2?',
+       {
+        vars: {
+            "x": Math.floor(Math.random() * 10),
+            "y": Math.floor(Math.random() * 10),
+        },
+        
+        question: `what is 2 + 2`,
         answers: [
-            '3',
+            Math.floor(Math.random() * 10),
             '4',
             '5',
             '2'
