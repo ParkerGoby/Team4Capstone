@@ -11,9 +11,9 @@ let data = additionData;
 class Quiz extends React.Component {
   constructor(props) {
     super(props);
+    var random = Math.floor(Math.random() * 4);
     this.state = {
-      nr: 0,
-      total: data.length,
+      nr: random,
       showButton: false,
       questionAnswered: false,
       score: 0,
@@ -35,6 +35,10 @@ class Quiz extends React.Component {
   }
 
   pushData(nr) {
+    var random = Math.floor(Math.random() * 4);
+    if (random === nr) {
+      Math.floor(Math.random() * 4);
+    }
     this.setState({
       question: data[nr].question,
       answers: [
@@ -44,17 +48,19 @@ class Quiz extends React.Component {
         data[nr].answers[3],
       ],
       correct: data[nr].correct,
-      nr: this.state.nr + 1,
+      nr: random,
     });
   }
 
   nextQuestion() {
-    let { nr, total } = this.state;
+    let { nr } = this.state;
 
-    if (nr === total) {
-      this.setState({
-        displayPopup: "flex",
-      });
+    if (this.state.score >= 100) {
+      /*add linking here to success page
+      const targetDiv = document.getElementById("modal");
+        if (targetDiv.style.display === "none") {
+          targetDiv.style.display = "";
+        }*/
     } else {
       this.pushData(nr);
       this.setState({
@@ -72,8 +78,9 @@ class Quiz extends React.Component {
   }
 
   handleStartQuiz() {
+    var random = Math.floor(Math.random() * 4);
     this.setState({
-      nr: 1,
+      nr: random,
     });
   }
 
@@ -84,16 +91,8 @@ class Quiz extends React.Component {
   }
 
   render() {
-    let {
-      nr,
-      total,
-      question,
-      answers,
-      correct,
-      showButton,
-      questionAnswered,
-      score,
-    } = this.state;
+    let { question, answers, correct, showButton, questionAnswered, score } =
+      this.state;
 
     return (
       <>
@@ -117,7 +116,7 @@ class Quiz extends React.Component {
             <div id="submit">
               {showButton ? (
                 <Button className="fancy-btn" onClick={this.nextQuestion}>
-                  {nr === total ? "Finish quiz" : "Next question"}
+                  {score === 100 ? "Finish quiz" : "Next question"}
                 </Button>
               ) : null}
             </div>

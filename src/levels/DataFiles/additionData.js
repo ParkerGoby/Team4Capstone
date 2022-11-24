@@ -1,5 +1,6 @@
 export default [
     {
+        id: 0,
         question: 'What is 2+2?',
         answers: [
             '3',
@@ -10,6 +11,7 @@ export default [
         correct: 2
     },
     {
+        id: 1,
         question: 'What is 3+3?',
         answers: [
             '7',
@@ -20,6 +22,7 @@ export default [
         correct: 3
     },    
     {
+        id: 2,
         question: 'What is 5+4?',
         answers: [
             '5',
@@ -30,6 +33,7 @@ export default [
         correct: 4
     },
     {
+        id: 3,
         question: 'What is 6+4?',
         answers: [
             '9',
@@ -40,6 +44,7 @@ export default [
         correct: 4
     },
     {
+        id: 4,
         question: 'What is 3+11?',
         answers: [
             '12',
@@ -50,6 +55,7 @@ export default [
         correct: 2
     },
     {
+        id: 5,
         question: 'What is 9+3?',
         answers: [
             '15',
