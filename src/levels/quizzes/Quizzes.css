@@ -78,13 +78,19 @@ padding: auto;*/
   transition-delay: 0.5s;
 }
 
+.alert {
+  align-content: center;
+  padding-top: 10px;
+}
+
 .level_footer {
   padding-top: 30px;
 }
 
 .continue_button {
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-right: 30px;
-  float: right;
 }
 
 /*

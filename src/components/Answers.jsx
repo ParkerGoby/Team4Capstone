@@ -27,7 +27,7 @@ class Answers extends React.Component {
       } else {
         updatedClassNames[answer - 1] = "wrong";
       }
-
+      this.show = true;
       this.setState({
         classNames: updatedClassNames,
       });
@@ -38,7 +38,6 @@ class Answers extends React.Component {
 
   render() {
     let { answers } = this.props;
-    let { classNames } = this.state;
 
     return (
       <div id="answers">
@@ -49,7 +48,6 @@ class Answers extends React.Component {
                 className="btn btn-outline-dark card"
                 style={{ cursor: "pointer" }}
                 onClick={this.checkAnswer}
-                className={classNames[0]}
                 data-id="1"
               >
                 <Card.Body className="card-body">
@@ -62,7 +60,6 @@ class Answers extends React.Component {
                 className="btn btn-outline-dark card"
                 style={{ cursor: "pointer" }}
                 onClick={this.checkAnswer}
-                className={classNames[1]}
                 data-id="2"
               >
                 <Card.Body className="card-body">
@@ -75,7 +72,6 @@ class Answers extends React.Component {
                 className="btn btn-outline-dark card"
                 style={{ cursor: "pointer" }}
                 onClick={this.checkAnswer}
-                className={classNames[2]}
                 data-id="3"
               >
                 <Card.Body className="card-body">
@@ -88,7 +84,6 @@ class Answers extends React.Component {
                 className="btn btn-outline-dark card"
                 style={{ cursor: "pointer" }}
                 onClick={this.checkAnswer}
-                className={classNames[3]}
                 data-id="4"
               >
                 <Card.Body className="card-body">

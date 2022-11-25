@@ -2,6 +2,9 @@ import React from "react";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
+import Alert from "react-bootstrap/Alert";
+import Modal from "react-bootstrap/Modal";
+import { BrowserRouter as Route, Link } from "react-router-dom";
 import Answers from "../../components/Answers.jsx";
 import additionData from "../DataFiles/additionData";
 import "./Quizzes.css";
@@ -11,12 +14,14 @@ let data = additionData;
 class Quiz extends React.Component {
   constructor(props) {
     super(props);
-    var random = Math.floor(Math.random() * 4);
+    var random = Math.floor(Math.random() * 500);
     this.state = {
       nr: random,
       showButton: false,
       questionAnswered: false,
       score: 0,
+      showModal: false,
+      showAlert: false,
     };
     this.nextQuestion = this.nextQuestion.bind(this);
     this.handleShowButton = this.handleShowButton.bind(this);
@@ -35,9 +40,9 @@ class Quiz extends React.Component {
   }
 
   pushData(nr) {
-    var random = Math.floor(Math.random() * 4);
+    var random = Math.floor(Math.random() * 500);
     if (random === nr) {
-      Math.floor(Math.random() * 4);
+      Math.floor(Math.random() * 500);
     }
     this.setState({
       question: data[nr].question,
@@ -56,16 +61,13 @@ class Quiz extends React.Component {
     let { nr } = this.state;
 
     if (this.state.score >= 100) {
-      /*add linking here to success page
-      const targetDiv = document.getElementById("modal");
-        if (targetDiv.style.display === "none") {
-          targetDiv.style.display = "";
-        }*/
+      this.setState({ showModal: true });
     } else {
       this.pushData(nr);
       this.setState({
         showButton: false,
         questionAnswered: false,
+        showAlert: false,
       });
     }
   }
@@ -78,7 +80,7 @@ class Quiz extends React.Component {
   }
 
   handleStartQuiz() {
-    var random = Math.floor(Math.random() * 4);
+    var random = Math.floor(Math.random() * 500);
     this.setState({
       nr: random,
     });
@@ -86,7 +88,8 @@ class Quiz extends React.Component {
 
   handleIncreaseScore() {
     this.setState({
-      score: this.state.score + 25,
+      score: this.state.score + 10,
+      showAlert: true,
     });
   }
 
@@ -97,30 +100,88 @@ class Quiz extends React.Component {
     return (
       <>
         <>
-          <div className="progress_bar">
-            <ProgressBar id="progress_bar" animated now={score}></ProgressBar>
-          </div>
-          <Container className="container" fluid>
-            <div id="question" className="text-center">
-              <h1>{question}</h1>
-            </div>
-            <div>
-              <Answers
-                answers={answers}
-                correct={correct}
-                showButton={this.handleShowButton}
-                isAnswered={questionAnswered}
-                increaseScore={this.handleIncreaseScore}
-              ></Answers>
-            </div>
-            <div id="submit">
-              {showButton ? (
-                <Button className="fancy-btn" onClick={this.nextQuestion}>
-                  {score === 100 ? "Finish quiz" : "Next question"}
-                </Button>
-              ) : null}
-            </div>
-          </Container>
+          <>
+            <>
+              <Modal
+                show={this.state.showModal}
+                onHide={() => this.setState({ showModal: false })}
+              >
+                <Modal.Header closeButton>
+                  <Modal.Title>Congratulations! You finished the quiz!</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                  Click the button below to collect your badge!
+                </Modal.Body>
+                <Modal.Footer>
+                  <Link
+                    style={{ color: "white", textDecoration: "none" }}
+                    to="/category"
+                  >
+                    <div className="d-grid gap-2">
+                      <Button
+                        variant="primary"
+                        onClick={() => this.setState({ showModal: false })}
+                      >
+                        Collect Badge
+                      </Button>
+                    </div>
+                  </Link>
+                </Modal.Footer>
+              </Modal>
+              <div className="progress_bar">
+                <ProgressBar
+                  id="progress_bar"
+                  animated
+                  now={score}
+                ></ProgressBar>
+              </div>
+              <Container className="container" fluid>
+                <div id="popup" className="alert">
+                  <Alert
+                    variant="success"
+                    onClose={() => this.setState({ showAlert: false })}
+                    show={this.state.showAlert}
+                    delay={3000}
+                    autohide
+                  >
+                    <Alert.Heading>You got it right! Great work!</Alert.Heading>
+                  </Alert>
+                </div>
+
+                <div id="question" className="text-center">
+                  <h1>{question}</h1>
+                </div>
+                <div>
+                  <Answers
+                    answers={answers}
+                    correct={correct}
+                    showButton={this.handleShowButton}
+                    isAnswered={questionAnswered}
+                    increaseScore={this.handleIncreaseScore}
+                  ></Answers>
+                </div>
+                <div id="submit">
+                  {showButton ? (
+                    <Button className="continue_button" onClick={this.nextQuestion}>
+                      {score === 100 ? "Finish quiz" : "Next question"}
+                    </Button>
+                  ) : null}
+                </div>
+              </Container>
+              <Container>
+                <div>
+                  <Link
+                    style={{ color: "white", textDecoration: "none" }}
+                    to="/category"
+                  >
+                    <div>
+                      <Button variant="primary">Return to categories</Button>
+                    </div>
+                  </Link>
+                </div>
+              </Container>
+            </>
+          </>
         </>
       </>
     );
