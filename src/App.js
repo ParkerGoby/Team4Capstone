@@ -22,7 +22,6 @@ import Footer from './footer';
 import Record_list from './components/recordList';
 
 //Quizzes:
-import LevelHome from './levels/level-home.js';
 import AdditionQuiz from './levels/quizzes/additionQuiz.js';
 import SubtractionQuiz from './levels/quizzes/subtractionQuiz.js';
 import MultiplicationQuiz from './levels/quizzes/multiplicationQuiz.js';
@@ -63,7 +62,6 @@ function App() {
 					<Route exact path='/create' element={<Create />}> </Route>
 					<Route exact path='/edit:id' element={<Edit />}> </Route>
 					<Route exact path='/recordList' element={<Record_list />}> </Route>
-					<Route exact path='/levels/level-home' element={<LevelHome/>}> </Route>
 					<Route exact path='/levels/quizzes/additionQuiz' element={<AdditionQuiz/>}> </Route>
 					<Route exact path='/levels/quizzes/subtractionQuiz' element={<SubtractionQuiz/>}> </Route>
 					<Route exact path='/levels/quizzes/multiplicationQuiz' element={<MultiplicationQuiz/>}> </Route>

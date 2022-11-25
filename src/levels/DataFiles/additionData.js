@@ -2242,7 +2242,7 @@ export default [
 {
         id: 320,
         question: 'What is 0 + 9 ?',
-        answers: ['11','9','8','9'],
+        answers: ['11','9','8','10'],
         correct: 2
 
     },
