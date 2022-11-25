@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-
-
+import Button from "react-bootstrap/Button";
 
 export function Addition() {
     return (
@@ -23,7 +22,13 @@ export function Addition() {
             {/* <a className="btn btn-primary"><Link style={{color: 'white',textDecoration: 'none' }} to="/counting">Counting</Link></a> */}
                 <h5 className="card-title">Level 1</h5>
                 {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
-                <a href="#" className="btn btn-primary"><Link style={{color: 'white',textDecoration: 'none'}} to="/levels/quizzes/additionQuiz">Level 1</Link></a>
+                <Link
+                    style={{ color: "white", textDecoration: "none" }}
+                    to="/levels/quizzes/additionQuiz">
+                      <div>
+                      <Button>Level 1</Button>
+                      </div>
+                  </Link>
          
             </div>
             </div>
@@ -35,7 +40,13 @@ export function Addition() {
             <div className="card-body">
                 <h5 className="card-title">Level 4</h5>
                 {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
-                <a href="#" className="btn btn-primary">Go somewhere</a>
+                <Link
+                    style={{ color: "white", textDecoration: "none" }}
+                    to="/levels/quizzes/additionQuiz">
+                      <div>
+                      <Button>Level 4</Button>
+                      </div>
+                  </Link>
             </div>
             </div>
             </div>
@@ -46,7 +57,13 @@ export function Addition() {
             <div className="card-body">
                 <h5 className="card-title">Level 2</h5>
                 {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
-                <a href='#' className="btn btn-primary"><Link style={{color: 'white',textDecoration: 'none'}} to="/question1">Level 2</Link></a>
+                <Link
+                    style={{ color: "white", textDecoration: "none" }}
+                    to="/levels/quizzes/additionQuiz">
+                      <div>
+                      <Button>Level 2</Button>
+                      </div>
+                  </Link>
             </div>
             </div>
             </div>
@@ -57,7 +74,13 @@ export function Addition() {
             <div className="card-body">
                 <h5 className="card-title">Level 5</h5>
                 {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
-                <a href="#" className="btn btn-primary">Go somewhere</a>
+                <Link
+                    style={{ color: "white", textDecoration: "none" }}
+                    to="/levels/quizzes/additionQuiz">
+                      <div>
+                      <Button>Level 5</Button>
+                      </div>
+                  </Link>
             </div>
             </div>
             </div>
@@ -68,7 +91,13 @@ export function Addition() {
             <div className="card-body">
                 <h5 className="card-title">Level 3</h5>
                 {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
-                <a href="#" className="btn btn-primary">Go somewhere</a>
+                <Link
+                    style={{ color: "white", textDecoration: "none" }}
+                    to="/levels/quizzes/additionQuiz">
+                      <div>
+                      <Button>Level 3</Button>
+                      </div>
+                  </Link>
             </div>
             </div>
             </div>
@@ -79,7 +108,13 @@ export function Addition() {
             <div className="card-body">
                 <h5 className="card-title">Level 6</h5>
                 {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
-                <a href="#" className="btn btn-primary">Go somewhere</a>
+                <Link
+                    style={{ color: "white", textDecoration: "none" }}
+                    to="/levels/quizzes/additionQuiz">
+                      <div>
+                      <Button>Level 6</Button>
+                      </div>
+                  </Link>
             </div>
             </div>
             </div>

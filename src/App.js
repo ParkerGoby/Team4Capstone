@@ -7,12 +7,11 @@ import Slider from './slider.js';
 import Login from './login.js';
 import Register from './register.js';
 import Category from './category.js';
-import CategoryMath from './categoryTypes/categoryMath.js';
 import Counting from './categoryTypesMath/counting.js';
-import Multiplication from './categoryTypesMath/multiplication.js';
 import Addition from './categoryTypesMath/addition.js';
-import Division from './categoryTypesMath/division.js';
 import Subtraction from './categoryTypesMath/subtraction.js';
+import Multiplication from './categoryTypesMath/multiplication.js';
+import Division from './categoryTypesMath/division.js';
 import Fractions from './categoryTypesMath/fractions.js';
 import Level_1 from './question1.js';
 import NewRegister from './newRegister.js';
@@ -50,12 +49,11 @@ function App() {
 					<Route exact path='/register' element={<Register />}> </Route>
 					<Route exact path='/login' element={<Login />}> </Route>
 					<Route exact path='/category' element={<Category />}> </Route>
-					<Route exact path='/categoryTypes/categoryMath' element={<CategoryMath />}> </Route>
 					<Route exact path='/counting' element={<Counting />}> </Route>
-					<Route exact path='/multiplication' element={<Multiplication />}> </Route>
-					<Route exact path='/categoryTypesMath/addition' element={<Addition />}> </Route>
-					<Route exact path='/division' element={<Division />}> </Route>
+					<Route exact path='/addition' element={<Addition />}> </Route>
 					<Route exact path='/subtraction' element={<Subtraction />}> </Route>
+					<Route exact path='/multiplication' element={<Multiplication />}> </Route>
+					<Route exact path='/division' element={<Division />}> </Route>
 					<Route exact path='/fractions' element={<Fractions />}> </Route>
                     <Route exact path='/question1' element={<Level_1 />}> </Route>
 					<Route exact path='/newregister' element={<NewRegister />}> </Route>

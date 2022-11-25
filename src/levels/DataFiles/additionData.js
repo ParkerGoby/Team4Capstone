@@ -1808,7 +1808,7 @@ export default [
 {
         id: 258,
         question: 'What is 4 + 1 ?',
-        answers: ['7','5','4','5'],
+        answers: ['7','5','4','6'],
         correct: 2
 
     },
