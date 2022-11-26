@@ -6,7 +6,6 @@ class Answers extends React.Component {
     super(props);
     this.state = {
       isAnswered: false,
-      classNames: ["", "", "", ""],
     };
 
     this.checkAnswer = this.checkAnswer.bind(this);
@@ -17,21 +16,13 @@ class Answers extends React.Component {
 
     if (!isAnswered) {
       let elem = e.currentTarget;
-      let { correct, increaseScore } = this.props;
+      let { correct, increaseScore, handleIncorrect } = this.props;
       let answer = Number(elem.dataset.id);
-      let updatedClassNames = this.state.classNames;
-
       if (answer === correct) {
-        updatedClassNames[answer - 1] = "right";
         increaseScore();
       } else {
-        updatedClassNames[answer - 1] = "wrong";
+        handleIncorrect();
       }
-      this.show = true;
-      this.setState({
-        classNames: updatedClassNames,
-      });
-
       this.props.showButton();
     }
   }

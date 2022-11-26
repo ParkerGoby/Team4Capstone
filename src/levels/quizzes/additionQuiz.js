@@ -21,12 +21,14 @@ class Quiz extends React.Component {
       questionAnswered: false,
       score: 0,
       showModal: false,
-      showAlert: false,
+      showSuccessAlert: false,
+      showIncorrectAlert: false,
     };
     this.nextQuestion = this.nextQuestion.bind(this);
     this.handleShowButton = this.handleShowButton.bind(this);
     this.handleStartQuiz = this.handleStartQuiz.bind(this);
     this.handleIncreaseScore = this.handleIncreaseScore.bind(this);
+    this.handleIncorrect = this.handleIncorrect.bind(this);
   }
 
   componentWillMount() {
@@ -67,7 +69,8 @@ class Quiz extends React.Component {
       this.setState({
         showButton: false,
         questionAnswered: false,
-        showAlert: false,
+        showSuccessAlert: false,
+        showIncorrectAlert: false,
       });
     }
   }
@@ -89,7 +92,13 @@ class Quiz extends React.Component {
   handleIncreaseScore() {
     this.setState({
       score: this.state.score + 10,
-      showAlert: true,
+      showSuccessAlert: true,
+    });
+  }
+
+  handleIncorrect() {
+    this.setState({
+      showIncorrectAlert: true,
     });
   }
 
@@ -139,12 +148,24 @@ class Quiz extends React.Component {
                 <div id="popup" className="alert">
                   <Alert
                     variant="success"
-                    onClose={() => this.setState({ showAlert: false })}
-                    show={this.state.showAlert}
+                    onClose={() => this.setState({ showSuccessAlert: false })}
+                    show={this.state.showSuccessAlert}
                     delay={3000}
                     autohide
                   >
                     <Alert.Heading>You got it right! Great work!</Alert.Heading>
+                  </Alert>
+                </div>
+
+                <div id="popup" className="alert">
+                  <Alert
+                    variant="danger"
+                    onClose={() => this.setState({ showIncorrectAlert: false })}
+                    show={this.state.showIncorrectAlert}
+                    delay={3000}
+                    autohide
+                  >
+                    <Alert.Heading>Whoops, you got it wrong. Try again!</Alert.Heading>
                   </Alert>
                 </div>
 
@@ -158,6 +179,7 @@ class Quiz extends React.Component {
                     showButton={this.handleShowButton}
                     isAnswered={questionAnswered}
                     increaseScore={this.handleIncreaseScore}
+                    handleIncorrect={this.handleIncorrect}
                   ></Answers>
                 </div>
                 <div id="submit">

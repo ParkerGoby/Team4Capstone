@@ -394,7 +394,7 @@ export default [
 {
         id: 56,
         question: 'What is 5 + 5 ?',
-        answers: ['10','13','10','11'],
+        answers: ['10','13','12','11'],
         correct: 1
 
     },
@@ -842,7 +842,7 @@ export default [
 {
         id: 120,
         question: 'What is 1 + 7 ?',
-        answers: ['8','9','8','11'],
+        answers: ['8','9','10','11'],
         correct: 1
 
     },
@@ -1164,7 +1164,7 @@ export default [
 {
         id: 166,
         question: 'What is 1 + 7 ?',
-        answers: ['9','8','8','11'],
+        answers: ['9','8','10','11'],
         correct: 2
 
     },
