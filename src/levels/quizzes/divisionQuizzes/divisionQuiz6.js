@@ -7,7 +7,7 @@ import Modal from "react-bootstrap/Modal";
 // eslint-disable-next-line
 import { BrowserRouter as Route, Link } from "react-router-dom";
 import Answers from "../../../components/Answers.jsx";
-import divisionData6 from "../../DataFiles/divisionData/divisionData5";
+import divisionData6 from "../../DataFiles/divisionData/divisionData6";
 import "../Quizzes.css";
 
 let data = divisionData6;

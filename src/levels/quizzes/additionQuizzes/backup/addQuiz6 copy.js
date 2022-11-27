@@ -7,10 +7,10 @@ import Modal from "react-bootstrap/Modal";
 // eslint-disable-next-line
 import { BrowserRouter as Route, Link } from "react-router-dom";
 import Answers from "../../../components/Answers.jsx";
-import subtractionData6 from "../../DataFiles/subtractionData/subtractionData6";
+import additionData6 from "../../DataFiles/additionData/additionData";
 import "../Quizzes.css";
 
-let data = subtractionData6;
+let data = additionData6;
 
 class Quiz extends React.Component {
   constructor(props) {
