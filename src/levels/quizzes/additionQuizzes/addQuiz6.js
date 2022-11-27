@@ -9,7 +9,7 @@ import { BrowserRouter as Route, Link } from "react-router-dom";
 import Answers from "../../../components/Answers.jsx";
 import additionData6 from "../../DataFiles/additionData/additionData6";
 import "../Quizzes.css";
-
+ 
 let data = additionData6;
 
 class Quiz extends React.Component {
