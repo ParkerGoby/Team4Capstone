@@ -4,12 +4,13 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Alert from "react-bootstrap/Alert";
 import Modal from "react-bootstrap/Modal";
+// eslint-disable-next-line
 import { BrowserRouter as Route, Link } from "react-router-dom";
-import Answers from "../../components/Answers.jsx";
-import additionData from "../DataFiles/additionData";
-import "./Quizzes.css";
+import Answers from "../../../components/Answers.jsx";
+import divisionData5 from "../../DataFiles/divisionData/divisionData5";
+import "../Quizzes.css";
 
-let data = additionData;
+let data = divisionData5;
 
 class Quiz extends React.Component {
   constructor(props) {

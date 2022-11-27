@@ -23,7 +23,7 @@ export function Addition() {
                   <h5 className="card-title">Level 1</h5>
                   <Link
                     style={{ color: "white", textDecoration: "none" }}
-                    to="/levels/quizzes/additionQuiz"
+                    to="/additionQuiz1"
                   >
                     <div>
                       <Button>Level 1</Button>
@@ -38,10 +38,9 @@ export function Addition() {
               <div className="card">
                 <div className="card-body">
                   <h5 className="card-title">Level 4</h5>
-                  {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
                   <Link
                     style={{ color: "white", textDecoration: "none" }}
-                    to="/levels/quizzes/additionQuiz"
+                    to="/additionQuiz4"
                   >
                     <div>
                       <Button>Level 4</Button>
@@ -56,10 +55,9 @@ export function Addition() {
               <div className="card">
                 <div className="card-body">
                   <h5 className="card-title">Level 2</h5>
-                  {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
                   <Link
                     style={{ color: "white", textDecoration: "none" }}
-                    to="/levels/quizzes/additionQuiz"
+                    to="/additionQuiz2"
                   >
                     <div>
                       <Button>Level 2</Button>
@@ -77,7 +75,7 @@ export function Addition() {
                   {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
                   <Link
                     style={{ color: "white", textDecoration: "none" }}
-                    to="/levels/quizzes/additionQuiz"
+                    to="/additionQuiz5"
                   >
                     <div>
                       <Button>Level 5</Button>
@@ -95,7 +93,7 @@ export function Addition() {
                   {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
                   <Link
                     style={{ color: "white", textDecoration: "none" }}
-                    to="/levels/quizzes/additionQuiz"
+                    to="/additionQuiz3"
                   >
                     <div>
                       <Button>Level 3</Button>
@@ -113,7 +111,7 @@ export function Addition() {
                   {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
                   <Link
                     style={{ color: "white", textDecoration: "none" }}
-                    to="/levels/quizzes/additionQuiz"
+                    to="/additionQuiz6"
                   >
                     <div>
                       <Button>Level 6</Button>

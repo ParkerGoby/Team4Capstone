@@ -2,14 +2,14 @@ import * as React from 'react';
 import { Link } from 'react-router-dom';
 import Button from "react-bootstrap/Button";
 
-export function Counting() {
+export function Multiplication() {
     return (
         <>
 
         <div className="title-container">        
             <div className="container-fluid">
                 <div className="row">
-                <div className="col-xs-1 text-center"><h1>Counting Levels</h1></div>
+                <div className="col-xs-1 text-center"><h1>Multiplication Levels</h1></div>
                 </div>
             </div>
             </div>
@@ -24,7 +24,7 @@ export function Counting() {
                 {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
                 <Link
                     style={{ color: "white", textDecoration: "none" }}
-                    to="/levels/quizzes/additionQuiz">
+                    to="/multiplicationQuiz1">
                       <div>
                       <Button>Level 1</Button>
                       </div>
@@ -42,7 +42,7 @@ export function Counting() {
                 {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
                 <Link
                     style={{ color: "white", textDecoration: "none" }}
-                    to="/levels/quizzes/additionQuiz">
+                    to="/multiplicationQuiz4">
                       <div>
                       <Button>Level 4</Button>
                       </div>
@@ -59,7 +59,7 @@ export function Counting() {
                 {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
                 <Link
                     style={{ color: "white", textDecoration: "none" }}
-                    to="/levels/quizzes/additionQuiz">
+                    to="/multiplicationQuiz2">
                       <div>
                       <Button>Level 2</Button>
                       </div>
@@ -76,7 +76,7 @@ export function Counting() {
                 {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
                 <Link
                     style={{ color: "white", textDecoration: "none" }}
-                    to="/levels/quizzes/additionQuiz">
+                    to="/multiplicationQuiz5">
                       <div>
                       <Button>Level 5</Button>
                       </div>
@@ -93,7 +93,7 @@ export function Counting() {
                 {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
                 <Link
                     style={{ color: "white", textDecoration: "none" }}
-                    to="/levels/quizzes/additionQuiz">
+                    to="/multiplicationQuiz3">
                       <div>
                       <Button>Level 3</Button>
                       </div>
@@ -110,7 +110,7 @@ export function Counting() {
                 {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
                 <Link
                     style={{ color: "white", textDecoration: "none" }}
-                    to="/levels/quizzes/additionQuiz">
+                    to="/multiplicationQuiz6">
                       <div>
                       <Button>Level 6</Button>
                       </div>
@@ -125,4 +125,4 @@ export function Counting() {
     )
 }
 
-export default Counting
+export default Multiplication
