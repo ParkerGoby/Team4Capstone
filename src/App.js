@@ -7,22 +7,19 @@ import Slider from './slider.js';
 import Login from './login.js';
 import Register from './register.js';
 import Category from './category.js';
-import CategoryMath from './categoryTypes/categoryMath.js';
 import Counting from './categoryTypesMath/counting.js';
-import Multiplication from './categoryTypesMath/multiplication.js';
 import Addition from './categoryTypesMath/addition.js';
-import Division from './categoryTypesMath/division.js';
 import Subtraction from './categoryTypesMath/subtraction.js';
+import Multiplication from './categoryTypesMath/multiplication.js';
+import Division from './categoryTypesMath/division.js';
 import Fractions from './categoryTypesMath/fractions.js';
 import Level_1 from './question1.js';
-import NewRegister from './newRegister.js';
 import Edit from './components/edit';
 import Create from './components/create';
 import Footer from './footer';
 import Record_list from './components/recordList';
 
 //Quizzes:
-import LevelHome from './levels/level-home.js';
 import AdditionQuiz from './levels/quizzes/additionQuiz.js';
 import SubtractionQuiz from './levels/quizzes/subtractionQuiz.js';
 import MultiplicationQuiz from './levels/quizzes/multiplicationQuiz.js';
@@ -51,19 +48,16 @@ function App() {
 					<Route exact path='/register' element={<Register />}> </Route>
 					<Route exact path='/login' element={<Login />}> </Route>
 					<Route exact path='/category' element={<Category />}> </Route>
-					<Route exact path='/categoryTypes/categoryMath' element={<CategoryMath />}> </Route>
 					<Route exact path='/counting' element={<Counting />}> </Route>
-					<Route exact path='/multiplication' element={<Multiplication />}> </Route>
-					<Route exact path='/categoryTypesMath/addition' element={<Addition />}> </Route>
-					<Route exact path='/division' element={<Division />}> </Route>
+					<Route exact path='/addition' element={<Addition />}> </Route>
 					<Route exact path='/subtraction' element={<Subtraction />}> </Route>
+					<Route exact path='/multiplication' element={<Multiplication />}> </Route>
+					<Route exact path='/division' element={<Division />}> </Route>
 					<Route exact path='/fractions' element={<Fractions />}> </Route>
                     <Route exact path='/question1' element={<Level_1 />}> </Route>
-					<Route exact path='/newregister' element={<NewRegister />}> </Route>
 					<Route exact path='/create' element={<Create />}> </Route>
 					<Route exact path='/edit:id' element={<Edit />}> </Route>
 					<Route exact path='/recordList' element={<Record_list />}> </Route>
-					<Route exact path='/levels/level-home' element={<LevelHome/>}> </Route>
 					<Route exact path='/levels/quizzes/additionQuiz' element={<AdditionQuiz/>}> </Route>
 					<Route exact path='/levels/quizzes/subtractionQuiz' element={<SubtractionQuiz/>}> </Route>
 					<Route exact path='/levels/quizzes/multiplicationQuiz' element={<MultiplicationQuiz/>}> </Route>
