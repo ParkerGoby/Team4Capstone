@@ -1,5 +1,5 @@
 const express = require("express");
- 
+const app = express();
 // recordRoutes is an instance of the express router.
 // We use it to define our routes.
 // The router will be added as a middleware and will take control of requests starting with path /record.
@@ -11,7 +11,7 @@ const dbo = require("../db/conn");
 // This help convert the id from string to ObjectId for the _id.
 const ObjectId = require("mongodb").ObjectId;
  
- 
+
 // This section will help you get a list of all the records.
 loginRoutes.route("/login").get(function (req, res) {
  let db_connect = dbo.getDb("employees");
@@ -24,18 +24,6 @@ loginRoutes.route("/login").get(function (req, res) {
    });
 });
 
-
-// This section will help you get a single login by id
-loginRoutes.route("/login/:id").get(function (req, res) {
- let db_connect = dbo.getDb();
- let myquery = { _id: ObjectId(req.params.id) };
- db_connect
-   .collection("logins")
-   .findOne(myquery, function (err, result) {
-     if (err) throw err;
-     res.json(result);
-   });
-});
 
 
 // This section will help you create a new login.
@@ -65,7 +53,7 @@ db_connect.collection("logins").findOne({email: req.body.email}).then(existingUs
   });
 
   // Checking User's Email/Username to verify if they mean to sign in and prevent duplicate logins.
-loginRoutes.route("/login/:email").get(function (req, response) {
+/* loginRoutes.route("/login/:email").get(function (req, response) {
   db_connect.collection("logins").findOne({email: req.body.email, password: req.body.password}).then(userCheck => {
   if(userCheck) {
         console.log("email found");
@@ -83,39 +71,35 @@ loginRoutes.route("/login/:email").get(function (req, response) {
       // });
     }    
    });
-  });
+  }); */
 
+loginRoutes.route("/login/validate").post(function (req, res) {
+  console.log("attempting")
+  let db_connect = dbo.getDb();
+  let myobj = {
+    email: req.body.email,
+    password: req.body.password,
+  };
+  db_connect.collection("logins").findOne({ email: req.body.email, password: req.body.password }).then(
+    (user) => {
+      console.log("Checking Username")
+      if (!user) {
+        return res.status(401).json({
+          error: new Error('User not found!')
+        });
+        
+      }
+      console.log("logged in")
+      var cursor = db_connect.collection("logins").find({email: req.body.email});
+      cursor.forEach(function(userId){
+      //access all the attributes of the document here
+      var id = userId._id;
+      console.log(id)
+      })
+      
+      
+    }
+  );
+}); 
 
-// This section will help you update a login by id.
-loginRoutes.route("/update/:id").post(function (req, response) {
- let db_connect = dbo.getDb();
- let myquery = { _id: ObjectId(req.params.id) };
- let newvalues = {
-   $set: {
-     email: req.body.email,
-     school: req.body.school,
-     password: req.body.password,
-   },
- };
- db_connect
-   .collection("logins")
-   .updateOne(myquery, newvalues, function (err, res) {
-     if (err) throw err;
-     console.log("1 document updated");
-     response.json(res);
-   });
-});
- 
-
-// This section will help you delete a login
-loginRoutes.route("/:id").delete((req, response) => {
- let db_connect = dbo.getDb();
- let myquery = { _id: ObjectId(req.params.id) };
- db_connect.collection("logins").deleteOne(myquery, function (err, obj) {
-   if (err) throw err;
-   console.log("1 document deleted");
-   response.json(obj);
- });
-});
- 
 module.exports = loginRoutes;

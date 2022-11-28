@@ -1,30 +1,45 @@
-import { useState } from "react"
+import React, { useState } from "react";
 import './login.css';
 import PropTypes from 'prop-types';
+import {useNavigate} from "react-router";
 
-async function loginUser(newPerson) {
-  return fetch('http://localhost:5000/loginUser', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(newPerson)
-  })
-    .then(data => data.json())
- }
- 
-export default function Login({setToken}) {
-    const [username, setUserName] = useState();
-    const [password, setPassword] = useState();
+export default function Login() {
+  const [form, setForm] = useState({
+    email: "",
+    password: "",
+  });
+  const navigate = useNavigate();
 
-    const handleSubmit = async e => {
-      e.preventDefault();
-      const token = await loginUser({
-        username,
-        password
-      });
-      setToken(token);
-    }
+    // These methods will update the state properties.
+  function updateForm(value) {
+    return setForm((prev) => {
+      return { ...prev, ...value };
+    });
+  }
+
+  // This function will handle the submission.
+  async function onSubmit(e) {
+    e.preventDefault();
+
+    // When a post request is sent to the create url, we'll add a new record to the database.
+    const newLogin = { ...form };
+
+    await fetch("http://localhost:5000/login/validate", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newLogin),
+    })
+    .catch(error => {
+      window.alert(error);
+      return;
+    });
+
+    setForm({ email: "", password: ""});
+    
+  }
+
 
     return (
         <>
@@ -34,13 +49,13 @@ export default function Login({setToken}) {
         <div className="card border-0 shadow rounded-3 my-5">
           <div className="card-body p-4 p-sm-5">
             <h5 className="card-title text-center mb-5 fw-light fs-5">Sign In</h5>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={onSubmit}>
               <div className="form-floating mb-3">
-                <input type="text" className="form-control" id="floatingInput" placeholder="name@example.com" onChange={e => setUserName(e.target.value)}></input>
+                <input type="text" className="form-control" id="floatingInput" value={form.email} placeholder="name@example.com" onChange={(e) => updateForm({ email: e.target.value })}></input>
                 <label for="floatingInput">Username</label>
               </div>
               <div className="form-floating mb-3">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" onChange={e => setPassword(e.target.value)}></input>
+                <input type="password" class="form-control" id="floatingPassword" value={form.password} placeholder="Password" onChange={(e) => updateForm({ password: e.target.value })}></input>
                 <label for="floatingPassword">Password</label>
               </div>
 
@@ -64,9 +79,6 @@ export default function Login({setToken}) {
 
 </>
     )
-}
 
-Login.propTypes = {
-  setToken: PropTypes.func.isRequired
 };
 
