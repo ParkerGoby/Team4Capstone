@@ -7,6 +7,7 @@ import NavigationBar from './navigationBar';
 import Slider from './slider.js';
 import Login from './login.js';
 import Register from './register.js';
+import Profile from './profile.js';
 import Category from './category.js';
 import CategoryMath from './categoryTypes/categoryMath.js';
 import Counting from './categoryTypesMath/counting.js';
@@ -16,7 +17,6 @@ import Division from './categoryTypesMath/division.js';
 import Subtraction from './categoryTypesMath/subtraction.js';
 import Fractions from './categoryTypesMath/fractions.js';
 import LevelOne from './question1.js';
-import NewRegister from './newRegister.js';
 import Edit from './components/edit';
 import Create from './components/create';
 import Footer from './footer';
@@ -44,12 +44,14 @@ import Level1GuideDivision from './guidebook/division/level1guidebook'
 import Level1GuideCounting from './guidebook/counting/level1guidebook'
 import useToken from './useToken';
 
+
 function App() {
 	const { token, setToken } = useToken();
 
 	if(!token){
 		return<Login setToken={setToken} />
 	}
+
 	return (
 		<div>
 			<BrowserRouter>
@@ -58,6 +60,7 @@ function App() {
 					<Route exact path='/' element={<Slider />}> </Route>
 					<Route exact path='/register' element={<Register />}> </Route>
 					<Route exact path='/login' element={<Login />}> </Route>
+					<Route exact path='/profile' element={<Profile />}> </Route>
 					<Route exact path='/category' element={<Category />}> </Route>
 					<Route exact path='/categoryTypes/categoryMath' element={<CategoryMath />}> </Route>
 					<Route exact path='/counting' element={<Counting />}> </Route>
@@ -66,8 +69,8 @@ function App() {
 					<Route exact path='/division' element={<Division />}> </Route>
 					<Route exact path='/subtraction' element={<Subtraction />}> </Route>
 					<Route exact path='/fractions' element={<Fractions />}> </Route>
-                    <Route exact path='/question1' element={<LevelOne />}> </Route>
-					<Route exact path='/newRegister' element={<NewRegister />}> </Route>
+               <Route exact path='/question1' element={<LevelOne />}> </Route>
+					<Route exact path='/register' element={<Register />}> </Route>
 					<Route exact path='/create' element={<Create />}> </Route>
 					<Route exact path='/edit:id' element={<Edit />}> </Route>
 					<Route exact path='/recordList' element={<RecordList />}> </Route>
