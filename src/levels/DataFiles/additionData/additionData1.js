@@ -3,21 +3,21 @@ export default [
             id: 1,
             question: 'What is 0 + 0 ?',
             answers: ['1','2','3','0'],
-            correct: 4
+            correct: 4,
     
         },
 {
             id: 2,
             question: 'What is 0 + 1 ?',
             answers: ['1','1','0','2'],
-            correct: 2
+            correct: 2,
     
         },
 {
             id: 3,
             question: 'What is 0 + 2 ?',
             answers: ['1','2','1','0'],
-            correct: 2
+            correct: 2,
     
         },
 {

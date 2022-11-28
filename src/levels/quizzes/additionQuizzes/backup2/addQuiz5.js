@@ -7,15 +7,15 @@ import Modal from "react-bootstrap/Modal";
 // eslint-disable-next-line
 import { BrowserRouter as Route, Link } from "react-router-dom";
 import Answers from "../../../components/Answers.jsx";
-import additionData2 from "../../DataFiles/additionData/additionData2";
+import additionData5 from "../../DataFiles/additionData/additionData5";
 import "../Quizzes.css";
 
-let data = additionData2;
+let data = additionData5;
 
 class Quiz extends React.Component {
   constructor(props) {
     super(props);
-    var random = Math.floor(Math.random() * 100);
+    var random = Math.floor(Math.random() * 500);
     this.state = {
       nr: random,
       showButton: false,
@@ -43,9 +43,9 @@ class Quiz extends React.Component {
   }
 
   pushData(nr) {
-    var random = Math.floor(Math.random() * 190);
+    var random = Math.floor(Math.random() * 500);
     if (random === nr) {
-      Math.floor(Math.random() * 190);
+      Math.floor(Math.random() * 500);
     }
     this.setState({
       question: data[nr].question,
@@ -84,7 +84,7 @@ class Quiz extends React.Component {
   }
 
   handleStartQuiz() {
-    var random = Math.floor(Math.random() * 190);
+    var random = Math.floor(Math.random() * 500);
     this.setState({
       nr: random,
     });

@@ -22,7 +22,7 @@ export function Category() {
       </div>
       <div className="container-thing">
         <div className="row row-cols-1 row-cols-md-2 g-4">
-          <div className="col">
+          {/* <div className="col">
             <Card bg="dark" text="white" className="card">
               <Card.Body>
                 <h3 class="text-center">Counting</h3>
@@ -41,7 +41,7 @@ export function Category() {
                 </div>
               </Link>
             </Card>
-          </div>
+          </div> */}
           <div className="col">
             <Card bg="dark" text="white" className="card">
               <Card.Body>
@@ -122,7 +122,7 @@ export function Category() {
               </Link>
             </Card>
           </div>
-          <div className="col">
+          {/* <div className="col">
             <Card bg="dark" text="white" className="card">
               <Card.Body>
                 <h3 class="text-center">Fractions</h3>
@@ -141,7 +141,7 @@ export function Category() {
                 </div>
               </Link>
             </Card>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

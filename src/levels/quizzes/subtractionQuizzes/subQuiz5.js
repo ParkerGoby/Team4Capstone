@@ -15,7 +15,7 @@ let data = subtractionData5;
 class Quiz extends React.Component {
   constructor(props) {
     super(props);
-    var random = Math.floor(Math.random() * 500);
+    var random = Math.floor(Math.random() * 10);
     this.state = {
       nr: random,
       showButton: false,
@@ -43,9 +43,9 @@ class Quiz extends React.Component {
   }
 
   pushData(nr) {
-    var random = Math.floor(Math.random() * 500);
+    var random = Math.floor(Math.random() * 10);
     if (random === nr) {
-      Math.floor(Math.random() * 500);
+      Math.floor(Math.random() * 10);
     }
     this.setState({
       question: data[nr].question,
@@ -84,7 +84,7 @@ class Quiz extends React.Component {
   }
 
   handleStartQuiz() {
-    var random = Math.floor(Math.random() * 500);
+    var random = Math.floor(Math.random() * 10);
     this.setState({
       nr: random,
     });
