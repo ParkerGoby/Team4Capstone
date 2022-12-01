@@ -64,6 +64,9 @@ import Level1GuideFraction from './guidebook/fractions/level1guidebook';
 import Level1GuideSubtraction from './guidebook/subtraction/level1guidebook';
 import Level1GuideDivision from './guidebook/division/level1guidebook'
 import Level1GuideCounting from './guidebook/counting/level1guidebook'
+
+import Google from './google';
+
 function App() {
 	return (
 		<div>
@@ -117,6 +120,7 @@ function App() {
 					<Route exact path='/guidebook/division/1' element={<Level1GuideDivision/>}> </Route>
 					<Route exact path='/guidebook/subtraction/1' element={<Level1GuideSubtraction/>}> </Route>
 					<Route exact path='/guidebook/counting/1' element={<Level1GuideCounting/>}> </Route>
+					<Route exact path='/google' element={<Google/>}> </Route>
 				</Routes>
 			</BrowserRouter>
 			<Footer />

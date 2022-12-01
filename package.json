@@ -2,7 +2,6 @@
   "name": "team4capstone",
   "version": "0.1.0",
   "private": true,
-  
   "dependencies": {
     "@popperjs/core": "^2.11.6",
     "@testing-library/jest-dom": "^5.16.5",
@@ -13,6 +12,7 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "jquery": "^3.6.1",
+    "jwt-decode": "^3.1.2",
     "mongodb": "^4.11.0",
     "node-sass": "^7.0.3",
     "react": "^18.2.0",
@@ -51,5 +51,4 @@
     ]
   },
   "proxy": "http://localhost:3000"
-  
 }
