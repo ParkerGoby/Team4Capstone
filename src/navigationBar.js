@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import './App.css';
 import jwt_decode from "jwt-decode";
+import './login.css';
 import {useState} from 'react'
-
 
 export function NavigationBar() {
   const [ user, setUser ] = useState({});
@@ -36,7 +37,11 @@ export function NavigationBar() {
       google.accounts.id.prompt();
   }, []);
 
+  // sign in button
 
+  // sign out button
+
+  
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark  bg-dark">
@@ -92,41 +97,30 @@ export function NavigationBar() {
             <a className="nav-link" aria-current="page">
               <Link
                 style={{ color: "white", textDecoration: "none" }}
-                to="/register"
+                to="/login"
               >
                 <li>Register</li>
               </Link>
             </a>
           </li>
-          <>
-        <div className="App">
-
-        <div className="container">
-    <div className="row">
-      <div className="col-sm-9 col-md-7 col-lg-5 mx-auto">
-      <div id="signInDiv"></div>
-
-        {
+          <li className="nav-item">
+            <a className="nav-link">
+              
+   
+              <Link
+                style={{ color: "white", textDecoration: "none" }}
+                to="/login"
+              >
+     {
 
             Object.keys(user).length != 0 &&
 
             <button onClick={(e) => handleSignOut(e)}> sign out</button>
 
         }
+        <li>
 
-            </div>
-      </div>
-    </div>
-  </div>
-      
-    </>
-          <li className="nav-item">
-            <a className="nav-link">
-              <Link
-                style={{ color: "white", textDecoration: "none" }}
-                to="/login"
-              >
-                Login
+                Login</li>
               </Link>
             </a>
           </li>
