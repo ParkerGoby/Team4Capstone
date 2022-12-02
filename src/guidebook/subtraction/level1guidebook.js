@@ -1,35 +1,24 @@
 import React from "react";
-import additionimg from "../guidebook images/addition.png"
+import subtractionimg from "../guidebook images/subtraction.gif"
 // import '../gb_css/gb_styles.css';
-const Level1GuideAddition = () => {
+const SubtractionGuide = () => {
     return ( 
-        <div>
-			{/* <h1>
-                How to add numbers.
-            </h1>
-            <div>
-                <p>
-                    Addition is important for learning mathematics! Start by
-                    starting from the number on the left, and moving forward the
-                    number on the right.
-                </p>
-                
-            </div> */}
-            <br></br>
-            <article className="mb-4" >
-            <div className="container px-4 px-lg-5">
-                <div className="row gx-4 gx-lg-5 justify-content-center">
-                    <div className="col-md-10 col-lg-8 col-xl-7">
-                        <h2 className="section-heading">What is subtraction?</h2>
-                        <p>Subtraction is an arithmetic operation that represents the operation of removing objects from a collection.</p>
-                        
-                        
-                    </div>
-                </div>
+        <article className="mb-4" >
+        <div className="container px-4 px-lg-5">
+            <div className="row gx-4 gx-lg-5 py-4">
+                 <div className="col-md-8 col-lg-6 col-xl-6 my-auto align-middle">
+                    <h2 className="section-heading">What is subtraction?</h2>
+                    <p>Addition (usually signified by the minus symbol -) is one of the four basic operations of arithmetic, the other three being addition, multiplication and division.
+                    Subtraction is important for learning mathematics! We take the number on the left
+                    and remove the number on the right from it. If we have 5 stars and an alien destroys 2 stars, we are left with 3 stars.
+                    This can be written as 5 - 2 = 3.</p>
+                 </div>
+                 <div className="col-md-8 col-lg-6 col-xl-6 text-center">
+                      <img class="rounded d-block mx-auto" src={subtractionimg} width="60%" alt="../guidebook images/addi.gif" />
+                 </div>
             </div>
-        </article>
-
-		</div>
+        </div>
+    </article>
     );
 };
-export default Level1GuideAddition;
+export default SubtractionGuide;
