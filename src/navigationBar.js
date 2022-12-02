@@ -111,16 +111,10 @@ export function NavigationBar() {
                 style={{ color: "white", textDecoration: "none" }}
                 to="/login"
               >
-     {
-
-            Object.keys(user).length != 0 &&
-
-            <button onClick={(e) => handleSignOut(e)}> sign out</button>
-
-        }
+   
         <li>
 
-                Login</li>
+                Login {user.name}</li>
               </Link>
             </a>
           </li>
