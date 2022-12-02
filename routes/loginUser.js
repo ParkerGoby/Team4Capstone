@@ -82,10 +82,11 @@ loginRoutes.route("/login/validate").post(function (req, res) {
   };
   db_connect.collection("logins").findOne({ email: req.body.email, password: req.body.password }).then(
     (user) => {
-      console.log("Checking Username")
+      console.log("Checking Username & Password")
       if (!user) {
+        console.log("Incorrect Username or Password")
         return res.status(401).json({
-          error: new Error('User not found!')
+          error: new Error('Incorrect username or password!')
         });
         
       }
@@ -95,6 +96,9 @@ loginRoutes.route("/login/validate").post(function (req, res) {
       //access all the attributes of the document here
       var id = userId._id;
       console.log(id)
+      return res.json({
+        id
+      })
       })
       
       
