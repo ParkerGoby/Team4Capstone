@@ -125,7 +125,7 @@ class Quiz extends React.Component {
                 <Modal.Footer>
                   <Link
                     style={{ color: "white", textDecoration: "none" }}
-                    to="/category"
+                    to="/multiplication-levels"
                   >
                     <div className="d-grid gap-2">
                       <Button
