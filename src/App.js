@@ -54,10 +54,10 @@ import DivisionQuiz6 from './levels/quizzes/divisionQuizzes/divisionQuiz6.js';
 
 //Guidebook:
 import GuidebookHome from './guidebook/guidebook';
-import AdditionGuide from './guidebook/addition/level1guidebook';
-import MultiplicationGuide from './guidebook/multiplication/level1guidebook';
-import SubtractionGuide from './guidebook/subtraction/level1guidebook';
-import DivisionGuide from './guidebook/division/level1guidebook'
+import AdditionGuide from './guidebook/addition/additionGuidebook';
+import MultiplicationGuide from './guidebook/multiplication/multiplicationGuidebook';
+import SubtractionGuide from './guidebook/subtraction/subtractionGuidebook';
+import DivisionGuide from './guidebook/division/divisionGuidebook'
 function App() {
 	return (
 		<div>
