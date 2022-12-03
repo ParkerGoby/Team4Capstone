@@ -22,26 +22,6 @@ export function Category() {
       </div>
       <div className="container-thing">
         <div className="row row-cols-1 row-cols-md-2 g-4">
-          {/* <div className="col">
-            <Card bg="dark" text="white" className="card">
-              <Card.Body>
-                <h3 class="text-center">Counting</h3>
-              </Card.Body>
-              <Card.Img
-                className="cardImg"
-                variant="top"
-                src={require("../assets/counting.jpg")}
-              />
-              <Link
-                style={{ color: "white", textDecoration: "none" }}
-                to="../guidebook/counting/1"
-              >
-                <div className="d-grid gap-2">
-                  <Button className="btn btn-primary">Let's Learn!</Button>
-                </div>
-              </Link>
-            </Card>
-          </div> */}
           <div className="col">
             <Card bg="dark" text="white" className="card">
               <Card.Body>
@@ -54,7 +34,7 @@ export function Category() {
               />
               <Link
                 style={{ color: "white", textDecoration: "none" }}
-                to="../guidebook/addition/1"
+                to="../guidebook/addition"
               >
                 <div className="d-grid gap-2">
                   <Button className="btn btn-primary">Let's Learn!</Button>
@@ -74,7 +54,7 @@ export function Category() {
               />
               <Link
                 style={{ color: "white", textDecoration: "none" }}
-                to="../guidebook/subtraction/1"
+                to="../guidebook/subtraction"
               >
                 <div className="d-grid gap-2">
                   <Button className="btn btn-primary">Let's Learn!</Button>
@@ -94,7 +74,7 @@ export function Category() {
               />
               <Link
                 style={{ color: "white", textDecoration: "none" }}
-                to="../guidebook/multiplication/1"
+                to="../guidebook/multiplication"
               >
                 <div className="d-grid gap-2">
                   <Button className="btn btn-primary">Let's Learn!</Button>
@@ -114,7 +94,7 @@ export function Category() {
               />
               <Link
                 style={{ color: "white", textDecoration: "none" }}
-                to="../guidebook/division/1"
+                to="../guidebook/division"
               >
                 <div className="d-grid gap-2">
                   <Button className="btn btn-primary">Let's Learn!</Button>
@@ -122,26 +102,6 @@ export function Category() {
               </Link>
             </Card>
           </div>
-          {/* <div className="col">
-            <Card bg="dark" text="white" className="card">
-              <Card.Body>
-                <h3 class="text-center">Fractions</h3>
-              </Card.Body>
-              <Card.Img
-                className="cardImg"
-                variant="top"
-                src={require("../assets/fractions.jpg")}
-              />
-              <Link
-                style={{ color: "white", textDecoration: "none" }}
-                to="../guidebook/fractions/1"
-              >
-                <div className="d-grid gap-2">
-                  <Button className="btn btn-primary">Let's Learn!</Button>
-                </div>
-              </Link>
-            </Card>
-          </div> */}
         </div>
       </div>
     </>
