@@ -73,7 +73,7 @@ export default [
             id: 11,
             question: 'What is 1 x 1 ?',
             answers: ['1','0','2','3'],
-            correct: 4
+            correct: 1
     
         },
 {
@@ -134,128 +134,121 @@ export default [
         },
 {
             id: 20,
-            question: 'What is 1 x 0 ?',
-            answers: ['3','2','0','1'],
-            correct: 3
-    
-        },
-{
-            id: 21,
-            question: 'What is 1 x 1 ?',
-            answers: ['0','1','2','3'],
-            correct: 2
-    
-        },
-{
-            id: 22,
             question: 'What is 2 x 0 ?',
             answers: ['3','1','0','2'],
             correct: 3
     
         },
 {
-            id: 23,
+            id: 21,
             question: 'What is 2 x 1 ?',
             answers: ['0','1','2','3'],
             correct: 3
     
         },
 {
-            id: 24,
+            id: 22,
             question: 'What is 3 x 0 ?',
             answers: ['0','1','2','3'],
             correct: 1
     
         },
 {
-            id: 25,
+            id: 23,
             question: 'What is 3 x 1 ?',
             answers: ['1','0','2','3'],
             correct: 4
     
         },
 {
-            id: 26,
+            id: 24,
             question: 'What is 4 x 0 ?',
             answers: ['2','0','1','3'],
             correct: 2
     
         },
 {
-            id: 27,
+            id: 25,
             question: 'What is 4 x 1 ?',
             answers: ['1','4','2','3'],
             correct: 2
     
         },
 {
-            id: 28,
+            id: 26,
             question: 'What is 5 x 0 ?',
             answers: ['3','0','2','1'],
             correct: 2
     
         },
 {
-            id: 29,
+            id: 27,
             question: 'What is 5 x 1 ?',
             answers: ['3','2','4','5'],
             correct: 4
     
         },
 {
-            id: 30,
+            id: 28,
             question: 'What is 6 x 0 ?',
             answers: ['0','2','3','1'],
             correct: 1
     
         },
 {
-            id: 31,
+            id: 29,
             question: 'What is 6 x 1 ?',
             answers: ['6','3','4','5'],
             correct: 1
     
         },
 {
-            id: 32,
+            id: 30,
             question: 'What is 7 x 0 ?',
             answers: ['3','0','1','2'],
             correct: 2
     
         },
 {
-            id: 33,
+            id: 31,
             question: 'What is 7 x 1 ?',
             answers: ['6','4','5','7'],
             correct: 4
     
         },
 {
-            id: 34,
+            id: 32,
             question: 'What is 8 x 0 ?',
             answers: ['3','0','1','2'],
             correct: 2
     
         },
 {
-            id: 35,
+            id: 33,
             question: 'What is 8 x 1 ?',
             answers: ['8','7','6','5'],
             correct: 1
     
         },
 {
-            id: 36,
+            id: 34,
             question: 'What is 9 x 0 ?',
             answers: ['1','3','0','2'],
             correct: 3
     
         },
 {
-            id: 37,
+            id: 35,
             question: 'What is 9 x 1 ?',
             answers: ['8','9','7','6'],
             correct: 2
+    
+        },
+{
+            id: 36,
+            question: 'What is 0 x 0 ?',
+            answers: ['2','3','0','1'],
+            correct: 3
     
         },
 ]
