@@ -6,9 +6,6 @@ import { Link } from "react-router-dom";
 var categoryType;
 
 export function Category() {
-  function clickHandler(typeSelection) {
-    categoryType = typeSelection;
-  }
 
   return (
     <>
@@ -29,28 +26,6 @@ export function Category() {
               <Card.Img
                 className="cardImg"
                 variant="top"
-                src={require("./assets/counting.jpg")}
-              />
-              <Card.Body>
-                <h3 className="text-center">Counting</h3>
-              </Card.Body>
-              <Link
-                style={{ color: "white", textDecoration: "none" }}
-                to="/counting"
-                onClick={clickHandler(0)}
-                state={{ from: categoryType }}
-              >
-                <div className="d-grid gap-2">
-                  <Button>Let's Learn!</Button>
-                </div>
-              </Link>
-            </Card>
-          </div>
-          <div className="col">
-            <Card bg="dark" text="white" className="card">
-              <Card.Img
-                className="cardImg"
-                variant="top"
                 src={require("./assets/addition.png")}
               />
               <Card.Body>
@@ -58,7 +33,7 @@ export function Category() {
               </Card.Body>
               <Link
                 style={{ color: "white", textDecoration: "none" }}
-                to="/addition"
+                to="/addition-levels"
               >
                 <div className="d-grid gap-2">
                   <Button>Let's Learn!</Button>
@@ -78,7 +53,7 @@ export function Category() {
               </Card.Body>
               <Link
                 style={{ color: "white", textDecoration: "none" }}
-                to="/subtraction"
+                to="/subtraction-levels"
               >
                 <div className="d-grid gap-2">
                   <Button>Let's Learn!</Button>
@@ -98,7 +73,7 @@ export function Category() {
               </Card.Body>
               <Link
                 style={{ color: "white", textDecoration: "none" }}
-                to="/multiplication"
+                to="/multiplication-levels"
               >
                 <div className="d-grid gap-2">
                   <Button>Let's Learn!</Button>
@@ -118,27 +93,7 @@ export function Category() {
               </Card.Body>
               <Link
                 style={{ color: "white", textDecoration: "none" }}
-                to="/division"
-              >
-                <div className="d-grid gap-2">
-                  <Button>Let's Learn!</Button>
-                </div>
-              </Link>
-            </Card>
-          </div>
-          <div className="col">
-            <Card bg="dark" text="white" className="card">
-              <Card.Img
-                className="cardImg"
-                variant="top"
-                src={require("./assets/fractions.jpg")}
-              />
-              <Card.Body>
-                <h3 className="text-center">Fractions</h3>
-              </Card.Body>
-              <Link
-                style={{ color: "white", textDecoration: "none" }}
-                to="/fractions"
+                to="/division-levels"
               >
                 <div className="d-grid gap-2">
                   <Button>Let's Learn!</Button>

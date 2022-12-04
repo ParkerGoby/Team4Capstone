@@ -42,7 +42,7 @@ export function NavigationBar() {
               <a className="nav-link">
                 <Link
                   style={{ color: "white", textDecoration: "none" }}
-                  to="/guidebook/guidebook"
+                  to="/guidebook"
                 >
                   Guidebooks
                 </Link>
