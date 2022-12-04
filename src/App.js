@@ -57,8 +57,11 @@ import GuidebookHome from './guidebook/guidebook';
 import AdditionGuide from './guidebook/addition/additionGuidebook';
 import MultiplicationGuide from './guidebook/multiplication/multiplicationGuidebook';
 import SubtractionGuide from './guidebook/subtraction/subtractionGuidebook';
-import DivisionGuide from './guidebook/division/divisionGuidebook'
+import DivisionGuide from './guidebook/division/divisionGuidebook';
+
+import useToken from './useToken';
 function App() {
+	const { token, setToken } = useToken();
 	return (
 		<div>
 			<BrowserRouter>
