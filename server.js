@@ -14,11 +14,7 @@ app.use(require("./routes/loginUser"));
 const dbo = require("./db/conn");
 const { response } = require("express");
 
-app.use('/loginUser', (req, res) => {
-  res.send({
-    token: 'test123'
-  });
-});
+
 
 
 

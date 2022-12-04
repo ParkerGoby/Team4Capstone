@@ -25,7 +25,7 @@ export default function Login() {
     // When a post request is sent to the create url, we'll add a new record to the database.
     const newLogin = { ...form };
 
-    await fetch("https://astro-learn.herokuapp.com/login/validate", {
+    await fetch("http://localhost:5000/login/validate", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
