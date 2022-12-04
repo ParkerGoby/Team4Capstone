@@ -42,15 +42,11 @@ import Level1GuideFraction from './guidebook/fractions/level1guidebook';
 import Level1GuideSubtraction from './guidebook/subtraction/level1guidebook';
 import Level1GuideDivision from './guidebook/division/level1guidebook'
 import Level1GuideCounting from './guidebook/counting/level1guidebook'
-import useToken from './useToken';
+
 
 
 function App() {
-	const { token, setToken } = useToken();
 
-//	if(!token){
-//		return<Login setToken={setToken} />
-//	}
 
 	return (
 		<div>

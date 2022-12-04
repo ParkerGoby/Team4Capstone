@@ -79,10 +79,6 @@ db_connect.collection("logins").findOne({email: req.body.email}).then(existingUs
 loginRoutes.route("/login/validate").post(function (req, res) {
   console.log("attempting")
   let db_connect = dbo.getDb();
-  let myobj = {
-    email: req.body.email,
-    password: req.body.password,
-  };
   db_connect.collection("logins").findOne({ email: req.body.email, password: req.body.password }).then(
     (user) => {
       console.log("Checking Username & Password")
