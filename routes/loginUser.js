@@ -115,7 +115,7 @@ loginRoutes.route("/login/validate").post(function (req, res) {
    .then((err, res) => {
      if (err) throw err;
      return res.json({
-        email
+        //email
       })
    });
 });
