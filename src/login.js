@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import './login.css';
-import PropTypes from 'prop-types';
 import {useNavigate} from "react-router";
 var obj;
+
 
 export default function Login() {
   const [form, setForm] = useState({
@@ -45,7 +45,6 @@ export default function Login() {
     });
     sessionStorage.setItem('token', JSON.stringify(obj))
     setForm({ email: "", password: ""});
-    
   }
 
 

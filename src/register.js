@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
 
+var obj;
+
 export default function Register() {
   const [form, setForm] = useState({
     email: "",
@@ -21,21 +23,26 @@ export default function Register() {
     e.preventDefault();
 
     // When a post request is sent to the create url, we'll add a new record to the database.
-    const newPerson = { ...form };
+    const newLogin = { ...form };
 
     await fetch("http://localhost:5000/login/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(newPerson),
+      body: JSON.stringify(newLogin),
+    })
+    .then(res => res.json())
+    .then(data => {
+      obj = data;
     })
     .catch(error => {
       window.alert(error);
       return;
     });
-
+    
     setForm({ email: "", school: "", password: ""});
+    sessionStorage.setItem('token', JSON.stringify(obj))
     navigate("/");
   }
 
