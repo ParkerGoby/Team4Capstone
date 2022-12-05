@@ -193,14 +193,16 @@ class Quiz extends React.Component {
               </Container>
               <Container>
                 <div>
-                  <Link
+                  
+                    <div>
+                    <Link
                     style={{ color: "white", textDecoration: "none" }}
                     to="/category"
                   >
-                    <div>
                       <Button variant="primary">Return to categories</Button>
+                      </Link>
                     </div>
-                  </Link>
+                 
                 </div>
               </Container>
             </>
