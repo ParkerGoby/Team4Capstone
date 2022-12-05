@@ -12,6 +12,19 @@ const dbo = require("../db/conn");
 const ObjectId = require("mongodb").ObjectId;
  
 
+// This section will help you get a list of all the records.
+loginRoutes.route("/login").get(function (req, res) {
+ let db_connect = dbo.getDb("employees");
+ db_connect
+   .collection("logins")
+   .find({})
+   .toArray(function (err, result) {
+     if (err) throw err;
+     res.json(result);
+   });
+});
+
+
 
 // This section will help you create a new login.
 loginRoutes.route("/login/register").post(function (req, response) {
@@ -20,38 +33,6 @@ loginRoutes.route("/login/register").post(function (req, response) {
    email: req.body.email,
    school: req.body.school,
    password: req.body.password,
-   addition: [{
-    "addition1" : false,
-    "addition2" : false,
-    "addition3" : false,
-    "addition4" : false,
-    "addition5" : false,
-    "addition6" : false,
-    }],  
-    subtraction: [{
-      "subtraction1" : false,
-      "subtraction2" : false,
-      "subtraction3" : false,
-      "subtraction4" : false,
-      "subtraction5" : false,
-      "subtraction6" : false,
-      }],
-      multiplication: [{
-      "multiplication1" : false,
-      "multiplication2" : false,
-      "multiplication3" : false,
-      "multiplication4" : false,
-      "multiplication5" : false,
-      "multiplication6" : false,
-      }],
-      division: [{
-      "division1" : false,
-      "division2" : false,
-      "division3" : false,
-      "division4" : false,
-      "division5" : false,
-      "division6" : false,
-      }]
  };
 
 
@@ -62,21 +43,35 @@ db_connect.collection("logins").findOne({email: req.body.email}).then(existingUs
     }
     else {
         db_connect.collection("logins").insertOne(myobj, function (err, res) {
-        console.log("User Created Successfully.");  
-        })
-        var cursor = db_connect.collection("logins").find({email: req.body.email});
-        cursor.forEach(function(userId){
-          //access all the attributes of the document here
-          var id = userId._id;
-          console.log(id)
-          return response.json({
-            id
-          })
-          })
-      }
-     });
-    });
+        console.log("User Created Successfully.");
+        // if (err) throw err;
+        // console.log(err);
+        response.json(res);
+      });
+    }    
+   });
+  });
 
+  // Checking User's Email/Username to verify if they mean to sign in and prevent duplicate logins.
+/* loginRoutes.route("/login/:email").get(function (req, response) {
+  db_connect.collection("logins").findOne({email: req.body.email, password: req.body.password}).then(userCheck => {
+  if(userCheck) {
+        console.log("email found");
+        res.status(200).send("let's check pw");
+
+    }
+     if (exist.password == password){
+        console.log("pw match great");
+    }
+    else {
+        // db_connect.collection("logins").insertOne(myobj, function (err, res) {
+        if (err) throw err;
+        console.log(err);
+        response.json(res);
+      // });
+    }    
+   });
+  }); */
 
 loginRoutes.route("/login/validate").post(function (req, res) {
   console.log("attempting")

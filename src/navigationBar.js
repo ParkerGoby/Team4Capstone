@@ -1,10 +1,8 @@
 import { Link } from 'react-router-dom';
-import { useNavigate } from "react-router";
+
 
 
 export function NavigationBar() {
-    const navigate = useNavigate();  
-    var token;
     if (sessionStorage.getItem("token") === null) {
         
       
@@ -49,9 +47,7 @@ export function NavigationBar() {
 }
 
 else{
-    
 return (
-    
     <nav className="navbar navbar-expand-lg navbar-dark  bg-dark">
         <div className="container-fluid">
         <Link style={{color: 'white',textDecoration: 'none' }} to="/"><a className="navbar-brand text-white" >
@@ -80,7 +76,7 @@ return (
                         <a className="nav-link"><Link style={{color: 'white',textDecoration: 'none' }} to="/profile">Profile</Link></a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link"><Link style={{color: 'white',textDecoration: 'none' }} onClick={logOut}>Logout</Link></a>
+                        <a className="nav-link"><Link style={{color: 'white',textDecoration: 'none' }} to="/profile">Logout</Link></a>
                     </li>
             </ul>
 
@@ -90,11 +86,7 @@ return (
         </nav>
 )
 
-function logOut() {
-    sessionStorage.clear(token)
-    window.location.reload();
-    navigate("/");
-}
+
 
 }}
 
