@@ -62,14 +62,16 @@ db_connect.collection("logins").findOne({email: req.body.email}).then(existingUs
     var cursor = db_connect.collection("logins").find({_id: ObjectId(userqueryID)});
     cursor.forEach(function(userId){
       //access all the attributes of the document here
+      var uName = userId.email;
+      var uSchool = userId.school;
       var addition = userId.addition;
       var multiplication = userId.multiplication;
       var subtraction = userId.subtraction;
       var division = userId.division;
-
+      
 
       return res.json({
-        addition,multiplication,subtraction,division
+        uName,uSchool,addition,multiplication,subtraction,division
       })
       })
   }); 
