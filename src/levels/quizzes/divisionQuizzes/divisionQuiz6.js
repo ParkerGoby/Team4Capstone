@@ -173,7 +173,7 @@ class Quiz extends React.Component {
                 <Modal.Footer>
                   <Link
                     style={{ color: "white", textDecoration: "none" }}
-                    to="/addition-levels"
+                    to="/division-levels"
                   >
                     <div className="d-grid gap-2">
                       <Button

@@ -19,7 +19,7 @@ class Quiz extends React.Component {
   constructor(props) {
     super(props);
     
-    var random = Math.floor(Math.random() * 78);
+    var random = Math.floor(Math.random() * 16);
     this.state = {
       nr: random,
       showButton: false,
@@ -52,7 +52,7 @@ class Quiz extends React.Component {
   pushData(nr) {
     let { correctlyAnswered } = this.state;
     let { incorrectlyAnswered } = this.state;
-    var random = Math.floor(Math.random() * 78);
+    var random = Math.floor(Math.random() * 16);
 
     if (incorrectlyAnswered.length > 0){
       if (!incorrectlyAnswered.includes(random)){
@@ -68,7 +68,7 @@ class Quiz extends React.Component {
     }
     if (correctlyAnswered.length > 0){
       while (correctlyAnswered.includes(random) || nr === random){
-        random = Math.floor(Math.random() * 78);
+        random = Math.floor(Math.random() * 16);
       }
     }
     
@@ -173,7 +173,7 @@ class Quiz extends React.Component {
                 <Modal.Footer>
                   <Link
                     style={{ color: "white", textDecoration: "none" }}
-                    to="/addition-levels"
+                    to="/multiplication-levels"
                   >
                     <div className="d-grid gap-2">
                       <Button
