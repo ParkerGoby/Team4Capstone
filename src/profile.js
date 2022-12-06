@@ -3,6 +3,41 @@ import * as React from "react";
 import Card from "react-bootstrap/Card";
 // import { Link } from "react-router-dom";
 
+const userQuery = sessionStorage.getItem("token");
+var userObj = JSON.stringify(userQuery)
+console.log(userQuery);
+console.log("above is userQuery")
+console.log(userObj);
+var obj;
+async function profileGrab() {
+
+  // When a post request is sent to the create url, we'll add a new record to the database.
+
+
+  await fetch("http://localhost:5000/login/profile", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: userQuery
+  })
+  .then(res => res.json())
+  .then(data => {
+    obj = data;
+  })
+  .then(() => {
+    console.log(obj);
+   })
+  .catch(error => {
+    window.alert(error);
+    return;
+  });
+console.log("this is return");
+console.log(obj);
+sessionStorage.setItem('progress',JSON.stringify(obj))
+}
+
+
 
 export function Profile() {
 
@@ -44,6 +79,8 @@ export function Profile() {
                     <div className="col">
                       <img className="cardImg" variant="top" src={require("./assets/testtrophy.png")} />
                     </div>
+                    <button className="btn btn-primary btn-login text-uppercase fw-bold" onClick={profileGrab()} type="submit">Sign
+                  in</button>
                   </div>
               </Card.Body>
               </Card>

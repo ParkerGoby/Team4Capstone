@@ -52,34 +52,31 @@ db_connect.collection("logins").findOne({email: req.body.email}).then(existingUs
    });
   });
 
-  // Checking User's Email/Username to verify if they mean to sign in and prevent duplicate logins.
-/* loginRoutes.route("/login/:email").get(function (req, response) {
-  db_connect.collection("logins").findOne({email: req.body.email, password: req.body.password}).then(userCheck => {
-  if(userCheck) {
-        console.log("email found");
-        res.status(200).send("let's check pw");
 
-    }
-     if (exist.password == password){
-        console.log("pw match great");
-    }
-    else {
-        // db_connect.collection("logins").insertOne(myobj, function (err, res) {
-        if (err) throw err;
-        console.log(err);
-        response.json(res);
-      // });
-    }    
-   });
-  }); */
+  
+  loginRoutes.route("/login/profile").post(function (req, res) {
+    console.log("attempting")
+    let db_connect = dbo.getDb();
+    var userqueryID = req.body;
+
+    var cursor = db_connect.collection("logins").find({_id: ObjectId(userqueryID)});
+    cursor.forEach(function(userId){
+      //access all the attributes of the document here
+      var addition = userId.addition;
+      var multiplication = userId.multiplication;
+      var subtraction = userId.subtraction;
+      var division = userId.division;
+
+
+      return res.json({
+        addition,multiplication,subtraction,division
+      })
+      })
+  }); 
 
 loginRoutes.route("/login/validate").post(function (req, res) {
   console.log("attempting")
   let db_connect = dbo.getDb();
-  let myobj = {
-    email: req.body.email,
-    password: req.body.password,
-  };
   db_connect.collection("logins").findOne({ email: req.body.email, password: req.body.password }).then(
     (user) => {
       console.log("Checking Username & Password")
