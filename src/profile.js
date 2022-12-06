@@ -29,9 +29,14 @@ async function profileGrab() {
     return;
   });
 
-console.log(obj);
+
 sessionStorage.setItem('progress',JSON.stringify(obj))
+console.log(obj.uName)
+
 }
+
+profileGrab();
+
 
 
 
@@ -45,7 +50,6 @@ export function Profile() {
    )
 }
 else{
-
             return (
               <>
                 <div className="title-container">
@@ -64,13 +68,13 @@ else{
                       <Card bg="dark" text="white" className="card my-4">
                         <Card.Body>
                           <h3 className="text-center">User Information</h3>
-                          <p>Username: </p>
+                           <p>Username: {obj.uName}</p>
                           <p>School: </p>
                         </Card.Body>
                         </Card>
                          <Card bg="dark" text="white" className="card my-4">
                         <Card.Body>
-                          <h3 className="text-center">Your Trophies</h3>
+                          {/* <h3 className="text-center">Your Trophies</h3> */}
                             <div className="row row-cols-1 row-cols-md-4 g-4">
                               <div className="col">
                                 <img className="cardImg" variant="top" src={require("./assets/testtrophy.png")} />
@@ -84,8 +88,8 @@ else{
                               <div className="col">
                                 <img className="cardImg" variant="top" src={require("./assets/testtrophy.png")} />
                               </div>
-          
-                            </div>
+
+                            </div> 
                         </Card.Body>
                         </Card>
                         {/* <Link
