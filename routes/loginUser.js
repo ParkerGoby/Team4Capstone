@@ -90,17 +90,173 @@ db_connect.collection("logins").findOne({email: req.body.email}).then(existingUs
      });
     });
 
-loginRoutes.route("/login/quizComplete").post(function (req, res) {
+loginRoutes.route("/login/additionQuiz1Complete").post(function (req, res) {
   console.log("updating progress");
   let db_connect = dbo.getDb();
   var userqueryID = req.body;
-  
   db_connect.collection("logins").findOneAndUpdate(  {_id: ObjectId(userqueryID)},{$set:{"addition.addition1": true }} )
-  
-  
+});
 
+loginRoutes.route("/login/additionQuiz2Complete").post(function (req, res) {
+  console.log("updating progress");
+  let db_connect = dbo.getDb();
+  var userqueryID = req.body;
+  db_connect.collection("logins").findOneAndUpdate(  {_id: ObjectId(userqueryID)},{$set:{"addition.addition2": true }} )
+});
 
-});   
+loginRoutes.route("/login/additionQuiz3Complete").post(function (req, res) {
+  console.log("updating progress");
+  let db_connect = dbo.getDb();
+  var userqueryID = req.body;
+  db_connect.collection("logins").findOneAndUpdate(  {_id: ObjectId(userqueryID)},{$set:{"addition.addition3": true }} )
+});
+
+loginRoutes.route("/login/additionQuiz4Complete").post(function (req, res) {
+  console.log("updating progress");
+  let db_connect = dbo.getDb();
+  var userqueryID = req.body;
+  db_connect.collection("logins").findOneAndUpdate(  {_id: ObjectId(userqueryID)},{$set:{"addition.addition4": true }} )
+});
+
+loginRoutes.route("/login/additionQuiz5Complete").post(function (req, res) {
+  console.log("updating progress");
+  let db_connect = dbo.getDb();
+  var userqueryID = req.body;
+  db_connect.collection("logins").findOneAndUpdate(  {_id: ObjectId(userqueryID)},{$set:{"addition.addition5": true }} )
+});
+
+loginRoutes.route("/login/additionQuiz6Complete").post(function (req, res) {
+  console.log("updating progress");
+  let db_connect = dbo.getDb();
+  var userqueryID = req.body;
+  db_connect.collection("logins").findOneAndUpdate(  {_id: ObjectId(userqueryID)},{$set:{"addition.addition6": true }} )
+});
+
+loginRoutes.route("/login/subtractionQuiz1Complete").post(function (req, res) {
+  console.log("updating progress");
+  let db_connect = dbo.getDb();
+  var userqueryID = req.body;
+  db_connect.collection("logins").findOneAndUpdate(  {_id: ObjectId(userqueryID)},{$set:{"subtraction.subtraction1": true }} )
+});
+
+loginRoutes.route("/login/subtractionQuiz2Complete").post(function (req, res) {
+  console.log("updating progress");
+  let db_connect = dbo.getDb();
+  var userqueryID = req.body;
+  db_connect.collection("logins").findOneAndUpdate(  {_id: ObjectId(userqueryID)},{$set:{"subtraction.subtraction2": true }} )
+});
+
+loginRoutes.route("/login/subtractionQuiz3Complete").post(function (req, res) {
+  console.log("updating progress");
+  let db_connect = dbo.getDb();
+  var userqueryID = req.body;
+  db_connect.collection("logins").findOneAndUpdate(  {_id: ObjectId(userqueryID)},{$set:{"subtraction.subtraction3": true }} )
+});
+
+loginRoutes.route("/login/subtractionQuiz4Complete").post(function (req, res) {
+  console.log("updating progress");
+  let db_connect = dbo.getDb();
+  var userqueryID = req.body;
+  db_connect.collection("logins").findOneAndUpdate(  {_id: ObjectId(userqueryID)},{$set:{"subtraction.subtraction4": true }} )
+});
+
+loginRoutes.route("/login/subtractionQuiz5Complete").post(function (req, res) {
+  console.log("updating progress");
+  let db_connect = dbo.getDb();
+  var userqueryID = req.body;
+  db_connect.collection("logins").findOneAndUpdate(  {_id: ObjectId(userqueryID)},{$set:{"subtraction.subtraction5": true }} )
+});
+
+loginRoutes.route("/login/subtractionQuiz6Complete").post(function (req, res) {
+  console.log("updating progress");
+  let db_connect = dbo.getDb();
+  var userqueryID = req.body;
+  db_connect.collection("logins").findOneAndUpdate(  {_id: ObjectId(userqueryID)},{$set:{"subtraction.subtraction6": true }} )
+});
+
+loginRoutes.route("/login/multiplicationQuiz1Complete").post(function (req, res) {
+  console.log("updating progress");
+  let db_connect = dbo.getDb();
+  var userqueryID = req.body;
+  db_connect.collection("logins").findOneAndUpdate(  {_id: ObjectId(userqueryID)},{$set:{"multiplication.multiplication1": true }} )
+});
+
+loginRoutes.route("/login/multiplicationQuiz2Complete").post(function (req, res) {
+  console.log("updating progress");
+  let db_connect = dbo.getDb();
+  var userqueryID = req.body;
+  db_connect.collection("logins").findOneAndUpdate(  {_id: ObjectId(userqueryID)},{$set:{"multiplication.multiplication2": true }} )
+});
+
+loginRoutes.route("/login/multiplicationQuiz3Complete").post(function (req, res) {
+  console.log("updating progress");
+  let db_connect = dbo.getDb();
+  var userqueryID = req.body;
+  db_connect.collection("logins").findOneAndUpdate(  {_id: ObjectId(userqueryID)},{$set:{"multiplication.multiplication3": true }} )
+});
+
+loginRoutes.route("/login/multiplicationQuiz4Complete").post(function (req, res) {
+  console.log("updating progress");
+  let db_connect = dbo.getDb();
+  var userqueryID = req.body;
+  db_connect.collection("logins").findOneAndUpdate(  {_id: ObjectId(userqueryID)},{$set:{"multiplication.multiplication4": true }} )
+});
+
+loginRoutes.route("/login/multiplicationQuiz5Complete").post(function (req, res) {
+  console.log("updating progress");
+  let db_connect = dbo.getDb();
+  var userqueryID = req.body;
+  db_connect.collection("logins").findOneAndUpdate(  {_id: ObjectId(userqueryID)},{$set:{"multiplication.multiplication5": true }} )
+});
+
+loginRoutes.route("/login/multiplicationQuiz6Complete").post(function (req, res) {
+  console.log("updating progress");
+  let db_connect = dbo.getDb();
+  var userqueryID = req.body;
+  db_connect.collection("logins").findOneAndUpdate(  {_id: ObjectId(userqueryID)},{$set:{"multiplication.multiplication6": true }} )
+});
+
+loginRoutes.route("/login/divisionQuiz1Complete").post(function (req, res) {
+  console.log("updating progress");
+  let db_connect = dbo.getDb();
+  var userqueryID = req.body;
+  db_connect.collection("logins").findOneAndUpdate(  {_id: ObjectId(userqueryID)},{$set:{"division.division1": true }} )
+});
+
+loginRoutes.route("/login/divisionQuiz2Complete").post(function (req, res) {
+  console.log("updating progress");
+  let db_connect = dbo.getDb();
+  var userqueryID = req.body;
+  db_connect.collection("logins").findOneAndUpdate(  {_id: ObjectId(userqueryID)},{$set:{"division.division2": true }} )
+});
+
+loginRoutes.route("/login/divisionQuiz3Complete").post(function (req, res) {
+  console.log("updating progress");
+  let db_connect = dbo.getDb();
+  var userqueryID = req.body;
+  db_connect.collection("logins").findOneAndUpdate(  {_id: ObjectId(userqueryID)},{$set:{"division.division3": true }} )
+});
+
+loginRoutes.route("/login/divisionQuiz4Complete").post(function (req, res) {
+  console.log("updating progress");
+  let db_connect = dbo.getDb();
+  var userqueryID = req.body;
+  db_connect.collection("logins").findOneAndUpdate(  {_id: ObjectId(userqueryID)},{$set:{"division.division4": true }} )
+});
+
+loginRoutes.route("/login/divisionQuiz5Complete").post(function (req, res) {
+  console.log("updating progress");
+  let db_connect = dbo.getDb();
+  var userqueryID = req.body;
+  db_connect.collection("logins").findOneAndUpdate(  {_id: ObjectId(userqueryID)},{$set:{"division.division5": true }} )
+});
+
+loginRoutes.route("/login/divisionQuiz6Complete").post(function (req, res) {
+  console.log("updating progress");
+  let db_connect = dbo.getDb();
+  var userqueryID = req.body;
+  db_connect.collection("logins").findOneAndUpdate(  {_id: ObjectId(userqueryID)},{$set:{"division.division6": true }} )
+});
 
 
   
