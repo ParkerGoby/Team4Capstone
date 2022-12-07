@@ -9,8 +9,9 @@ import { BrowserRouter as Route, Link } from "react-router-dom";
 import Answers from "../../../components/Answers.jsx";
 import additionData1 from "../../DataFiles/additionData/additionData1";
 import "../Quizzes.css";
+import {quizComplete} from "../quizComplete";
 
-
+const quizNum="addition1";
 
 let data = additionData1;
 
@@ -178,7 +179,7 @@ class Quiz extends React.Component {
                     <div className="d-grid gap-2">
                       <Button
                         variant="primary"
-                        onClick={() => this.setState({ showModal: false })}
+                        onClick={() => {this.setState({ showModal: false });quizComplete(quizNum);}}
                       >
                         Collect Badge
                       </Button>
