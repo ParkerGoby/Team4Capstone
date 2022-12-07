@@ -291,7 +291,7 @@ else{
                               <figure><img  style={{width:"100px",height:"100px"}}className="cardImg" variant="top" src={require("./assets/Picture22.png")} /><figcaption className="text-center">Level 2</figcaption></figure>
                               </div>
                               <div  style={{display:"none"}} id="divisionTrophy3" className="col text-center">
-                              <figure><img style={{width:"100px",height:"100px"}} className="cardImg" variant="top" src={require("./assets/Picture23.png")} /><figcaption className="text-center">Level 3</figcaption></figure>
+                              <figure><img style={{width:"100px",height:"100px"}} className="cardImg" variant="top" src={require("./assets/Picture28.png")} /><figcaption className="text-center">Level 3</figcaption></figure>
                                
                               </div>
                               <div  style={{display:"none"}} id="divisionTrophy4" className="col text-center">
