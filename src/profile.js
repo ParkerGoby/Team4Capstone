@@ -316,6 +316,7 @@ else{
                             <Button>Let's Learn!</Button>
                           </div>
                         </Link> */}
+                        <p>Source for badge assests: Flaticon </p>
                     </div>
                   </div>
                 </div>
