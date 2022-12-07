@@ -34,11 +34,13 @@ export async function profileGrab() {
 
 sessionStorage.setItem('uName',JSON.stringify(obj.uName));
 sessionStorage.setItem('schoolName',JSON.stringify(obj.uSchool));
-sessionStorage.setItem('addition',JSON.stringify(obj.addition));
+sessionStorage.setItem('addition',JSON.stringify(obj.addition.addition1));
 sessionStorage.setItem('multiplication',JSON.stringify(obj.multiplication));
 sessionStorage.setItem('subtraction',JSON.stringify(obj.subtraction));
 sessionStorage.setItem('division',JSON.stringify(obj.division));
-
+var add;
+add= JSON.stringify(obj.addition.addition1);
+console.log(add);
 console.log(obj.uName);
 
 
@@ -79,6 +81,7 @@ else{
                           <h3 className="text-center">User Information</h3>
                            <p>Username: {sessionStorage.getItem("uName")} </p>
                           <p>School: {sessionStorage.getItem("schoolName")}</p>
+                          <p>School: </p>
                         </Card.Body>
                         </Card>
                          <Card bg="dark" text="white" className="card my-4">
