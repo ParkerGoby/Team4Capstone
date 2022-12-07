@@ -68,7 +68,6 @@ db_connect.collection("logins").findOne({email: req.body.email}).then(existingUs
       var multiplication = userId.multiplication;
       var subtraction = userId.subtraction;
       var division = userId.division;
-      
 
       return res.json({
         uName,uSchool,addition,multiplication,subtraction,division

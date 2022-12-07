@@ -5,7 +5,9 @@ import Card from "react-bootstrap/Card";
 
 const userQuery = sessionStorage.getItem("token");
 var obj;
-async function profileGrab() {
+
+
+export async function profileGrab() {
 
   // When a post request is sent to the create url, we'll add a new record to the database.
 
@@ -30,12 +32,19 @@ async function profileGrab() {
   });
 
 
-sessionStorage.setItem('progress',JSON.stringify(obj))
-console.log(obj.uName)
+sessionStorage.setItem('uName',JSON.stringify(obj.uName));
+sessionStorage.setItem('schoolName',JSON.stringify(obj.uSchool));
+sessionStorage.setItem('addition',JSON.stringify(obj.addition));
+sessionStorage.setItem('multiplication',JSON.stringify(obj.multiplication));
+sessionStorage.setItem('subtraction',JSON.stringify(obj.subtraction));
+sessionStorage.setItem('division',JSON.stringify(obj.division));
+
+console.log(obj.uName);
+
 
 }
 
-profileGrab();
+
 
 
 
@@ -68,8 +77,8 @@ else{
                       <Card bg="dark" text="white" className="card my-4">
                         <Card.Body>
                           <h3 className="text-center">User Information</h3>
-                           <p>Username: {obj.uName}</p>
-                          <p>School: </p>
+                           <p>Username: {sessionStorage.getItem("uName")} </p>
+                          <p>School: {sessionStorage.getItem("schoolName")}</p>
                         </Card.Body>
                         </Card>
                          <Card bg="dark" text="white" className="card my-4">

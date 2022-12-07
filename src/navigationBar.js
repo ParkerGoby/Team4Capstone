@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router";
+import { profileGrab } from './profile';
 
 
 var token;
@@ -77,7 +78,7 @@ return (
             </div>
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                     <li className="nav-item">
-                        <Link className='nav-link' style={{color: 'white',textDecoration: 'none' }} to="/profile">Profile</Link>
+                        <Link className='nav-link' style={{color: 'white',textDecoration: 'none' }}  onClick={profileGrab} to="/profile">Profile</Link>
                     </li>
                     <li className="nav-item">
                         <Link className='nav-link' style={{color: 'white',textDecoration: 'none' }} onClick={logOut}>Logout</Link>
