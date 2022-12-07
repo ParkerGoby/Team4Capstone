@@ -175,8 +175,8 @@ class Quiz extends React.Component {
                   <Link
                     style={{ color: "white", textDecoration: "none" }}
                     to="/subtraction-levels"
-                  >                         onClick={() => {this.setState({ showModal: false }); subtractionQuiz1Complete ();}}
-
+                  onClick={() => {this.setState({ showModal: false }); subtractionQuiz1Complete ();}}
+                   >
                     <div className="d-grid gap-2">
                       <Button
                         variant="primary"

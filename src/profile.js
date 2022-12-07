@@ -196,23 +196,23 @@ else{
                   <div className="container-fluid">
                     <div className="row">
                       <div className="col-xs-1 text-center">
-                        <h1>Welcome Back....</h1>
-                        <p>Select one of the subjects below to start learning!</p>
-                      </div>
+                        <h1>Welcome Back {sessionStorage.getItem("uName")}</h1>
+                        <p>View your earned trophies below! More trophies can be earned by learning and completing other levels found on the <a href="../category">categories page.</a></p>
+                        <h3>School: {sessionStorage.getItem("schoolName")}</h3>
+                        </div>
                     </div>
                   </div>
                 </div>
                 <div className="trophy-container">  
                   <div className="row row-cols-1 row-cols-md-1 g-4">
                     <div className="col ">
-                      <Card bg="dark" text="white" className="card my-4">
+                      {/* <Card bg="dark" text="white" className="card my-4">
                         <Card.Body>
                           <h3 className="text-center">User Information</h3>
                            <p>Username: {sessionStorage.getItem("uName")} </p>
-                          <p>School: {sessionStorage.getItem("schoolName")}</p>
                           
                         </Card.Body>
-                        </Card>
+                        </Card> */}
                          <Card bg="dark" text="white" className="card my-4">
                         <Card.Body>
                           <h3 className="text-center">Your Trophies</h3>
