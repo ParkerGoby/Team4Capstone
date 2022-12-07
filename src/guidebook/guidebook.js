@@ -50,7 +50,7 @@ export function Category() {
               <Card.Img
                 className="cardImg"
                 variant="top"
-                src={require("../assets/subtraction.jpg")}
+                src={require("../assets/subtraction.png")}
               />
               <Link
                 style={{ color: "white", textDecoration: "none" }}
@@ -90,7 +90,7 @@ export function Category() {
               <Card.Img
                 className="cardImg"
                 variant="top"
-                src={require("../assets/division.jpg")}
+                src={require("../assets/division.png")}
               />
               <Link
                 style={{ color: "white", textDecoration: "none" }}
