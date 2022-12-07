@@ -132,45 +132,45 @@ const trophyShow = () =>{
     document.getElementById("multiplicationTrophy6").style.display = "block"; // to show
   }
 
-   if (sessionStorage.getItem("subtraction1") === "false"){
-    document.getElementById("subtractionTrophy1").style.display = "none"; // to hide
+   if (sessionStorage.getItem("division1") === "false"){
+    document.getElementById("divisionTrophy1").style.display = "none"; // to hide
   }
   else{
-    document.getElementById("subtractionTrophy1").style.display = "block"; // to show
+    document.getElementById("divisionTrophy1").style.display = "block"; // to show
 }
-  if (sessionStorage.getItem("subtraction2") === "false"){
-    document.getElementById("subtractionTrophy2").style.display = "none"; // to hide
+  if (sessionStorage.getItem("division2") === "false"){
+    document.getElementById("divisionTrophy2").style.display = "none"; // to hide
   }
   else{
-    document.getElementById("subtractionTrophy2").style.display = "block"; // to show
+    document.getElementById("divisionTrophy2").style.display = "block"; // to show
 }
 
-  if (sessionStorage.getItem("subtraction3") === "false"){
-    document.getElementById("subtractionTrophy3").style.display = "none"; // to hide
+  if (sessionStorage.getItem("division3") === "false"){
+    document.getElementById("divisionTrophy3").style.display = "none"; // to hide
   }
   else{
-    document.getElementById("subtractionTrophy3").style.display = "block"; // to show
+    document.getElementById("divisionTrophy3").style.display = "block"; // to show
   }
 
-  if (sessionStorage.getItem("subtraction4") === "false"){
-    document.getElementById("subtractionTrophy4").style.display = "none"; // to hide
+  if (sessionStorage.getItem("division4") === "false"){
+    document.getElementById("divisionTrophy4").style.display = "none"; // to hide
   }
   else{
-    document.getElementById("subtractionTrophy4").style.display = "block"; // to show
+    document.getElementById("divisionTrophy4").style.display = "block"; // to show
   }
 
-  if (sessionStorage.getItem("subtraction5") === "false"){
-    document.getElementById("subtractionTrophy5").style.display = "none"; // to hide
+  if (sessionStorage.getItem("division5") === "false"){
+    document.getElementById("divisionTrophy5").style.display = "none"; // to hide
   }
   else{
-    document.getElementById("subtractionTrophy5").style.display = "block"; // to show
+    document.getElementById("divisionTrophy5").style.display = "block"; // to show
   }
 
-  if (sessionStorage.getItem("subtraction6") === "false"){
-    document.getElementById("subtractionTrophy6").style.display = "none"; // to hide
+  if (sessionStorage.getItem("division6") === "false"){
+    document.getElementById("divisionTrophy6").style.display = "none"; // to hide
   }
   else{
-    document.getElementById("subtractionTrophy6").style.display = "block"; // to show
+    document.getElementById("divisionTrophy6").style.display = "block"; // to show
   }
 
 }
@@ -217,22 +217,22 @@ else{
                         <Card.Body>
                           <h3 className="text-center">Your Trophies</h3>
                             <div  className="row row-cols-1 row-cols-md-4 g-4">
-                              <div  style={{display:"none"}} id="additiontrophy1" className="col">
+                              <div  style={{display:"none"}} id="additionTrophy1" className="col">
                                 <img className="cardImg" variant="top" src={require("./assets/testtrophy.png")} />
                               </div>
-                              <div style={{display:"none"}} id="additiontrophy2" className="col">
+                              <div style={{display:"none"}} id="additionTrophy2" className="col">
                                 <img  className="cardImg" variant="top" src={require("./assets/testtrophy.png")} />
                               </div>
-                              <div  style={{display:"none"}} id="additiontrophy3" className="col">
+                              <div  style={{display:"none"}} id="additionTrophy3" className="col">
                                 <img className="cardImg" variant="top" src={require("./assets/testtrophy.png")} />
                               </div>
-                              <div  style={{display:"none"}} id="additiontrophy4" className="col">
+                              <div  style={{display:"none"}} id="additionTrophy4" className="col">
                                 <img className="cardImg" variant="top" src={require("./assets/testtrophy.png")} />
                               </div>
-                              <div  style={{display:"none"}} id="additiontrophy5" className="col">
+                              <div  style={{display:"none"}} id="additionTrophy5" className="col">
                                 <img className="cardImg" variant="top" src={require("./assets/testtrophy.png")} />
                               </div>
-                              <div  style={{display:"none"}} id="additiontrophy6" className="col">
+                              <div  style={{display:"none"}} id="additionTrophy6" className="col">
                                 <img className="cardImg" variant="top" src={require("./assets/testtrophy.png")} />
                               </div>
                               <div  style={{display:"none"}} id="subtractionTrophy1" className="col">
