@@ -7,6 +7,7 @@ import Slider from './slider.js';
 import Login from './login.js';
 import Register from './register.js';
 import Category from './category.js';
+import Profile from './profile.js';
 
 //Math category types:
 import Addition from './mathSubjects/addition.js';
@@ -14,11 +15,11 @@ import Subtraction from './mathSubjects/subtraction.js';
 import Multiplication from './mathSubjects/multiplication.js';
 import Division from './mathSubjects/division.js';
 
-import Level_1 from './question1.js';
+import LEVEL_1 from './question1.js';
 import Edit from './components/edit';
 import Create from './components/create';
 import Footer from './footer';
-import Record_list from './components/recordList';
+import RECORD_LIST from './components/recordList';
 
 //Addition Quizzes:
 import AdditionQuiz1 from './levels/quizzes/additionQuizzes/addQuiz1.js';
@@ -59,9 +60,9 @@ import MultiplicationGuide from './guidebook/multiplication/multiplicationGuideb
 import SubtractionGuide from './guidebook/subtraction/subtractionGuidebook';
 import DivisionGuide from './guidebook/division/divisionGuidebook';
 
-import useToken from './useToken';
+
 function App() {
-	const { token, setToken } = useToken();
+
 	return (
 		<div>
 			<BrowserRouter>
@@ -70,11 +71,12 @@ function App() {
 					<Route exact path='/' element={<Slider />}> </Route>
 					<Route exact path='/register' element={<Register />}> </Route>
 					<Route exact path='/login' element={<Login />}> </Route>
+					<Route exact path='/profile' element={<Profile />}> </Route>
 					<Route exact path='/category' element={<Category />}> </Route>
-                    <Route exact path='/question1' element={<Level_1 />}> </Route>
+                    <Route exact path='/question1' element={<LEVEL_1 />}> </Route>
 					<Route exact path='/create' element={<Create />}> </Route>
 					<Route exact path='/edit:id' element={<Edit />}> </Route>
-					<Route exact path='/recordList' element={<Record_list />}> </Route>
+					<Route exact path='/recordList' element={<RECORD_LIST />}> </Route>
 					<Route exact path='/addition-levels' element={<Addition />}> </Route>
 					<Route exact path='/subtraction-levels' element={<Subtraction />}> </Route>
 					<Route exact path='/multiplication-levels' element={<Multiplication />}> </Route>

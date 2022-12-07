@@ -8,6 +8,7 @@ import Modal from "react-bootstrap/Modal";
 import { BrowserRouter as Route, Link } from "react-router-dom";
 import Answers from "../../../components/Answers.jsx";
 import multiplicationData1 from "../../DataFiles/multiplicationData/multiplicationData1";
+import { multiplicationQuiz1Complete } from "../multiplicationQuiz1Complete.js";
 import "../Quizzes.css";
 
 
@@ -178,7 +179,7 @@ class Quiz extends React.Component {
                     <div className="d-grid gap-2">
                       <Button
                         variant="primary"
-                        onClick={() => this.setState({ showModal: false })}
+                         onClick={() => {this.setState({ showModal: false }); multiplicationQuiz1Complete ();}}
                       >
                         Collect Badge
                       </Button>

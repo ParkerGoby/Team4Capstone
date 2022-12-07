@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './login.css';
 import {useNavigate} from "react-router";
+
 var obj;
 
 
@@ -43,10 +44,18 @@ export default function Login() {
       window.alert(error);
       return;
     });
-    sessionStorage.setItem('token', JSON.stringify(obj))
-    setForm({ email: "", password: ""});
-    navigate("/");
-    window.location.reload(false);
+    console.log(obj.error);
+    if (obj.error === null){
+     navigate("/");
+      window.location.reload(false);
+      
+    }
+    else{
+      sessionStorage.setItem('token', JSON.stringify(obj))
+      setForm({ email: "", password: ""});
+      navigate("/");
+      window.location.reload(false);
+    }
   }
 
 

@@ -9,7 +9,7 @@ import { BrowserRouter as Route, Link } from "react-router-dom";
 import Answers from "../../../components/Answers.jsx";
 import additionData5 from "../../DataFiles/additionData/additionData5";
 import "../Quizzes.css";
-
+import {additionQuiz5Complete} from "../quizCompleteadd5";
 
 
 let data = additionData5;
@@ -178,7 +178,7 @@ class Quiz extends React.Component {
                     <div className="d-grid gap-2">
                       <Button
                         variant="primary"
-                        onClick={() => this.setState({ showModal: false })}
+                        onClick={() => {this.setState({ showModal: false });additionQuiz5Complete();}}
                       >
                         Collect Badge
                       </Button>
