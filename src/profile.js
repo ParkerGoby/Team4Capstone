@@ -42,7 +42,7 @@ var add;
 add= JSON.stringify(obj.addition.addition1);
 console.log(add);
 console.log(obj.uName);
-
+window.location.reload(false);
 
 }
 

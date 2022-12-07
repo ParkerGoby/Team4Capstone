@@ -122,7 +122,7 @@ loginRoutes.route("/login/validate").post(function (req, res) {
       if (!user) {
         console.log("Incorrect Username or Password")
         return res.status(401).json({
-          error: new Error('Incorrect username or password!')
+          error: null
         });
         
       }
