@@ -16,7 +16,7 @@ export async function quizComplete(quizNum) {
       headers: {
         "Content-Type": "application/json",
       },
-      body: userQuery
+      body: userQuery,
     })
     .then(res => res.json())
     .then(data => {
