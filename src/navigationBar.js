@@ -1,9 +1,58 @@
 import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router";
-import { profileGrab } from './profile';
+
 
 
 var token;
+const userQuery = sessionStorage.getItem("token");
+var obj;
+
+
+
+ async function profileGrab() {
+
+  // When a post request is sent to the create url, we'll add a new record to the database.
+
+
+  await fetch("http://localhost:5000/login/profile", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: userQuery
+  })
+  .then(res => res.json())
+  .then(data => {
+    obj = data;
+  })
+  .then(() => {
+    console.log(obj);
+   })
+  .catch(error => {
+    window.alert(error);
+    return;
+  });
+
+
+sessionStorage.setItem('uName',JSON.stringify(obj.uName));
+sessionStorage.setItem('schoolName',JSON.stringify(obj.uSchool));
+sessionStorage.setItem('addition1',JSON.stringify(obj.addition.addition1));
+sessionStorage.setItem('addition2',JSON.stringify(obj.addition.addition2));
+sessionStorage.setItem('addition3',JSON.stringify(obj.addition.addition3));
+sessionStorage.setItem('addition4',JSON.stringify(obj.addition.addition4));
+sessionStorage.setItem('addition5',JSON.stringify(obj.addition.addition5));
+sessionStorage.setItem('addition6',JSON.stringify(obj.addition.addition6));
+
+sessionStorage.setItem('multiplication',JSON.stringify(obj.multiplication));
+sessionStorage.setItem('subtraction',JSON.stringify(obj.subtraction));
+sessionStorage.setItem('division',JSON.stringify(obj.division));
+
+
+
+window.location.reload(false);
+
+
+}
 
 export function NavigationBar() {
     const navigate = useNavigate();
