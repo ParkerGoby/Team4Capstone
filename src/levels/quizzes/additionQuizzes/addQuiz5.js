@@ -10,12 +10,16 @@ import Answers from "../../../components/Answers.jsx";
 import additionData5 from "../../DataFiles/additionData/additionData5";
 import "../Quizzes.css";
 
+
+
 let data = additionData5;
 
 class Quiz extends React.Component {
+  
   constructor(props) {
     super(props);
-    var random = Math.floor(Math.random() * 100);
+    
+    var random = Math.floor(Math.random() * 6400);
     this.state = {
       nr: random,
       showButton: false,
@@ -24,12 +28,16 @@ class Quiz extends React.Component {
       showModal: false,
       showSuccessAlert: false,
       showIncorrectAlert: false,
+      current: random,
+      correctlyAnswered: [],
+      incorrectlyAnswered: [],
     };
     this.nextQuestion = this.nextQuestion.bind(this);
     this.handleShowButton = this.handleShowButton.bind(this);
-    this.handleStartQuiz = this.handleStartQuiz.bind(this);
+    //this.handleStartQuiz = this.handleStartQuiz.bind(this);
     this.handleIncreaseScore = this.handleIncreaseScore.bind(this);
     this.handleIncorrect = this.handleIncorrect.bind(this);
+    
   }
 
   componentWillMount() {
@@ -38,16 +46,34 @@ class Quiz extends React.Component {
   }
 
   componentWillUnmount() {
-    let { nr } = this.state;
-    this.pushData(nr);
+    
   }
 
   pushData(nr) {
-    var random = Math.floor(Math.random() * 100);
-    if (random === nr) {
-      Math.floor(Math.random() * 100);
+    let { correctlyAnswered } = this.state;
+    let { incorrectlyAnswered } = this.state;
+    var random = Math.floor(Math.random() * 6400);
+
+    if (incorrectlyAnswered.length > 0){
+      if (!incorrectlyAnswered.includes(random)){
+        var randomDigit = Math.floor(Math.random() * 3);
+        var randomBit = Math.floor(Math.random() * 2);
+        random = incorrectlyAnswered.pop();
+        if (randomBit === 1 && random > 2 && random < data.length - 2){
+          random = random - randomDigit;
+        } else if(randomBit === 0 && random > 2 && random < data.length - 2) {
+          random = random + randomDigit;
+        }
+      }
     }
+    if (correctlyAnswered.length > 0){
+      while (correctlyAnswered.includes(random) || nr === random){
+        random = Math.floor(Math.random() * 6400);
+      }
+    }
+    
     this.setState({
+      nr: random,
       question: data[nr].question,
       answers: [
         data[nr].answers[0],
@@ -56,8 +82,10 @@ class Quiz extends React.Component {
         data[nr].answers[3],
       ],
       correct: data[nr].correct,
-      nr: random,
+      
     });
+    
+
   }
 
   nextQuestion() {
@@ -81,25 +109,45 @@ class Quiz extends React.Component {
       showButton: true,
       questionAnswered: true,
     });
+    
+
   }
 
-  handleStartQuiz() {
-    var random = Math.floor(Math.random() * 100);
-    this.setState({
-      nr: random,
-    });
-  }
+  // handleStartQuiz() {
+  //   console.log("handlestartquiz nr is " +this.state.nr);
+  //   var random = Math.floor(Math.random() * 100);
+  //   this.setState({
+  //     nr: random,
+  //   });
+    
+  // }
 
   handleIncreaseScore() {
+    let { nr } = this.state;
+    let {current} = this.state;
+    let {correctlyAnswered} = this.state;
+    correctlyAnswered.push(current);
+    console.log(correctlyAnswered);
+
+   
+    
     this.setState({
       score: this.state.score + 10,
       showSuccessAlert: true,
+      current: nr,
     });
   }
 
   handleIncorrect() {
+    let { nr } = this.state;
+    let { incorrectlyAnswered } = this.state;
+    let {current} = this.state;
+    incorrectlyAnswered.push(current);
+    current = nr;
+    console.log(incorrectlyAnswered);
     this.setState({
       showIncorrectAlert: true,
+      current: nr,
     });
   }
 
@@ -193,14 +241,16 @@ class Quiz extends React.Component {
               </Container>
               <Container>
                 <div>
-                  <Link
+                  
+                    <div>
+                    <Link
                     style={{ color: "white", textDecoration: "none" }}
                     to="/category"
                   >
-                    <div>
                       <Button variant="primary">Return to categories</Button>
+                      </Link>
                     </div>
-                  </Link>
+                 
                 </div>
               </Container>
             </>
