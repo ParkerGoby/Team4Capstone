@@ -143,7 +143,7 @@ return (
                         <Link className='nav-link' style={{color: 'white',textDecoration: 'none' }} to="/category">Categories</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className='nav-link' style={{color: 'white',textDecoration: 'none' }} to="/guidebook/guidebook">Guidebooks</Link>
+                        <Link className='nav-link' style={{color: 'white',textDecoration: 'none' }} to="/guidebook">Guidebooks</Link>
                     </li>
                 </ul>
             </div>
