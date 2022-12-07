@@ -11,7 +11,7 @@ export async function additionQuiz3Complete(quizNum) {
     // When a post request is sent to the create url, we'll add a new record to the database.
   
   
-     await fetch("http://localhost:5000/login/additionQuiz3Complete", {
+     await fetch("https://astro-learn.herokuapp.com/login/additionQuiz3Complete", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

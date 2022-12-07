@@ -14,7 +14,7 @@ var obj;
   // When a post request is sent to the create url, we'll add a new record to the database.
 
 
-  await fetch("http://localhost:5000/login/profile", {
+  await fetch("https://astro-learn.herokuapp.com/login/profile", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

@@ -23,7 +23,7 @@ export default function Register() {
     // When a post request is sent to the create url, we'll add a new record to the database.
     const newPerson = { ...form };
 
-    await fetch("http://localhost:5000/login/add", {
+    await fetch("https://astro-learn.herokuapp.com/login/add", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
