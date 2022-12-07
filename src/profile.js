@@ -295,13 +295,13 @@ else{
                                
                               </div>
                               <div  style={{display:"none"}} id="divisionTrophy4" className="col">
-                              <figure><img className="cardImg" variant="top" src={require("./assets/Picture24.png")} /><figcaption >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Level 4</figcaption></figure>
+                              <figure><img style={{width:"100px",height:"100px"}} className="cardImg" variant="top" src={require("./assets/Picture24.png")} /><figcaption >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Level 4</figcaption></figure>
                               </div>
                               <div  style={{display:"none"}} id="divisionTrophy5" className="col">
-                              <figure><img className="cardImg" variant="top" src={require("./assets/Picture25.png")} /><figcaption >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Level 5</figcaption></figure>
+                              <figure><img style={{width:"100px",height:"100px"}} className="cardImg" variant="top" src={require("./assets/Picture25.png")} /><figcaption >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Level 5</figcaption></figure>
                               </div>
                               <div  style={{display:"none"}} id="divisionTrophy6" className="col">
-                              <figure><img className="cardImg" variant="top" src={require("./assets/Picture26.png")} /><figcaption >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Level 6</figcaption></figure>
+                              <figure><img style={{width:"100px",height:"100px"}} className="cardImg" variant="top" src={require("./assets/Picture26.png")} /><figcaption >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Level 6</figcaption></figure>
                               </div></div>
                              
                         </Card.Body>
