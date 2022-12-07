@@ -94,17 +94,12 @@ loginRoutes.route("/login/quizComplete").post(function (req, res) {
   console.log("updating progress");
   let db_connect = dbo.getDb();
   var userqueryID = req.body;
+  
+  db_connect.collection("logins").findOneAndUpdate(  {_id: ObjectId(userqueryID)},{$set:{"addition.addition1": true }} )
+  
+  
 
-  var cursor = db_connect.collection("logins").find({_id: ObjectId(userqueryID)});
-  cursor.forEach(function(userId){
-    //access all the attributes of the document here
-    var uName = userId.email;
 
-
-    return res.json({
-      uName
-    })
-  })
 });   
 
 
