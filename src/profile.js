@@ -197,7 +197,7 @@ else{
                     <div className="row">
                       <div className="col-xs-1 text-center">
                         <h1>Welcome Back {sessionStorage.getItem("uName")}</h1>
-                        <p>View your earned trophies below! More trophies can be earned by learning and completing other levels found on the <a href="../category">categories page.</a></p>
+                        <p>View your earned badges below! More badges can be earned by learning and completing other levels found on the <a href="../category">categories page.</a></p>
                         <h3>School: {sessionStorage.getItem("schoolName")}</h3>
                         </div>
                     </div>
@@ -215,8 +215,8 @@ else{
                         </Card> */}
                          <Card bg="dark" text="white" className="card my-4">
                         <Card.Body>
-                          <h3 className="text-center">Your Trophies</h3>
-                          <h3 style={{margin:"3rem"}}className="text-center">Addition Trophies</h3>
+                          <h3 className="text-center">Your Badges</h3>
+                          <h3 style={{margin:"3rem"}}className="text-center">Addition Badges</h3>
                             
                             <div  className="row row-cols-1 row-cols-md-3 g-4">
                               <div  style={{display:"none"}} id="additionTrophy1" className="col text-center">
@@ -240,7 +240,7 @@ else{
                               </div></div>
 
                               <div className="block">
-                              <h3 className="text-center" style={{margin:"3rem"}}>Subtraction Trophies</h3>
+                              <h3 className="text-center" style={{margin:"3rem"}}>Subtraction Badges</h3>
                               <div  className="row row-cols-1 row-cols-md-3 g-4">
                               <div  style={{display:"none"}} id="subtractionTrophy1" className="col text-center">
                               <figure><img style={{width:"100px",height:"100px"}} className="cardImg" variant="top" src={require("./assets/Picture7.png")} /><figcaption className="text-center">Level 1</figcaption></figure>
@@ -261,7 +261,7 @@ else{
                               <figure><img style={{width:"100px",height:"100px"}} className="cardImg" variant="top" src={require("./assets/Picture12.png")} /><figcaption className="text-center">Level 6</figcaption></figure>
                               </div></div></div>
 
-                              <h3 style={{margin:"3rem"}} className="text-center">Multiplication Trophies</h3>
+                              <h3 style={{margin:"3rem"}} className="text-center">Multiplication Badges</h3>
                               <div  className="row row-cols-1 row-cols-md-3 g-4">
                               <div  style={{display:"none"}} id="multiplicationTrophy1" className="col text-center">
                               <figure><img style={{width:"100px",height:"100px"}} className="cardImg" variant="top" src={require("./assets/Picture13.png")} /><figcaption className="text-center">Level 1</figcaption></figure>
@@ -282,7 +282,7 @@ else{
                               <figure><img style={{width:"100px",height:"100px"}} className="cardImg" variant="top" src={require("./assets/Picture20.png")} /><figcaption className="text-center">Level 6</figcaption></figure>
                               </div></div>
 
-                              <h3 style={{margin:"3rem"}} className="text-center">Division Trophies</h3>
+                              <h3 style={{margin:"3rem"}} className="text-center">Division Badges</h3>
                               <div  className="row row-cols-1 row-cols-md-3 g-4">
                               <div  style={{display:"none"}} id="divisionTrophy1" className="col text-center">
                               <figure><img style={{width:"100px",height:"100px"}} className="cardImg" variant="top" src={require("./assets/Picture21.png")} /><figcaption className="text-center">Level 1</figcaption></figure>
