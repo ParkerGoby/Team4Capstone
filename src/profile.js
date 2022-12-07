@@ -183,7 +183,7 @@ export function Profile() {
   if (sessionStorage.getItem("token") === null) {
    return (
    <div className="col-xs-1 text-center">
-              <h1>LOGIN</h1>
+              <h1>Login to view your Profile!</h1>
               
             </div>
    )

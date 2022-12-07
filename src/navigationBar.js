@@ -33,9 +33,14 @@ var obj;
     return;
   });
 
+const unameRaw=JSON.stringify(obj.uName);
+const unameQuotes = unameRaw.replaceAll('"', '');
+const schoolRaw=JSON.stringify(obj.uSchool);
+const schoolQuotes = schoolRaw.replaceAll('"', '');
 
-sessionStorage.setItem('uName',JSON.stringify(obj.uName));
-sessionStorage.setItem('schoolName',JSON.stringify(obj.uSchool));
+
+sessionStorage.setItem('uName',unameQuotes);
+sessionStorage.setItem('schoolName',schoolQuotes);
 sessionStorage.setItem('addition1',JSON.stringify(obj.addition.addition1));
 sessionStorage.setItem('addition2',JSON.stringify(obj.addition.addition2));
 sessionStorage.setItem('addition3',JSON.stringify(obj.addition.addition3));
